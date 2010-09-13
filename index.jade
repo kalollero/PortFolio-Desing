@@ -51,18 +51,18 @@ body
 
 	//Navegador
 	nav.menuNavegacion
-				i.menuNavegacion__icon.icon-logo
+		div.menuNavegacion__icon: i.icon-logo
 
-				i.menuNavegacion__icon.icon-introduccion
-				i.menuNavegacion__icon.icon-frase1
-				i.menuNavegacion__icon.icon-resumen
-				i.menuNavegacion__icon.icon-software
-				i.menuNavegacion__icon.icon-portafolio
-				i.menuNavegacion__icon.icon-frase2
-				i.menuNavegacion__icon.icon-tecnologias
-				i.menuNavegacion__icon.icon-contacto
+		div.menuNavegacion__icon: i.icon-introduccion
+		div.menuNavegacion__icon: i.icon-frase1
+		div.menuNavegacion__icon: i.icon-resumen
+		div.menuNavegacion__icon: i.icon-software
+		div.menuNavegacion__icon: i.icon-portafolio
+		div.menuNavegacion__icon: i.icon-frase2
+		div.menuNavegacion__icon: i.icon-tecnologias
+		div.menuNavegacion__icon: i.icon-contacto
 
-				i.menuNavegacion__icon.icon-facebook
+		div.menuNavegacion__icon: i.icon-facebook
 
 	div.marro-on__contenedor
 		
@@ -70,153 +70,154 @@ body
 		header.portada
 			div.portada__contenedor
 				img.portada__logo(href="")
-				h2 Kalollero Marrô.ôn
-				p DISEÑADOR PUBLICITARIO
+				h2.portada__nombre Kalollero Marrô.ôn
+				p.portada__profesion DISEÑADOR PUBLICITARIO
 				img.portada__mouse(href="")
 
 		//Introducción
 		section.introduccion
-			h1.titulo__seccion Sobre Mi
+			h5.titulo__seccion Sobre Mi
 			div.introduccion__resena
-				div Loco, Gitano & Soñador, con estudios en Imagen y Diseño; soy un publicista art nouvo de épocas contemporáneas, experto en vampiras moderna ...Bienvenid@.
-				img.imagenPerfil
+				div.introduccion__texto Loco, Gitano & Soñador, con estudios en Imagen y Diseño; soy un publicista art nouvo de épocas contemporáneas, experto en vampiras moderna ...Bienvenid@.
+				div.introduccion__imagenPerfil: img(src="images/")
 			div.introduccion__curriculumVitae
-				div DESCARGAR CV
-				div IR AL RESUMEN
+				div.introduccion__descargaCV DESCARGAR CV
+				div.introduccion__visitaResumen IR AL RESUMEN
 
 		//Frase 1
 		section.frase.frase--1
-			h1 ...Siempre pasan cosas importantes en mi vida...”
-			h4 mc marrO.On
+			h2.frase__texto ...Siempre pasan cosas importantes en mi vida...”
+			h4.frase__autor mc marrO.On
 			
 		//Resumen
 		section.resumen
-			h1.titulo__seccion
+			h5.titulo__seccion Resumen
 			div.resumen__experiencia
 			div.resumen__educacion
 			div.resumen__Freelance
 
 		//Software
 		section.software
-			h1.titulo__seccion
+			h5.titulo__seccion Conocimiento
 			div.software__contenedor
-				div.item__contenedor
-					h4.grupoSoftware Sofware de Imagen & Diseño
-					div.item__software
-						div.software
-							p.nombreSoftware Illustrator
-							p.nombreSoftware Photoshop
-							p.nombreSoftware Corel Drawn
-						div.nivelConocimiento
-					div.icon__software
+				
+				div.software__contenedorGrupo.software--imagenDiseno
+					h6.software__nombreGrupo--izquierda Sofware de Imagen & Diseño
+					div.software__grupo--izquierda
+						div.software__items
+							p.software__nombre Illustrator
+							p.software__nombre Photoshop
+							p.software__nombre Corel Drawn
+						div.software__nivelConocimiento
+					div.software__icon--izquierda
 						img(href="")
 
-				div.item__contenedor
-					h4.grupoSoftware Web Software
-					div.item__software
-						div.software
-							p.nombreSoftware Google Analitics
-							p.nombreSoftware Hootsouit
-							p.nombreSoftware Bootstrap 4
-						div.nivelConocimiento
-					div.icon__software
+				div.software__contenedorGrupo.software--programacion
+					h6.software__nombreGrupo--izquierda Lenguajes de Programación
+					div.software__grupo--izquierda
+						div.software__items
+							p.software__nombre HTML5
+							p.software__nombre CSS3
+							P.software__nombre JQuery
+						div.software__nivelConocimiento
+					div.software__icon--izquierda
 						img(href="")
 
-				div.item__contenedor
-					h4.grupoSoftware Paquetería Office 
-					div.item__software
-						div.software
-							p.nombreSoftware Word
-							p.nombreSoftware Excel
-							p.nombreSoftware Power Point
-						div.nivelConocimiento
-					div.icon__software
+				div.software__contenedorGrupo.software--web
+					h6.software__nombreGrupo--izquierda Web Software
+					div.software__grupo--izquierda
+						div.software__items
+							p.software__nombre Google Analitics
+							p.software__nombre Hootsouit
+							p.software__nombre Bootstrap 4
+						div.software__nivelConocimiento
+					div.software__icon--izquierda
 						img(href="")
 
-				div.item__contenedor
-					h4.grupoSoftware Software de Video, Audio & 3D
-					div.item__software
-						div.software
-							p.nombreSoftware Auditions
-							p.nombreSoftware After Efects
-							p.nombreSoftware Blender
-						div.nivelConocimiento
-					div.icon__software
+				div.software__contenedorGrupo.software--office
+					h6.software__nombreGrupo--derecha Paquetería Office 
+					div.software__grupo--derecha
+						div.software__items
+							p.software__nombre Word
+							p.software__nombre Excel
+							p.software__nombre Power Point
+						div.software__nivelConocimiento
+					div.software__icon--derecha
 						img(href="")
 
-				div.item__contenedor
-					h4.grupoSoftware Lenguajes de Programación
-					div.item__software
-						div.software
-							p.nombreSoftware HTML5
-							p.nombreSoftware CSS3
-							P.nombreSoftware JQuery
-						div.nivelConocimiento
-					div.icon__software
+				div.software__contenedorGrupo.software--videoAudio3D
+					h6.software__nombreGrupo--derecha Software de Video, Audio & 3D
+					div.software__grupo--derecha
+						div.software__items
+							p.software__nombre Auditions
+							p.software__nombre After Efects
+							p.software__nombre Blender
+						div.software__nivelConocimiento
+					div.software__icon--derecha
 						img(href="")
 
-				div.item__contenedor
-					h4.grupoSoftware Software para Desarrollo
-					div.item__software
-						div.software
-							p.nombreSoftware Sublime Text
-							p.nombreSoftware Git
-							p.nombreSoftware Acrobat
-						div.nivelConocimiento
-					div.icon__software
+				div.software__contenedorGrupo.software--desarrollo
+					h6.software__nombreGrupo--derecha Software para Desarrollo
+					div.software__grupo--derecha
+						div.software__items
+							p.software__nombre Sublime Text
+							p.software__nombre Git
+							p.software__nombre Acrobat
+						div.software__nivelConocimiento
+					div.software__icon--derecha
 						img(href="")
 
 		//PortaFolio
 		section.portafolio
-			h1.titulo__seccion
+			h5.titulo__seccion Portafolio
 			div.portafolio__descripcion
 			div.portafolio__galeria
 		
 		//Frase 2
 		section.frase.frase--2
-			h2 ...dormir las ocho horas de sueño entre las 10:00 pm y las 6:00 am es anticuado...”
-			h4 mc marrO.On
+			h2.frase__texto ...dormir las ocho horas de sueño entre las 10:00 pm y las 6:00 am es anticuado...”
+			h4.frase__autor mc marrO.On
 
 		//Tecnologías en Estudio
-		section.tecnologias
-			h1.titulo__seccion
-			div.tecnologias__contenedor
-				div.tecnologia__item
+		section.tecnologia
+			h5.titulo__seccion Aprendizaje
+			div.tecnologia__contenedor
+				div.tecnologia__item.tecnologia--indesing
 					div.tecnologia__icono
 						img(href="")
 					div.tecnologia__nombre
 						p InDesing
 					div.tecnologia__nivel
 
-				div.tecnologia__item
+				div.tecnologia__item.tecnologia--sass
 					div.tecnologia__nombre
 						p SASS
 					div.tecnologia__nivel
 					div.tecnologia__icono
 						img(href="")
 
-				div.tecnologia__item
+				div.tecnologia__item.tecnologia--javascript
 					div.tecnologia__icono
 						img(href="")
 					div.tecnologia__nombre
 						p Java Script
 					div.tecnologia__nivel
 
-				div.tecnologia__item
+				div.tecnologia__item.tecnologia--canvas
 					div.tecnologia__nombre
-						p Premier
+						p Buissnes Model Canvas
 					div.tecnologia__nivel
 					div.tecnologia__icono
 						img(href="")
 
-				div.tecnologia__item
+				div.tecnologia__item.tecnologia--sdkfacebook
 					div.tecnologia__icono
 						img(href="")
 					div.tecnologia__nombre
 						p SDK JS Facebook
 					div.tecnologia__nivel
 
-				div.tecnologia__item
+				div.tecnologia__item.tecnologia--grid
 					div.tecnologia__nombre
 						p CSS3 - Grid
 					div.tecnologia__nivel
@@ -225,42 +226,42 @@ body
 
 		//Contacto
 		section.contacto
-			h1.titulo__seccion
+			h5.titulo__seccion
 			div.contacto__contenedor
-				div.medioDeContacto
-					div.medioDeContacto__icono
-					div.nombreDeContacto__nombre
+				div.contacto__medioMovil
+					div.contacto__icono
+					div.contacto__nombre
 						p Teléfono Móvil
-					div.medioDeContacto__informacion
+					div.contacto__informacion
 
-				div.medioDeContacto
-					div.medioDeContacto__icono
-					div.nombreDeContacto__nombre
+				div.contacto__medioCorreo
+					div.contacto__icono
+					div.contacto__nombre
 						p Correo Web
-					div.medioDeContacto__informacion
+					div.contacto__informacion
 
-				div.medioDeContacto
-					div.medioDeContacto__icono
-					div.nombreDeContacto__nombre
+				div.contacto__medioFacebook
+					div.contacto__icono
+					div.contacto__nombre
 						p Facebook
-					div.medioDeContacto__informacion
+					div.contacto__informacion
 
-				div.medioDeContacto
-					div.medioDeContacto__icono
-					div.nombreDeContacto__nombre
+				div.contacto__medioDireccion
+					div.contacto__icono
+					div.contacto__nombre
 						p Dirección
-					div.medioDeContacto__informacion
+					div.contacto__informacion
 
 		//Pie
 		footer.pie
 			div.pie__derechosReservados
 				p DR 2017
 			
-			div.pie__firma
+			div.pie__firma FIRMA
 				img(href="")
 
 			div.pie__redesSociales
-				i.iconRedes.icon-facebook
-				i.iconRedes.icon-twitter
-				i.iconRedes.icon-github
-				i.iconRedes.icon-Linkedin
+				div.iconRedes.icon-facebook f
+				div.iconRedes.icon-twitter t
+				div.iconRedes.icon-github g
+				div.iconRedes.icon-Linkedin l

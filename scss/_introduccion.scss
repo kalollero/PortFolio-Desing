@@ -1,0 +1,42 @@
+.introduccion {
+
+	&__resena{
+		display: flex;
+	}	
+
+	&__texto {
+		width: 50%;
+		padding: 0 1rem;
+	}
+
+	&__imagenPerfil {
+		width: 50%;
+		height: 100%;
+		background-color: var(--anaranjado);
+	}
+
+	&__curriculumVitae {
+		width: 100%;
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__descargaCV, &__visitaResumen {
+		border-radius: 4px;
+		background-color: var(--anaranjado);
+		color: var(--ahuesado);
+
+		@include md {
+			margin: 0px 5px;
+			padding: 0.5rem 1rem;
+			font-weight: 200;
+			font-size: 1rem;
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}

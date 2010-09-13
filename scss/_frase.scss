@@ -1,0 +1,23 @@
+.frase {
+	padding: 2rem 3rem;
+	display: flex;
+	flex-flow: column;
+
+	&__texto {
+		color: var(--blanco);
+	}
+
+	&__autor {
+		color: var(--blanco);
+	}
+
+	&--1 {
+		background-color: purple;
+	}
+
+	&--2 {
+		background-color: blue;
+	}
+
+
+}

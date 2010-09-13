@@ -1,26 +1,77 @@
 @import "normalize.scss";
 
-//Contenedor
+//Media Queries
+@import "media_queries";
+
+
+
+/* ================================
+		INICIAN MÓDULOS
+=================================*/
+
+/* -------- CONTENEDOR --------*/
 	.marro-on__contenedor{
 		width: 100%;
 	    height: 100%;
 	    position: relative;
-	    margin-top: 4rem;
+	    // margin-top: 3rem;
 	    left: 0;
 	    bottom: 0;
-	    padding: 0 1rem;
+	    padding: 0;
 
-	    @media (min-width:768px) {
+	    @include md {
 			width: calc(100% - 3rem);
-		    height: 100vh;
+		    height: 100%;
 		    position: relative;
 		    margin: 0;
 		    left: 0;
 		    bottom: initial;
-		    padding: 1rem;
-			
+		    padding: 0;
 		}			
 	}
 
+/* -------- SECCIONES -------- */
+	section {
+		width: 100%;
+		padding: 3rem 0;
+	}
 
+	.titulo__seccion {
+		text-align: center;
+		color: var(--claro);
+	}
+	
+	.imagen-fluida {
+	  max-width: 100%;
+	  height: auto;
+	}
+
+/* -------- MENU --------*/
 @import "menu.scss";
+
+/* -------- PORTADA --------*/
+@import "portada.scss";
+
+/* -------- INTRODUCCION --------*/
+@import "introduccion.scss";
+
+/* -------- FRASE --------*/
+@import "frase.scss";
+
+/* -------- RESUMEN --------*/
+@import "resumen.scss";
+
+/* -------- SOFTWARE --------*/
+@import "software.scss";
+
+/* -------- PORTAFOLIO --------*/
+@import "portafolio.scss";
+
+/* -------- TECNOLOGÍAS --------*/
+@import "tecnologias.scss";
+
+/* -------- CONTACTO --------*/
+@import "contacto.scss";
+
+/* -------- PIE --------*/
+@import "pie.scss";

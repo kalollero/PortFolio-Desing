@@ -1,18 +1,18 @@
 //Menu Navegación
 	.menuNavegacion {
-	  display: flex;
-      position: fixed;
       width: 100%;
       height: 3rem;
       padding: 0 1rem;
-      justify-content: space-between;
-      align-items: center;
-      background-color: var(--blanco);
-      color: var(--oxford);
-      z-index: 9; 
       border-bottom: 1px solid var(--claro);
-      top: 0;
+      position: fixed;
+      top: 0; 
+      z-index: 9; 
+      background-color: var(--blanco);
+      color: var(--oxford);      
       line-height: 1;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 20% auto auto auto auto auto auto auto auto 20%;
 
       	&__icon	{
 	     	color: var(--profundo);
@@ -23,7 +23,7 @@
 	    	color: var(--anaranjado);
 	    }
 
-	    @media (min-width:768px)  {
+	   	@include md {
 			width: 3rem;
 			height: 100vh;
 			padding: 1rem 0;

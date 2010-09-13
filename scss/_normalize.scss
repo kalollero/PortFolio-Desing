@@ -355,29 +355,6 @@ main {
   display: block;
 }
 
-
 figure {
   margin: 1em 40px;
-}
-
-
-/* ================================
-Inicia FrameWork
-=================================*/
-.imagen-fluida {
-  max-width: 100%;
-  height: auto;
-}
-
-.flexRow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flexColumn {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
 }

@@ -43,167 +43,179 @@
 </head>
 <body>
   <!--Navegador-->
-  <nav class="menuNavegacion"><i class="menuNavegacion__icon icon-logo"></i><i class="menuNavegacion__icon icon-introduccion"></i><i class="menuNavegacion__icon icon-frase1"></i><i class="menuNavegacion__icon icon-resumen"></i><i class="menuNavegacion__icon icon-software"></i><i class="menuNavegacion__icon icon-portafolio"></i><i class="menuNavegacion__icon icon-frase2"></i><i class="menuNavegacion__icon icon-tecnologias"></i><i class="menuNavegacion__icon icon-contacto"></i><i class="menuNavegacion__icon icon-facebook"></i></nav>
+  <nav class="menuNavegacion">
+    <div class="menuNavegacion__icon"><i class="icon-logo"></i></div>
+    <div class="menuNavegacion__icon"><i class="icon-introduccion"></i></div>
+    <div class="menuNavegacion__icon"><i class="icon-frase1"></i></div>
+    <div class="menuNavegacion__icon"><i class="icon-resumen"></i></div>
+    <div class="menuNavegacion__icon"><i class="icon-software"></i></div>
+    <div class="menuNavegacion__icon"><i class="icon-portafolio"></i></div>
+    <div class="menuNavegacion__icon"><i class="icon-frase2"></i></div>
+    <div class="menuNavegacion__icon"><i class="icon-tecnologias"></i></div>
+    <div class="menuNavegacion__icon"><i class="icon-contacto"></i></div>
+    <div class="menuNavegacion__icon"><i class="icon-facebook"></i></div>
+  </nav>
   <div class="marro-on__contenedor">
     <!--Portada-->
     <header class="portada">
       <div class="portada__contenedor"><img class="portada__logo" href=""/>
-        <h2>Kalollero Marrô.ôn</h2>
-        <p>DISEÑADOR PUBLICITARIO</p><img class="portada__mouse" href=""/>
+        <h2 class="portada__nombre">Kalollero Marrô.ôn</h2>
+        <p class="portada__profesion">DISEÑADOR PUBLICITARIO</p><img class="portada__mouse" href=""/>
       </div>
     </header>
     <!--Introducción-->
     <section class="introduccion">
-      <h1 class="titulo__seccion">Sobre Mi</h1>
+      <h5 class="titulo__seccion">Sobre Mi</h5>
       <div class="introduccion__resena">
-        <div>Loco, Gitano & Soñador, con estudios en Imagen y Diseño; soy un publicista art nouvo de épocas contemporáneas, experto en vampiras moderna ...Bienvenid@.</div><img class="imagenPerfil"/>
+        <div class="introduccion__texto">Loco, Gitano & Soñador, con estudios en Imagen y Diseño; soy un publicista art nouvo de épocas contemporáneas, experto en vampiras moderna ...Bienvenid@.</div>
+        <div class="introduccion__imagenPerfil"><img src="images/"/></div>
       </div>
       <div class="introduccion__curriculumVitae">
-        <div>DESCARGAR CV</div>
-        <div>IR AL RESUMEN</div>
+        <div class="introduccion__descargaCV">DESCARGAR CV</div>
+        <div class="introduccion__visitaResumen">IR AL RESUMEN</div>
       </div>
     </section>
     <!--Frase 1-->
     <section class="frase frase--1">
-      <h1>...Siempre pasan cosas importantes en mi vida...”</h1>
-      <h4>mc marrO.On</h4>
+      <h2 class="frase__texto">...Siempre pasan cosas importantes en mi vida...”</h2>
+      <h4 class="frase__autor">mc marrO.On</h4>
     </section>
     <!--Resumen-->
     <section class="resumen">
-      <h1 class="titulo__seccion"></h1>
+      <h5 class="titulo__seccion">Resumen</h5>
       <div class="resumen__experiencia"></div>
       <div class="resumen__educacion"></div>
       <div class="resumen__Freelance"></div>
     </section>
     <!--Software-->
     <section class="software">
-      <h1 class="titulo__seccion"></h1>
+      <h5 class="titulo__seccion">Conocimiento</h5>
       <div class="software__contenedor">
-        <div class="item__contenedor">
-          <h4 class="grupoSoftware">Sofware de Imagen & Diseño</h4>
-          <div class="item__software">
-            <div class="software">
-              <p class="nombreSoftware">Illustrator</p>
-              <p class="nombreSoftware">Photoshop</p>
-              <p class="nombreSoftware">Corel Drawn</p>
+        <div class="software__contenedorGrupo software--imagenDiseno">
+          <h6 class="software__nombreGrupo--izquierda">Sofware de Imagen & Diseño</h6>
+          <div class="software__grupo--izquierda">
+            <div class="software__items">
+              <p class="software__nombre">Illustrator</p>
+              <p class="software__nombre">Photoshop</p>
+              <p class="software__nombre">Corel Drawn</p>
             </div>
-            <div class="nivelConocimiento"></div>
+            <div class="software__nivelConocimiento"></div>
           </div>
-          <div class="icon__software"><img href=""/></div>
+          <div class="software__icon--izquierda"><img href=""/></div>
         </div>
-        <div class="item__contenedor">
-          <h4 class="grupoSoftware">Web Software</h4>
-          <div class="item__software">
-            <div class="software">
-              <p class="nombreSoftware">Google Analitics</p>
-              <p class="nombreSoftware">Hootsouit</p>
-              <p class="nombreSoftware">Bootstrap 4</p>
+        <div class="software__contenedorGrupo software--programacion">
+          <h6 class="software__nombreGrupo--izquierda">Lenguajes de Programación</h6>
+          <div class="software__grupo--izquierda">
+            <div class="software__items">
+              <p class="software__nombre">HTML5</p>
+              <p class="software__nombre">CSS3</p>
+              <P class="software__nombre">JQuery</P>
             </div>
-            <div class="nivelConocimiento"></div>
+            <div class="software__nivelConocimiento"></div>
           </div>
-          <div class="icon__software"><img href=""/></div>
+          <div class="software__icon--izquierda"><img href=""/></div>
         </div>
-        <div class="item__contenedor">
-          <h4 class="grupoSoftware">Paquetería Office </h4>
-          <div class="item__software">
-            <div class="software">
-              <p class="nombreSoftware">Word</p>
-              <p class="nombreSoftware">Excel</p>
-              <p class="nombreSoftware">Power Point</p>
+        <div class="software__contenedorGrupo software--web">
+          <h6 class="software__nombreGrupo--izquierda">Web Software</h6>
+          <div class="software__grupo--izquierda">
+            <div class="software__items">
+              <p class="software__nombre">Google Analitics</p>
+              <p class="software__nombre">Hootsouit</p>
+              <p class="software__nombre">Bootstrap 4</p>
             </div>
-            <div class="nivelConocimiento"></div>
+            <div class="software__nivelConocimiento"></div>
           </div>
-          <div class="icon__software"><img href=""/></div>
+          <div class="software__icon--izquierda"><img href=""/></div>
         </div>
-        <div class="item__contenedor">
-          <h4 class="grupoSoftware">Software de Video, Audio & 3D</h4>
-          <div class="item__software">
-            <div class="software">
-              <p class="nombreSoftware">Auditions</p>
-              <p class="nombreSoftware">After Efects</p>
-              <p class="nombreSoftware">Blender</p>
+        <div class="software__contenedorGrupo software--office">
+          <h6 class="software__nombreGrupo--derecha">Paquetería Office </h6>
+          <div class="software__grupo--derecha">
+            <div class="software__items">
+              <p class="software__nombre">Word</p>
+              <p class="software__nombre">Excel</p>
+              <p class="software__nombre">Power Point</p>
             </div>
-            <div class="nivelConocimiento"></div>
+            <div class="software__nivelConocimiento"></div>
           </div>
-          <div class="icon__software"><img href=""/></div>
+          <div class="software__icon--derecha"><img href=""/></div>
         </div>
-        <div class="item__contenedor">
-          <h4 class="grupoSoftware">Lenguajes de Programación</h4>
-          <div class="item__software">
-            <div class="software">
-              <p class="nombreSoftware">HTML5</p>
-              <p class="nombreSoftware">CSS3</p>
-              <P class="nombreSoftware">JQuery</P>
+        <div class="software__contenedorGrupo software--videoAudio3D">
+          <h6 class="software__nombreGrupo--derecha">Software de Video, Audio & 3D</h6>
+          <div class="software__grupo--derecha">
+            <div class="software__items">
+              <p class="software__nombre">Auditions</p>
+              <p class="software__nombre">After Efects</p>
+              <p class="software__nombre">Blender</p>
             </div>
-            <div class="nivelConocimiento"></div>
+            <div class="software__nivelConocimiento"></div>
           </div>
-          <div class="icon__software"><img href=""/></div>
+          <div class="software__icon--derecha"><img href=""/></div>
         </div>
-        <div class="item__contenedor">
-          <h4 class="grupoSoftware">Software para Desarrollo</h4>
-          <div class="item__software">
-            <div class="software">
-              <p class="nombreSoftware">Sublime Text</p>
-              <p class="nombreSoftware">Git</p>
-              <p class="nombreSoftware">Acrobat</p>
+        <div class="software__contenedorGrupo software--desarrollo">
+          <h6 class="software__nombreGrupo--derecha">Software para Desarrollo</h6>
+          <div class="software__grupo--derecha">
+            <div class="software__items">
+              <p class="software__nombre">Sublime Text</p>
+              <p class="software__nombre">Git</p>
+              <p class="software__nombre">Acrobat</p>
             </div>
-            <div class="nivelConocimiento"></div>
+            <div class="software__nivelConocimiento"></div>
           </div>
-          <div class="icon__software"><img href=""/></div>
+          <div class="software__icon--derecha"><img href=""/></div>
         </div>
       </div>
     </section>
     <!--PortaFolio-->
     <section class="portafolio">
-      <h1 class="titulo__seccion"></h1>
+      <h5 class="titulo__seccion">Portafolio</h5>
       <div class="portafolio__descripcion"></div>
       <div class="portafolio__galeria"></div>
     </section>
     <!--Frase 2-->
     <section class="frase frase--2">
-      <h2>...dormir las ocho horas de sueño entre las 10:00 pm y las 6:00 am es anticuado...”</h2>
-      <h4>mc marrO.On</h4>
+      <h2 class="frase__texto">...dormir las ocho horas de sueño entre las 10:00 pm y las 6:00 am es anticuado...”</h2>
+      <h4 class="frase__autor">mc marrO.On</h4>
     </section>
     <!--Tecnologías en Estudio-->
-    <section class="tecnologias">
-      <h1 class="titulo__seccion"></h1>
-      <div class="tecnologias__contenedor">
-        <div class="tecnologia__item">
+    <section class="tecnologia">
+      <h5 class="titulo__seccion">Aprendizaje</h5>
+      <div class="tecnologia__contenedor">
+        <div class="tecnologia__item tecnologia--indesing">
           <div class="tecnologia__icono"><img href=""/></div>
           <div class="tecnologia__nombre">
             <p>InDesing</p>
           </div>
           <div class="tecnologia__nivel"></div>
         </div>
-        <div class="tecnologia__item">
+        <div class="tecnologia__item tecnologia--sass">
           <div class="tecnologia__nombre">
             <p>SASS</p>
           </div>
           <div class="tecnologia__nivel"></div>
           <div class="tecnologia__icono"><img href=""/></div>
         </div>
-        <div class="tecnologia__item">
+        <div class="tecnologia__item tecnologia--javascript">
           <div class="tecnologia__icono"><img href=""/></div>
           <div class="tecnologia__nombre">
             <p>Java Script</p>
           </div>
           <div class="tecnologia__nivel"></div>
         </div>
-        <div class="tecnologia__item">
+        <div class="tecnologia__item tecnologia--canvas">
           <div class="tecnologia__nombre">
-            <p>Premier</p>
+            <p>Buissnes Model Canvas</p>
           </div>
           <div class="tecnologia__nivel"></div>
           <div class="tecnologia__icono"><img href=""/></div>
         </div>
-        <div class="tecnologia__item">
+        <div class="tecnologia__item tecnologia--sdkfacebook">
           <div class="tecnologia__icono"><img href=""/></div>
           <div class="tecnologia__nombre">
             <p>SDK JS Facebook</p>
           </div>
           <div class="tecnologia__nivel"></div>
         </div>
-        <div class="tecnologia__item">
+        <div class="tecnologia__item tecnologia--grid">
           <div class="tecnologia__nombre">
             <p>CSS3 - Grid</p>
           </div>
@@ -214,35 +226,35 @@
     </section>
     <!--Contacto-->
     <section class="contacto">
-      <h1 class="titulo__seccion"></h1>
+      <h5 class="titulo__seccion"></h5>
       <div class="contacto__contenedor">
-        <div class="medioDeContacto">
-          <div class="medioDeContacto__icono"></div>
-          <div class="nombreDeContacto__nombre">
+        <div class="contacto__medioMovil">
+          <div class="contacto__icono"></div>
+          <div class="contacto__nombre">
             <p>Teléfono Móvil</p>
           </div>
-          <div class="medioDeContacto__informacion"></div>
+          <div class="contacto__informacion"></div>
         </div>
-        <div class="medioDeContacto">
-          <div class="medioDeContacto__icono"></div>
-          <div class="nombreDeContacto__nombre">
+        <div class="contacto__medioCorreo">
+          <div class="contacto__icono"></div>
+          <div class="contacto__nombre">
             <p>Correo Web</p>
           </div>
-          <div class="medioDeContacto__informacion"></div>
+          <div class="contacto__informacion"></div>
         </div>
-        <div class="medioDeContacto">
-          <div class="medioDeContacto__icono"></div>
-          <div class="nombreDeContacto__nombre">
+        <div class="contacto__medioFacebook">
+          <div class="contacto__icono"></div>
+          <div class="contacto__nombre">
             <p>Facebook</p>
           </div>
-          <div class="medioDeContacto__informacion"></div>
+          <div class="contacto__informacion"></div>
         </div>
-        <div class="medioDeContacto">
-          <div class="medioDeContacto__icono"></div>
-          <div class="nombreDeContacto__nombre">
+        <div class="contacto__medioDireccion">
+          <div class="contacto__icono"></div>
+          <div class="contacto__nombre">
             <p>Dirección</p>
           </div>
-          <div class="medioDeContacto__informacion"></div>
+          <div class="contacto__informacion"></div>
         </div>
       </div>
     </section>
@@ -251,8 +263,13 @@
       <div class="pie__derechosReservados">
         <p>DR 2017</p>
       </div>
-      <div class="pie__firma"><img href=""/></div>
-      <div class="pie__redesSociales"><i class="iconRedes icon-facebook"></i><i class="iconRedes icon-twitter"></i><i class="iconRedes icon-github"></i><i class="iconRedes icon-Linkedin"></i></div>
+      <div class="pie__firma">FIRMA<img href=""/></div>
+      <div class="pie__redesSociales">
+        <div class="iconRedes icon-facebook">f</div>
+        <div class="iconRedes icon-twitter">t</div>
+        <div class="iconRedes icon-github">g</div>
+        <div class="iconRedes icon-Linkedin">l</div>
+      </div>
     </footer>
   </div>
 </body>
