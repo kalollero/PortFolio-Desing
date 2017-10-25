@@ -1,0 +1,227 @@
+.resumen {
+	
+	&__contenedor {
+		display: grid;
+    	grid-template-columns: 100%;
+    	grid-template-rows: auto auto auto;
+	}
+
+
+	//Mixing de Módulos para Info
+	@mixin resumen-item($grid-template-cols, $grid-template-rows){
+			display: grid;
+			grid-template-columns: $grid-template-cols;
+			grid-template-rows: $grid-template-rows;
+		}
+
+	//PlaceHolder Contenedor Linea & Punto
+	%contenedor {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+//--------Experiencia Profesional--------//
+	&__experiencia {
+		grid-column:1;
+		grid-row:1/2;
+		text-align: center;
+		// background-color: red;
+  	}
+	
+//--------Educación--------//
+  	&__educacion {
+		grid-column:1;
+		grid-row:2/3;
+		background-color: green;
+  	}
+
+//--------Freelance--------//
+  	&__freelance {
+		grid-column:1;
+		grid-row:3/4; 
+		background-color: orange;     		
+    }
+
+// -------- Módulo Item -------- //
+  	&__item {
+  		margin: 0 1rem;
+		@include resumen-item(
+			$grid-template-cols:1fr,
+			$grid-template-rows:auto
+		);
+	}
+
+	&__item > &__fecha {
+		text-align: center;
+	}
+
+	&__item > &__lugarTrabajo {
+		text-align: center;
+	}
+
+	&__item > &__cargo {
+		text-align: center;
+	}
+
+	&__item > &__descripcionActividades {
+		text-align: center;
+	}
+
+	&__item > .linea__contenedor {
+		text-align: center;
+		@extend %contenedor;
+	}
+
+	&__item > .punto__contenedor {
+		text-align: center;
+		@extend %contenedor;
+	}
+
+//Clase para Fecha
+	.resumen__fecha {
+		font-size: 60%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}	
+
+//Clase para Linea
+	.linea {
+		width: 100%;
+		height: 1px;
+		background-color: transparent;
+	}
+
+//MEDIA QUERIE //
+	@include lg {
+
+		&__contenedor {
+	    	grid-template-columns: 50% 50%;
+	      	grid-template-rows: auto auto;
+		}
+		
+		//PlaceHolder Contenedor Linea & Punto
+		%contenedormd {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		//--------Experiencia Profesional--------//
+	  	&__experiencia {
+			grid-column:1/2;
+			grid-row:1/3;
+	  	}
+
+	    //Plus
+	  	&__item {
+			@include resumen-item(
+				$grid-template-cols:repeat(12,1fr),
+				$grid-template-rows:repeat(3,auto)
+			);
+		}
+
+		&__item > &__fecha {
+			grid-column:2/5;
+			grid-row:1/2;
+			text-align: right;
+		}
+
+		&__item > &__lugarTrabajo {
+			grid-column:6/12;
+			grid-row:1/2;
+			text-align: left;
+		}
+
+		&__item > &__cargo {
+			grid-column:6/12;
+			grid-row:2/3;
+			text-align: left;
+		}
+
+		&__item > &__descripcionActividades {
+			grid-column:6/12;
+			grid-row:3/4;
+			text-align: left;
+		}
+
+		&__item > .linea__contenedor {
+			grid-column:5/6;
+			grid-row:1/4;
+			@extend %contenedormd;
+		}
+
+		&__item > .punto__contenedor {
+			grid-column:5/6;
+			grid-row:1/2;
+			@extend %contenedormd;
+		}
+		//--------Educación md--------//
+	  	&__educacion {
+			grid-column:2/3;
+			grid-row:1/2;
+	  	}
+		//--------Freelance md--------//
+	  	&__freelance {
+			grid-column:2/3;
+			grid-row:2/3;      		
+	  	}
+		
+		//Clase para Fecha
+		.resumen__fecha {
+			font-size: 80%;
+			justify-content: flex-end;
+		}
+
+	  	//Clase para Linea
+		.linea {
+			height: 100%;
+			width: 1px;
+			background-color: var(--tenue);
+		}
+	}
+}
+
+//Clases Globales
+
+//Clase Título
+.resumen__tituloItem{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+//Clase para Linea
+.linea__naranja {
+	height: 1px;
+	width: 10%;
+	background-color: var(--anaranjado);
+}
+
+
+
+//Clase para Lugar
+.resumen__lugarTrabajo {
+
+}
+
+//Clase para Cargo
+.resumen__cargo {
+
+}
+
+//Clase para Descripción
+.resumen__descripcionActividades {
+
+}
+
+//Clase para Punto
+.punto{
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: var(--anaranjado);
+}

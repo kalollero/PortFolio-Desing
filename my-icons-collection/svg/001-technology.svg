@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Capa_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px"
+	 viewBox="172 -44 1024 1024" enable-background="new 172 -44 1024 1024" xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  width="669.156" height="1024" y="-43.5" x="348.922" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<path d="M717.449-44h-78.549C476.575-44,349.422,88.286,349.422,257.162v421.645C349.422,847.7,476.575,980,638.899,980h78.549
+	c166.043,0,301.13-135.114,301.13-301.194V257.162C1018.578,91.101,883.492-44,717.449-44z M680.961,113.822h6.077
+	c9.498,0,17.229,7.729,17.229,17.229v122.657c0,9.501-7.731,17.229-17.229,17.229h-6.077c-9.498,0-17.229-7.729-17.229-17.229
+	V131.052C663.732,121.551,671.463,113.822,680.961,113.822z M979.196,678.806c0,144.363-117.419,261.812-261.748,261.812h-78.549
+	c-140.243,0-250.096-115.002-250.096-261.812V257.162c0-146.79,109.855-261.78,250.096-261.78h25.167v81.636
+	c-22.989,7.204-39.716,28.702-39.716,54.037v122.657c0,25.332,16.727,46.832,39.716,54.034v101.324
+	c0,10.874,8.817,19.691,19.691,19.691s19.691-8.817,19.691-19.691V307.888c23.238-7.052,40.201-28.667,40.201-54.177V131.052
+	c0-25.509-16.964-47.125-40.201-54.179V-4.618h14c144.329,0,261.748,117.434,261.748,261.78V678.806z"/>
+</svg>

@@ -1,0 +1,279 @@
+.portafolio {
+	padding: 1rem;
+
+    &__contenedor {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-column-gap: 0.5rem;
+    }
+
+    &__navegador {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        margin:0px;
+        padding:0px;
+        text-align: center;
+    }
+    
+    &__boton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style:none;
+        border-radius: 4px;
+        color: var(--profundo);
+    }
+
+    &__boton > a {
+        color: var(--profundo);
+    }
+
+    .becaver {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .iscam {
+        grid-column:3/4;
+        grid-row: 1/2;
+    }
+
+    .xico {
+        grid-column:4/5;
+        grid-row: 1/2;
+    }
+
+    .imagen {
+        grid-column:5/6;
+        grid-row: 1/2;
+    }
+
+    &__informacion {
+        grid-column:1/2;
+        grid-row: 2/3;
+    }
+
+    &__becaver, &__iscam, &__xico, &__xico {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-column-gap: 1rem;
+    }
+
+    &__descripcion {
+        grid-column:1/2;
+        grid-row: 1/2;
+    }
+
+    &__galeria {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+        height: 100%;
+        -webkit-column-count:2;
+        -moz-column-count:2;
+        column-count:2;
+        -webkit-column-gap: 0.5rem;
+        -moz-column-gap: 0.5rem;
+        column-gap: 0.5rem;
+        column-fill: balance
+    }
+
+    &__logotipos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
+    }
+    
+    @include sm {
+        &__galeria {
+            -webkit-column-count:3;
+            -moz-column-count:3;
+            column-count:3;
+            -webkit-column-gap: 0.5rem;
+            -moz-column-gap: 0.5rem;
+            column-gap: 0.5rem;
+        }
+
+        &__logotipos {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    @include md {
+        &__becaver, &__iscam, &__xico, &__xico {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: auto;
+        }
+
+         &__descripcion {
+            grid-column:1/2;
+            grid-row: 1/2;
+        }
+
+        &__galeria {
+            grid-column:2/3;
+            grid-row: 1/2;
+        }
+
+        &__galeria {
+            -webkit-column-count:4;
+            -moz-column-count:4;
+            column-count:4;
+            -webkit-column-gap: 0.5rem;
+            -moz-column-gap: 0.5rem;
+            column-gap: 0.5rem;
+        }
+
+        &__logotipos {
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+
+    @include lg {
+        &__galeria {
+            -webkit-column-count:5;
+            -moz-column-count:5;
+            column-count:5;
+            -webkit-column-gap: 0.5rem;
+            -moz-column-gap: 0.5rem;
+            column-gap: 0.5rem;
+        }
+
+        &__logotipos {
+            grid-template-columns: repeat(5,1fr);
+        }
+    }
+}
+
+.tarjeta {
+    display: inline-block;
+
+    &__contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    &__link {
+        color: red;
+    }
+
+    &__imagen {
+        color: red;
+    }
+
+    &__nombre {
+        color: red;
+    }
+}
+
+.modal {
+    &__contenedor {
+        
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        overflow: hidden;
+        background-color: var(--profundoTransparente); 
+    }
+    
+    &__displayNone {
+        display: none;
+    }
+
+    &__cerrar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 8;
+        width: 4rem;
+        height: 2rem;
+        background-color: transparent;
+        color: var(--profundo);
+        border: transparent;
+
+        @include sm {
+            color: var(-- blanco);
+        }
+
+        @include md {
+            right: 3%;
+            top: 0;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+        }
+        @include lg {
+            right: 2%;
+        }
+    }
+
+    &__portafolio {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__activo {
+        overflow: hidden;
+    } 
+}
+
+#entrada {
+    transform:scaleY(.01) scaleX(0);
+    animation:unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    
+    .modal__portafolio {
+        transform:scale(1);
+        animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    }
+}
+
+#salida {
+    transform:scale(1);
+    animation:unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    
+    .modal__portafolio {
+        animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    }
+}
+
+
+@keyframes unfoldIn {
+  0% {
+    transform:scaleY(.005) scaleX(0);
+  }
+  50% {
+    transform:scaleY(.005) scaleX(1);
+  }
+  100% {
+    transform:scaleY(1) scaleX(1);
+  }
+}
+
+@keyframes unfoldOut {
+  0% {
+    transform:scaleY(1) scaleX(1);
+  }
+  50% {
+    transform:scaleY(.005) scaleX(1);
+  }
+  100% {
+    transform:scaleY(.005) scaleX(0);
+  }
+}
+
+
+
+
+

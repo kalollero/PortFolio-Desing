@@ -35,9 +35,10 @@ body {
   --b: rgba(59, 59, 59, 1);
   --oxford: rgba(38, 38, 38, 1);
   --profundo:rgba(23, 23, 23, 1);
-  --ahuesadoTransparente: rgba(237, 239, 244, .5);
-  --tenueTransparente: rgba(129, 129, 129, .5);
-  --profundoTransparente: rgba(23, 23, 23, .5);
+  --ahuesadoTransparente: rgba(237, 239, 244, 0.5);
+  --tenueTransparente: rgba(129, 129, 129, 0.5);
+  --oxfordTransparente: rgba(38, 38, 38, 0.5);
+  --profundoTransparente: rgba(23, 23, 23, 0.5);
   /*--sombra*/
 }
 
@@ -358,3 +359,12 @@ main {
 figure {
   margin: 1em 40px;
 }
+
+/* ================================
+Inicia FrameWork
+=================================*/
+
+.imagen-fluida {
+    max-width: 100%;
+    height: auto;
+  }

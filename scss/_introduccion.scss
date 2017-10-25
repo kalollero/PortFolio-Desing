@@ -1,18 +1,28 @@
 .introduccion {
+	display: grid;
+	grid-template-columns: 100%;	
+	grid-template-rows: repeat(3,auto);
 
-	&__resena{
+	&__resena {
+		grid-row: 2/3;
 		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		align-items: center;
 	}	
 
 	&__texto {
-		width: 50%;
+		width: 100%;
 		padding: 0 1rem;
+		font-family: 'Playfair Display', 'serif';
+		font-size: 1.5rem;
 	}
 
 	&__imagenPerfil {
 		width: 50%;
 		height: 100%;
 		background-color: var(--anaranjado);
+		display: none;
 	}
 
 	&__curriculumVitae {
@@ -27,16 +37,17 @@
 		border-radius: 4px;
 		background-color: var(--anaranjado);
 		color: var(--ahuesado);
+	}
 
-		@include md {
-			margin: 0px 5px;
-			padding: 0.5rem 1rem;
-			font-weight: 200;
-			font-size: 1rem;
-			display: flex;
-			flex-flow: column;
-			justify-content: center;
-			align-items: center;
+	@include md {
+
+		&__texto {
+			font-size: 2rem;
+			width: 50%;
+		}
+
+		&__imagenPerfil {
+			display: initial;
 		}
 	}
 }

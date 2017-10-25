@@ -1,7 +1,11 @@
 .portada {
 	width: 100%;
 	height: 100vh;
-	background-color: var(--profundo);
+	background-image: url("../images/bg-image.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 9;
 
 	&__contenedor {
 		width: 100%;
@@ -10,21 +14,100 @@
 		flex-flow: column;
 		justify-content: center;
 		align-items: center;	
-	}
-
-	&__logo {
-		
-	}
-
-	&__nombre, &__profesion {
+		background-color: var(--profundoTransparente);
 		color: var(--ahuesado);
-		font-weight: 500;
+	}
+	
+	&__header {
+		position: absolute;
+		top: 2rem;
+		width: 100%;
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 1rem;
+	}
+
+	&__logo {	
+	}
+
+	&__social a {
+		color: var(--gris);
+		font-size: 80%;
+		padding: 0 3px;
+	}
+
+	&__contenedor a:hover {
+		color: var(--anaranjado);
+	}
+
+	&__nombre {
+		font-weight: 400;
+	}
+
+	&__profesion {
+		font-weight: 100;
 	}
 
 	&__mouse {
-		color: var(--blanco);
+		position: absolute;
+		bottom: 2rem;
+		animation-duration: 1s;
+  		animation-name: mouse;
+  		animation-iteration-count: infinite;
+  		font-size: 2.5rem;
+	}
+
+	&__mouse:hover {
+		animation: none;
+	}
+
+	@include sm {
+		&__social a {
+			font-size: 1rem;
+		}
+
+		&__nombre {
+			font-size: 3rem;
+		}
+		&__profesion {
+			font-weight: 400;
+		}
 	}
 
 	@include md {
+		&__social a {
+			font-size: 1.5rem;
+		}
+
+		&__nombre {
+			font-size: 4rem;
+		}
+		&__profesion {
+		}
 	}
+
+	@include lg {
+		&__nombre {
+			font-size: 5rem;
+		}
+		&__profesion {
+		}
+	}
+}
+
+
+@keyframes mouse {
+  0% {
+    bottom: 1rem;
+  }
+
+  50% {
+	bottom: 2rem;
+  }
+
+  100% {
+    bottom: 1rem;
+  }
 }

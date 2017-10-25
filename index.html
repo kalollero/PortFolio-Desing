@@ -35,36 +35,64 @@
   <!--Icono Pestaña-->
   <link rel="icon" type="image/png" href="images/icon.png"/>
   <!--Icon Font-->
-  <link href="" rel="stylesheet"/>
+  <link href="https://file.myfontastic.com/yGAo5hbMEGyagVcTpFscjj/icons.css" rel="stylesheet"/>
   <!--Roboto Font-->
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"/>
+  <!--PlayFair-->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet"/>
+  <!--Normalize -->
+  <link rel="stylesheet" href="css/normalize.css"/>
   <!--Agora Style-->
   <link rel="stylesheet" href="css/portaFolio-style.css"/>
 </head>
 <body>
-  <!--Navegador-->
+  <div class="modal__contenedor modal__displayNone">
+    <button class="modal__cerrar" id="cerrar">X </button>
+    <embed class="modal__portafolio" src=""/>
+  </div>
+  <!--Menú Navegación-->
   <nav class="menuNavegacion">
-    <div class="menuNavegacion__icon"><i class="icon-logo"></i></div>
-    <div class="menuNavegacion__icon"><i class="icon-introduccion"></i></div>
-    <div class="menuNavegacion__icon"><i class="icon-frase1"></i></div>
-    <div class="menuNavegacion__icon"><i class="icon-resumen"></i></div>
-    <div class="menuNavegacion__icon"><i class="icon-software"></i></div>
-    <div class="menuNavegacion__icon"><i class="icon-portafolio"></i></div>
-    <div class="menuNavegacion__icon"><i class="icon-frase2"></i></div>
-    <div class="menuNavegacion__icon"><i class="icon-tecnologias"></i></div>
-    <div class="menuNavegacion__icon"><i class="icon-contacto"></i></div>
-    <div class="menuNavegacion__icon"><i class="icon-facebook"></i></div>
+    <div class="menuNavegacion__icon"><a href="#portada">i.icon-logo o.o</a></div>
+    <div class="menuNavegacion__icon"><a href="#introduccion">i.icon-introduccion </a></div>
+    <div class="menuNavegacion__icon"><a href="#frase1">i.icon-frase1 </a></div>
+    <div class="menuNavegacion__icon"><a href="#resumen">i.icon-resumen </a></div>
+    <div class="menuNavegacion__icon"><a href="#software">i.icon-software </a></div>
+    <div class="menuNavegacion__icon"><a href="#portafolio">i.icon-portafolio </a></div>
+    <div class="menuNavegacion__icon"><a href="#frase2">i.icon-frase2 </a></div>
+    <div class="menuNavegacion__icon"><a href="#tecnologia">i.icon-tecnologia</a></div>
+    <div class="menuNavegacion__icon"><a href="#contacto">i.icon-contacto </a></div>
+    <div class="menuNavegacion__icon"><a href="">i.icon-facebook </a></div>
+    <div class="menuNavegacion__botonMenu"><a href="#nav" aria-label="Open Navigation">
+        <div class="botonMenu" id="botonMenu"> <span class="top"></span><span class="middle"></span><span class="bottom"></span></div></a></div>
   </nav>
-  <div class="marro-on__contenedor">
-    <!--Portada-->
-    <header class="portada">
-      <div class="portada__contenedor"><img class="portada__logo" href=""/>
-        <h2 class="portada__nombre">Kalollero Marrô.ôn</h2>
-        <p class="portada__profesion">DISEÑADOR PUBLICITARIO</p><img class="portada__mouse" href=""/>
+  <div class="menuNavegacion__Extendida" id="nav"><a class="menuNavegacion__Extendida__items" href=""> 
+      <p>logo</p></a><a class="menuNavegacion__Extendida__items" href=""> 
+      <p>introduccion</p></a><a class="menuNavegacion__Extendida__items" href=""> 
+      <p>frase1</p></a><a class="menuNavegacion__Extendida__items" href=""> 
+      <p>resumen</p></a><a class="menuNavegacion__Extendida__items" href=""> 
+      <p>software</p></a><a class="menuNavegacion__Extendida__items" href=""> 
+      <p>portafolio </p></a><a class="menuNavegacion__Extendida__items" href=""> 
+      <p>frase2</p></a><a class="menuNavegacion__Extendida__items" href=""> 
+      <p>tecnologias</p></a><a class="menuNavegacion__Extendida__items" href=""> 
+      <p>contacto</p></a><a class="menuNavegacion__Extendida__items" href=""> 
+      <p>facebook</p></a>
+    <div class="linea"></div>
+    <div class="menuNavExtendida--faseBeta"><i class="iconNavExtendida icon-info"></i><a href="">Fase Beta</a></div>
+  </div>
+  <!--Portada-->
+  <header class="portada" id="portada">
+    <div class="portada__contenedor">
+      <div class="portada__header"><img class="portada__logo" src="images/logo.png" href=""/>
+        <div class="portada__social"><a href=""><i class="icon-facebook"></i></a><a href=""><i class="icon-github"></i></a><a href=""><i class="icon-behance"></i></a><a href=""><i class="icon-dribbble"></i></a></div>
       </div>
-    </header>
+      <h2 class="portada__nombre">Kalóllero Marro.on</h2>
+      <p class="portada__profesion">DISEÑADOR PUBLICITARIO</p><a href="#introduccion"><i class="portada__mouse icon-mouse"></i></a>
+    </div>
+  </header>
+  <div class="marro-on__contenedor">
+    <!--Back--><a class="back" href="#portada"><i class="icon-back icono--menu">ñ</i></a>
     <!--Introducción-->
-    <section class="introduccion">
+    <section class="introduccion" id="introduccion">
       <h5 class="titulo__seccion">Sobre Mi</h5>
       <div class="introduccion__resena">
         <div class="introduccion__texto">Loco, Gitano & Soñador, con estudios en Imagen y Diseño; soy un publicista art nouvo de épocas contemporáneas, experto en vampiras moderna ...Bienvenid@.</div>
@@ -76,19 +104,166 @@
       </div>
     </section>
     <!--Frase 1-->
-    <section class="frase frase--1">
+    <div class="frase frase--1" id="frase1">
       <h2 class="frase__texto">...Siempre pasan cosas importantes en mi vida...”</h2>
       <h4 class="frase__autor">mc marrO.On</h4>
-    </section>
+    </div>
     <!--Resumen-->
-    <section class="resumen">
+    <section class="resumen" id="resumen">
       <h5 class="titulo__seccion">Resumen</h5>
-      <div class="resumen__experiencia"></div>
-      <div class="resumen__educacion"></div>
-      <div class="resumen__Freelance"></div>
+      <div class="resumen__contenedor">
+        <div class="resumen__experiencia"> 
+          <div class="resumen__tituloItem"> 
+            <p>Experiencia Profesional</p>
+            <div class="linea__naranja"></div>
+          </div>
+          <!--Auditoría Integral EZA	-->
+          <div class="resumen__item">
+            <div class="resumen__fecha">Jul-Nov/2004</div>
+            <div class="resumen__lugarTrabajo">Auditoría Integral Eza</div>
+            <div class="resumen__cargo">Auditoría, Análisis & Captura</div>
+            <div class="resumen__descripcionActividades">
+              <p>Revisión y Análisis de </p>
+              <p>Captura y concentrado de la información (Egresos e Ingresos).</p>
+              <p></p>
+            </div>
+            <div class="linea__contenedor">
+              <div class="linea"></div>
+            </div>
+            <div class="punto__contenedor">
+              <div class="punto"></div>
+            </div>
+          </div>
+          <!--SEDESOL DELEGACIÓN VERACRUZ-->
+          <div class="resumen__item">
+            <div class="resumen__fecha">Nov-Dic/2004</div>
+            <div class="resumen__lugarTrabajo">SEDESOL Delegación Veracruz</div>
+            <div class="resumen__cargo"> </div>
+            <div class="resumen__descripcionActividades"> 
+              <p>Programa TDT</p>
+              <p>Entrega de Televisiones Digitales en la Región de Huayacocotla por el inicio del Apagon Tecnológico</p>
+            </div>
+            <div class="linea__contenedor">
+              <div class="linea"></div>
+            </div>
+            <div class="punto__contenedor">
+              <div class="punto"></div>
+            </div>
+          </div>
+          <!--Plus Internacional Ingenieros	-->
+          <div class="resumen__item">
+            <div class="resumen__fecha">Jul-Nov/2004</div>
+            <div class="resumen__lugarTrabajo">Plus Internacional Ingenieros </div>
+            <div class="resumen__cargo">Verificador</div>
+            <div class="resumen__descripcionActividades">Verificación Documental de Expedientes Técnicos a Cédulas de Trabajo de SEDESOL Delegación Xalapa</div>
+            <div class="linea__contenedor">
+              <div class="linea"></div>
+            </div>
+            <div class="punto__contenedor">
+              <div class="punto"></div>
+            </div>
+          </div>
+          <!--Instituto de Capacitación Múltiple	-->
+          <div class="resumen__item">
+            <div class="resumen__fecha">Ago/2010 a Nov/2013</div>
+            <div class="resumen__lugarTrabajo">Instituto de Capacitación Múltiple</div>
+            <div class="resumen__cargo">Coordinador de Publicidad y Diseño</div>
+            <div class="resumen__descripcionActividades"> 
+              <p>Planeación y diseño de la imagen gráfica para la campaña publicitaria para la inscripción de alumnos.</p>
+              <p>Diseño de la imagen gráfica para conferencias, muestras, cursos y simposios:
+                <ul>
+                  <li>Que No Se Te Escape Nada (2011);</li>
+                  <li>Cocina Saludable (2012);</li>
+                  <li>Cursos de Gastronomía (Cocina Francesa, Mexicana, Panadería, Fondant y Pastelería, Cocktelería, entre otros);</li>
+                  <li>Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz, en coordinación con SEDESOL Delegación Estatal (diciembre 2012);</li>
+                  <li>1er Simposio de Enfermería Geronto-Geriátrica (2013).</li>
+                </ul>
+              </p>
+              <p>Desarrollo y gestión de las redes sociales, sitio web y e-marketing de la institución.</p>
+              <p>Imagen gráfica de la institución.</p>
+            </div>
+            <div class="linea__contenedor">
+              <div class="linea"></div>
+            </div>
+            <div class="punto__contenedor">
+              <div class="punto"></div>
+            </div>
+          </div>
+        </div>
+        <div class="resumen__educacion">
+          <div class="resumen__tituloItem"> 
+            <p>Educación</p>
+            <div class="linea__naranja"></div>
+          </div>
+          <!--FCAS	-->
+          <div class="resumen__item">
+            <div class="resumen__fecha">Periodo 2005-2010</div>
+            <div class="resumen__lugarTrabajo">Licenciatura en Publicidad y Relaciones Públicas</div>
+            <div class="resumen__cargo">Universidad Veracruzana</div>
+            <div class="resumen__descripcionActividades">
+              <p>Actualmente realizando la Experiencia Recepcional de la Carrera</p>
+              <p>Arco Sur Paseo no. 112 lote 2, Campo Nuevo. Xalapa, Veracruz</p>
+            </div>
+            <div class="linea__contenedor">
+              <div class="linea"></div>
+            </div>
+            <div class="punto__contenedor">
+              <div class="punto"></div>
+            </div>
+          </div>
+          <!--FCAS	-->
+          <div class="resumen__item">
+            <div class="resumen__fecha">Periodo 1998-2004</div>
+            <div class="resumen__lugarTrabajo">Secundaria & Bachillerato</div>
+            <div class="resumen__cargo">ESBAO | Escuela Secundaria y de Bachilleres Artes y Oficios</div>
+            <div class="resumen__descripcionActividades">
+              <p>Certificado de estudios</p>
+              <P>Avenida 11 no9. 2806, Dos Caminos Córdoba, Veracruz</P>
+            </div>
+            <div class="linea__contenedor">
+              <div class="linea"></div>
+            </div>
+            <div class="punto__contenedor">
+              <div class="punto"></div>
+            </div>
+          </div>
+        </div>
+        <div class="resumen__freelance">
+          <div class="resumen__tituloItem"> 
+            <p>Trabajos Independientes</p>
+            <div class="linea__naranja"></div>
+          </div>
+          <!--BECAVER	-->
+          <div class="resumen__item">
+            <div class="resumen__fecha">Abr/2014</div>
+            <div class="resumen__lugarTrabajo">BECAVER Feria de Becas 2014</div>
+            <div class="resumen__cargo">Sistema Estatal de Becas del Estado de Veracruz</div>
+            <div class="resumen__descripcionActividades">Diseño de la Imagen Gráfica</div>
+            <div class="linea__contenedor">
+              <div class="linea"></div>
+            </div>
+            <div class="punto__contenedor">
+              <div class="punto"></div>
+            </div>
+          </div>
+          <!--XICO	-->
+          <div class="resumen__item">
+            <div class="resumen__fecha">Feb-Jun/2012</div>
+            <div class="resumen__lugarTrabajo">XICO Historia, Cultura y Tradiciones</div>
+            <div class="resumen__cargo">Ciclo de Conferencias y Panel sobre los pueblos mágicos de México</div>
+            <div class="resumen__descripcionActividades">Coordinación, Logística & Diseño de la Imagen Gráfica</div>
+            <div class="linea__contenedor">
+              <div class="linea"></div>
+            </div>
+            <div class="punto__contenedor">
+              <div class="punto"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--Software-->
-    <section class="software">
+    <section class="software" id="software">
       <h5 class="titulo__seccion">Conocimiento</h5>
       <div class="software__contenedor">
         <div class="software__contenedorGrupo software--imagenDiseno">
@@ -166,18 +341,74 @@
       </div>
     </section>
     <!--PortaFolio-->
-    <section class="portafolio">
+    <section class="portafolio" id="portafolio">
       <h5 class="titulo__seccion">Portafolio</h5>
-      <div class="portafolio__descripcion"></div>
-      <div class="portafolio__galeria"></div>
+      <div class="portafolio__contenedor" id="tabs">
+        <ul class="portafolio__navegador">
+          <li class="portafolio__boton becaver"><a href="#tab__becaver">BECAVER</a></li>
+          <li class="portafolio__boton iscam"><a href="#tab__iscam">ISCAM</a></li>
+          <li class="portafolio__boton xico"><a href="#tab__xico">XICO</a></li>
+          <li class="portafolio__boton imagen"><a href="#tab__imagen">Imagen Gráfica</a></li>
+        </ul>
+        <div class="portafolio__informacion">
+          <div class="portafolio__becaver" id="tab__becaver">
+            <div class="portafolio__descripcion">
+              <p>BECAVER</p>Feria de Becas 2014
+              Diseño de la Imagen Gráfica de la Feria
+              Feria Estatal de Becas, Organizada por la Dirección General de Sistema Estatal de Becas, Veracruz. Teniendo esta como sede las Ciudades de Xalapa, Veracruz, Córdoba, Poza Rica, Coatzacoalcos.
+            </div>
+            <div class="portafolio__galeria">
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" src="images/portafolio.jpg"/></a>
+                  <div class="tarjeta__nombre">Nombre						</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portafolio__iscam" id="tab__iscam">
+            <div class="portafolio__descripcion">
+              <p>Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz</p>
+              <p>Diseño de la Imagen Gráfica del Evento Logística del Evento & Community Manager en Redes Sociales</p>
+              <p>Muestra Gastronómica de Pueblos Originarios del Estado de Veracruz en Coordinación con la Delegación de SEDESOL Veracruz</p>
+            </div>
+            <div class="portafolio__galeria">
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__iscam"><img class="tarjeta__imagen imagen-fluida" src="images/portafolio.jpg"/></a>
+                  <div class="tarjeta__nombre">Nombre</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portafolio__xico" id="tab__xico">
+            <div class="portafolio__descripcion">
+              <p>XICO Historia, Cultura & Tradiciones</p>
+            </div>
+            <div class="portafolio__galeria">
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__xico"><img class="tarjeta__imagen imagen-fluida" src="images/portafolio.jpg"/></a>
+                  <div class="tarjeta__nombre">Nombre</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portafolio__imagenGrafica" id="tab__imagen">
+            <div class="portafolio__logotipos">
+              <div class="tarjeta">
+                <div class="tarjeta__contenedor"><a class="tarjeta__link" id="modal__tortuga"><img class="tarjeta__imagen imagen-fluida" src="images/portafolio.jpg"/>
+                    <div class="tarjeta__nombre">Nombre										</div></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--Frase 2-->
-    <section class="frase frase--2">
+    <div class="frase frase--2" id="frase2">
       <h2 class="frase__texto">...dormir las ocho horas de sueño entre las 10:00 pm y las 6:00 am es anticuado...”</h2>
       <h4 class="frase__autor">mc marrO.On</h4>
-    </section>
+    </div>
     <!--Tecnologías en Estudio-->
-    <section class="tecnologia">
+    <section class="tecnologia" id="tecnologia">
       <h5 class="titulo__seccion">Aprendizaje</h5>
       <div class="tecnologia__contenedor">
         <div class="tecnologia__item tecnologia--indesing">
@@ -225,8 +456,8 @@
       </div>
     </section>
     <!--Contacto-->
-    <section class="contacto">
-      <h5 class="titulo__seccion"></h5>
+    <section class="contacto" id="contacto">
+      <h5 class="titulo__seccion">Contacto</h5>
       <div class="contacto__contenedor">
         <div class="contacto__medioMovil">
           <div class="contacto__icono"></div>
@@ -264,12 +495,32 @@
         <p>DR 2017</p>
       </div>
       <div class="pie__firma">FIRMA<img href=""/></div>
-      <div class="pie__redesSociales">
-        <div class="iconRedes icon-facebook">f</div>
-        <div class="iconRedes icon-twitter">t</div>
-        <div class="iconRedes icon-github">g</div>
-        <div class="iconRedes icon-Linkedin">l</div>
-      </div>
+      <div class="pie__redesSociales"> <a class="iconRedes" href=""><i class="icon-facebook"></i></a><a class="iconRedes" href=""><i class="icon-github"></i></a><a class="iconRedes" href=""><i class="icon-behance"></i></a><a class="iconRedes" href=""><i class="icon-dribbble"></i></a></div>
     </footer>
   </div>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript">
+    $('#botonMenu').click(function(){
+    	$(this).toggleClass('active');
+    	$('#nav').toggleClass('nav--activo');
+    });
+    
+    $(function() {
+    	$( "#tabs" ).tabs();
+    });
+    
+    $('.tarjeta__link').click(function(){
+    	var modal = $(this).attr('id');
+    	var sitio = modal + ".html"
+    	$('.modal__portafolio').attr('src', sitio);
+      	$('.modal__contenedor').removeAttr('id').attr('id','entrada').removeClass('modal__displayNone');
+      	$('body').addClass('modal__activo');
+    });
+    
+    $('#cerrar').click(function(){
+     	$('.modal__contenedor').addClass('modal__displayNone');
+      	$('body').removeAttr('class');
+    });
+  </script>
 </body>

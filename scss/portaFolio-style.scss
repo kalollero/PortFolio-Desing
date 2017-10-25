@@ -1,5 +1,3 @@
-@import "normalize.scss";
-
 //Media Queries
 @import "media_queries";
 
@@ -18,6 +16,7 @@
 	    left: 0;
 	    bottom: 0;
 	    padding: 0;
+	    z-index: 6;
 
 	    @include md {
 			width: calc(100% - 3rem);
@@ -33,21 +32,21 @@
 /* -------- SECCIONES -------- */
 	section {
 		width: 100%;
-		padding: 3rem 0;
+		padding: 1rem 0;
 	}
 
 	.titulo__seccion {
 		text-align: center;
-		color: var(--claro);
-	}
-	
-	.imagen-fluida {
-	  max-width: 100%;
-	  height: auto;
+		color: var(--tenueTransparente);
+		font-weight: 600;
+
 	}
 
 /* -------- MENU --------*/
 @import "menu.scss";
+
+/* -------- BAC -------- */
+@import "back.scss";
 
 /* -------- PORTADA --------*/
 @import "portada.scss";

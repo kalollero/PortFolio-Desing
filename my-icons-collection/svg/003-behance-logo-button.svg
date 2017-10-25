@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Capa_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px"
+	 viewBox="-487.174 -487.174 1024 1024" enable-background="new -487.174 -487.174 1024 1024" xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  height="1024" width="1024" y="-43.5" x="171.5" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<g>
+		<g>
+			<path d="M-56.266-60.555c0-39.185-26.666-39.185-26.666-39.185h-14.127h-95.569h-0.041v84.103h102.932
+				C-71.94-15.637-56.266-21.309-56.266-60.555z"/>
+			<path d="M197.961-15.637c-58.179,0-66.305,58.035-66.305,58.035h123.782C255.438,42.438,256.201-15.637,197.961-15.637z"/>
+			<path d="M-82.932,42.438h-109.676v100.767h97.157c1.65,0,4.083,0.082,6.991,0c15.612-0.392,45.289-4.847,45.289-48.96
+				C-43.17,41.944-82.932,42.438-82.932,42.438z"/>
+			<path d="M24.826-487.174c-282.316,0-512,229.684-512,512c0,282.295,229.684,512,512,512c282.295,0,512-229.705,512-512
+				C536.826-257.49,307.162-487.174,24.826-487.174z M115.425-144.514h155.481v46.424H115.425V-144.514z M36.808,98.926
+				c0,115.018-119.74,111.264-119.74,111.264h-109.676h-3.217h-83.195v-376.895h83.195h3.217h109.676
+				c59.623,0,106.665,32.936,106.665,100.375c0,67.418-57.498,71.708-57.498,71.708C42.026,5.357,36.808,98.926,36.808,98.926z
+				 M327.703,92.739H132.378c0,70.038,66.346,65.624,66.346,65.624c62.613,0,60.427-40.546,60.427-40.546h66.387
+				c0,107.614-128.98,100.21-128.98,100.21C41.82,218.027,51.76,73.972,51.76,73.972S51.616-70.847,196.558-70.847
+				C349.09-70.847,327.662,92.739,327.703,92.739z"/>
+		</g>
+	</g>
+</g>
+</svg>
