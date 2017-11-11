@@ -1,10 +1,13 @@
 .contacto {
+	background-color: var(--ahuesado);
+	
 	&__contenedor {
 		display: grid;
 		grid-template-columns: repeat(2,1fr);
 		grid-template-rows: repeat(2,1fr);
 		grid-gap: 1rem;
 		margin: 0 1rem;
+		text-align: center;
 	}
 
 	&__medioMovil {
@@ -28,10 +31,14 @@
 	}
 
 	&__icono {
-		background-color: red;
 		border-radius: 4px;
 		width: 100%;
 		height: 6rem;
+	}
+
+	&__icono > i {
+		font-size: 4rem;
+		color: var(--melon);
 	}
 
 	&__nombre {

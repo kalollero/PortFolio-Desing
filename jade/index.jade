@@ -45,7 +45,7 @@ head
 	link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet")
 	
 	//PlayFair
-	link(href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet")
+	link(href="https://fonts.googleapis.com/css?family=Playfair+Display:400" rel="stylesheet")
 	
 	//Normalize 
 	link(rel="stylesheet" href="css/normalize.css")
@@ -54,22 +54,24 @@ head
 	link(rel="stylesheet" href="css/portaFolio-style.css")
 
 body
+	
+	//Modal
 	div.modal__contenedor.modal__displayNone
-		button.modal__cerrar#cerrar X 
+		button.modal__cerrar#cerrar: i.icon-close
 		embed.modal__portafolio(src="")
 
 	//Menú Navegación
 	nav.menuNavegacion
-		div.menuNavegacion__icon: a(href="#portada") i.icon-logo o.o
-		div.menuNavegacion__icon: a(href="#introduccion") i.icon-introduccion 
-		div.menuNavegacion__icon: a(href="#frase1") i.icon-frase1 
-		div.menuNavegacion__icon: a(href="#resumen") i.icon-resumen 
-		div.menuNavegacion__icon: a(href="#software") i.icon-software 
-		div.menuNavegacion__icon: a(href="#portafolio") i.icon-portafolio 
-		div.menuNavegacion__icon: a(href="#frase2") i.icon-frase2 
-		div.menuNavegacion__icon: a(href="#tecnologia") i.icon-tecnologia
-		div.menuNavegacion__icon: a(href="#contacto") i.icon-contacto 
-		div.menuNavegacion__icon: a(href="") i.icon-facebook 
+		div.menuNavegacion__icon: a(href="#portada"): i.icon-logo o.o
+		div.menuNavegacion__icon: a(href="#introduccion"): i.icon-introduccion 
+		div.menuNavegacion__icon: a(href="#frase1"): i.icon-frase1 
+		div.menuNavegacion__icon: a(href="#resumen"): i.icon-resumen 
+		div.menuNavegacion__icon: a(href="#software"): i.icon-software 
+		div.menuNavegacion__icon: a(href="#portafolio"): i.icon-portafolio 
+		div.menuNavegacion__icon: a(href="#tecnologia"): i.icon-tecnologia
+		div.menuNavegacion__icon: a(href="#frase2"): i.icon-frase2 			
+		div.menuNavegacion__icon: a(href="#contacto"): i.icon-contacto 
+		div.menuNavegacion__icon: a(href=""): i.icon-facebook 
 		div.menuNavegacion__botonMenu
 			a(href="#nav" aria-label="Open Navigation")
 				div.botonMenu#botonMenu 
@@ -77,41 +79,34 @@ body
 					span.middle
 					span.bottom
 
-
 	div#nav.menuNavegacion__Extendida
-		a.menuNavegacion__Extendida__items(href="") 
-			p logo
-		a.menuNavegacion__Extendida__items(href="") 
-			p introduccion
-		a.menuNavegacion__Extendida__items(href="") 
-			p frase1
-		a.menuNavegacion__Extendida__items(href="") 
-			p resumen
-		a.menuNavegacion__Extendida__items(href="") 
-			p software
-		a.menuNavegacion__Extendida__items(href="") 
-			p portafolio 
-		a.menuNavegacion__Extendida__items(href="") 
-			p frase2
-		a.menuNavegacion__Extendida__items(href="") 
-			p tecnologias
-		a.menuNavegacion__Extendida__items(href="") 
-			p contacto
-		a.menuNavegacion__Extendida__items(href="") 
-			p facebook
+		a.menuNavegacion__Extendida__items(href="#portada") 
+			i.icon-logo: p Inicio
+		a.menuNavegacion__Extendida__items(href="#introduccion") 
+			i.icon-introduccion: p Introduccion
+		a.menuNavegacion__Extendida__items(href="#resumen") 
+			i.icon-resumen: p Resumen
+		a.menuNavegacion__Extendida__items(href="#software") 
+			i.icon-software: p Software
+		a.menuNavegacion__Extendida__items(href="#portafolio") 
+			i.icon-portafolio: p Portafolio 
+		a.menuNavegacion__Extendida__items(href="#tecnologia") 
+			i.icon-tecnologia: p Aprendizaje en Progreso
+		a.menuNavegacion__Extendida__items(href="#contacto") 
+			i.icon-contacto: p ContactO
 
-		div.linea
+		//- div.linea
 			
-		div.menuNavExtendida--faseBeta
-			i.iconNavExtendida.icon-info
-			a(href="") Fase Beta
+		//- div.menuNavExtendida--faseBeta
+		//- 	i.iconNavExtendida.icon-info
+		//- 	a(href="") Fase Beta
 		
 
 	//Portada
 	header#portada.portada
 		div.portada__contenedor
 			div.portada__header
-				img.portada__logo(src="images/logo.png")(href="")
+				img.portada__logo(src="")(href="")
 				div.portada__social
 					a(href=""): i.icon-facebook
 					a(href=""): i.icon-github
@@ -126,7 +121,7 @@ body
 	div.marro-on__contenedor
 
 		//Back
-		a.back(href="#portada"): i.icon-back.icono--menu ñ
+		a.back(href="#portada"): i.icon-back.icono--menu
 
 		//Introducción
 		section#introduccion.introduccion
@@ -135,8 +130,10 @@ body
 				div.introduccion__texto Loco, Gitano & Soñador, con estudios en Imagen y Diseño; soy un publicista art nouvo de épocas contemporáneas, experto en vampiras moderna ...Bienvenid@.
 				div.introduccion__imagenPerfil: img(src="images/")
 			div.introduccion__curriculumVitae
-				div.introduccion__descargaCV DESCARGAR CV
-				div.introduccion__visitaResumen IR AL RESUMEN
+				a(target="_blank")(href="Rogelio_Serna_Curriculum_vitae.pdf")
+					div.introduccion__descargaCV DESCARGAR CV
+				a(href="#resumen")
+					div.introduccion__visitaResumen IR AL RESUMEN
 
 		//Frase 1
 		div#frase1.frase.frase--1
@@ -150,8 +147,12 @@ body
 				div.resumen__experiencia 
 					div.resumen__tituloItem 
 						p Experiencia Profesional
-						div.linea__naranja
-
+					//Icon Trabajo
+					div.resumen__item
+						div.linea__contenedor
+							div.linea
+						div.punto__contenedor
+							i.icon-trabajo
 					//Auditoría Integral EZA	
 					div.resumen__item
 						div.resumen__fecha Jul-Nov/2004
@@ -214,8 +215,13 @@ body
 				div.resumen__educacion
 					div.resumen__tituloItem 
 						p Educación
-						div.linea__naranja
-
+					
+					//Icon Educación
+					div.resumen__item
+						div.linea__contenedor
+							div.linea
+						div.punto__contenedor
+							i.icon-educacion
 					//FCAS	
 					div.resumen__item
 						div.resumen__fecha Periodo 2005-2010
@@ -229,7 +235,7 @@ body
 						div.punto__contenedor
 							div.punto
 
-					//FCAS	
+					//ESBAO	
 					div.resumen__item
 						div.resumen__fecha Periodo 1998-2004
 						div.resumen__lugarTrabajo Secundaria & Bachillerato
@@ -245,7 +251,13 @@ body
 				div.resumen__freelance
 					div.resumen__tituloItem 
 						p Trabajos Independientes
-						div.linea__naranja
+					
+					//Icon Freelance-
+					div.resumen__item
+						div.linea__contenedor
+							div.linea
+						div.punto__contenedor
+							i.icon-freelance
 
 					//BECAVER	
 					div.resumen__item
@@ -283,7 +295,7 @@ body
 							p.software__nombre Corel Drawn
 						div.software__nivelConocimiento
 					div.software__icon--izquierda
-						img(href="")
+						img.imagen-fluida(src="images/desing.svg")
 
 				div.software__contenedorGrupo.software--programacion
 					h6.software__nombreGrupo--izquierda Lenguajes de Programación
@@ -294,7 +306,7 @@ body
 							P.software__nombre JQuery
 						div.software__nivelConocimiento
 					div.software__icon--izquierda
-						img(href="")
+						img.imagen-fluida(src="images/desarrollo.svg")
 
 				div.software__contenedorGrupo.software--web
 					h6.software__nombreGrupo--izquierda Web Software
@@ -305,7 +317,7 @@ body
 							p.software__nombre Bootstrap 4
 						div.software__nivelConocimiento
 					div.software__icon--izquierda
-						img(href="")
+						img.imagen-fluida(src="images/web.svg")
 
 				div.software__contenedorGrupo.software--office
 					h6.software__nombreGrupo--derecha Paquetería Office 
@@ -316,7 +328,7 @@ body
 							p.software__nombre Power Point
 						div.software__nivelConocimiento
 					div.software__icon--derecha
-						img(href="")
+						img.imagen-fluida(src="images/office.svg")
 
 				div.software__contenedorGrupo.software--videoAudio3D
 					h6.software__nombreGrupo--derecha Software de Video, Audio & 3D
@@ -327,7 +339,7 @@ body
 							p.software__nombre Blender
 						div.software__nivelConocimiento
 					div.software__icon--derecha
-						img(href="")
+						img.imagen-fluida(src="images/3D.svg")
 
 				div.software__contenedorGrupo.software--desarrollo
 					h6.software__nombreGrupo--derecha Software para Desarrollo
@@ -338,7 +350,7 @@ body
 							p.software__nombre Acrobat
 						div.software__nivelConocimiento
 					div.software__icon--derecha
-						img(href="")
+						img.imagen-fluida(src="images/clound.svg")
 
 		//PortaFolio
 		section#portafolio.portafolio
@@ -362,7 +374,7 @@ body
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(src="images/portafolio.jpg")
+										img.tarjeta__imagen.imagen-fluida(role="button")(src="images/portafolio.jpg")
 									div.tarjeta__nombre Nombre						
 					
 					div.portafolio__iscam#tab__iscam
@@ -393,12 +405,7 @@ body
 								div.tarjeta__contenedor
 									a.tarjeta__link#modal__tortuga
 										img.tarjeta__imagen.imagen-fluida(src="images/portafolio.jpg")
-										div.tarjeta__nombre Nombre										
-
-		//Frase 2
-		div#frase2.frase.frase--2
-			h2.frase__texto ...dormir las ocho horas de sueño entre las 10:00 pm y las 6:00 am es anticuado...”
-			h4.frase__autor mc marrO.On
+										div.tarjeta__nombre Nombre				
 
 		//Tecnologías en Estudio
 		section#tecnologia.tecnologia
@@ -406,70 +413,88 @@ body
 			div.tecnologia__contenedor
 				div.tecnologia__item.tecnologia--indesing
 					div.tecnologia__icono
-						img(href="")
+						i.icon-adobe
 					div.tecnologia__nombre
 						p InDesing
+						p Descripción de la tecnología
 					div.tecnologia__nivel
+						p Nivel
+						div
 
 				div.tecnologia__item.tecnologia--sass
+					div.tecnologia__icono
+						i.icon-sass
 					div.tecnologia__nombre
 						p SASS
+						p Descripción de la tecnología
 					div.tecnologia__nivel
-					div.tecnologia__icono
-						img(href="")
+						p Nivel
+						div
 
 				div.tecnologia__item.tecnologia--javascript
 					div.tecnologia__icono
-						img(href="")
+						i.icon-javascript
 					div.tecnologia__nombre
 						p Java Script
+						p Descripción de la tecnología
 					div.tecnologia__nivel
-
-				div.tecnologia__item.tecnologia--canvas
-					div.tecnologia__nombre
-						p Buissnes Model Canvas
-					div.tecnologia__nivel
-					div.tecnologia__icono
-						img(href="")
-
-				div.tecnologia__item.tecnologia--sdkfacebook
-					div.tecnologia__icono
-						img(href="")
-					div.tecnologia__nombre
-						p SDK JS Facebook
-					div.tecnologia__nivel
-
+						p Nivel
+						div
+				
 				div.tecnologia__item.tecnologia--grid
+					div.tecnologia__icono
+						i.icon-css3
 					div.tecnologia__nombre
 						p CSS3 - Grid
+						p Descripción de la tecnología
 					div.tecnologia__nivel
+						p Nivel
+						div
+	
+					
+				div.tecnologia__item.tecnologia--sdkfacebook
 					div.tecnologia__icono
-						img(href="")
+						i.icon-sdk-facebook
+					div.tecnologia__nombre
+						p SDK JS Facebook
+						p Descripción de la tecnología
+					div.tecnologia__nivel
+						p Nivel
+						div
 
+		//Frase 2
+		div#frase2.frase.frase--2
+			h2.frase__texto ...dormir las ocho horas de sueño entre las 10:00 pm y las 6:00 am es anticuado...”
+			h4.frase__autor mc marrO.On		
+					
 		//Contacto
 		section#contacto.contacto
 			h5.titulo__seccion Contacto
 			div.contacto__contenedor
 				div.contacto__medioMovil
 					div.contacto__icono
+						i.icon-telefono
 					div.contacto__nombre
 						p Teléfono Móvil
 					div.contacto__informacion
 
 				div.contacto__medioCorreo
 					div.contacto__icono
+						i.icon-correo
 					div.contacto__nombre
 						p Correo Web
 					div.contacto__informacion
 
 				div.contacto__medioFacebook
 					div.contacto__icono
+						i.icon-sdk-facebook
 					div.contacto__nombre
 						p Facebook
 					div.contacto__informacion
 
 				div.contacto__medioDireccion
 					div.contacto__icono
+						i.icon-direccion
 					div.contacto__nombre
 						p Dirección
 					div.contacto__informacion

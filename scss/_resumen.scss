@@ -1,11 +1,48 @@
+//Clases Globales
+.icon-trabajo,
+.icon-educacion,
+.icon-freelance {
+	font-size: 2rem;
+    color: var(--melon);
+    background-color: var(--ceniza);
+    height: 2rem;
+}
+
+//Clase para Punto
+.punto{
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: var(--melon);
+}
+
 .resumen {
-	
+	background-color: var(--ceniza);
+
 	&__contenedor {
 		display: grid;
     	grid-template-columns: 100%;
     	grid-template-rows: auto auto auto;
 	}
 
+	&__tituloItem {
+		display: flex;
+		flex-flow: row;
+		justify-content: flex-start;
+		align-items: center;
+		margin-left: 1rem;
+	}
+	
+	&__tituloItem p {
+		background-color: var(--marfil);
+		padding: 0.5rem 0.75rem;
+		border-radius: 2px;
+		margin: 1rem 0;
+		color: var(--oxford);
+		font-weight: 400;
+		width: auto;
+		text-align: center;
+	}
 
 	//Mixing de Módulos para Info
 	@mixin resumen-item($grid-template-cols, $grid-template-rows){
@@ -15,7 +52,7 @@
 		}
 
 	//PlaceHolder Contenedor Linea & Punto
-	%contenedor {
+	%contenedor_ {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -33,67 +70,271 @@
   	&__educacion {
 		grid-column:1;
 		grid-row:2/3;
-		background-color: green;
   	}
 
 //--------Freelance--------//
   	&__freelance {
 		grid-column:1;
 		grid-row:3/4; 
-		background-color: orange;     		
     }
 
 // -------- Módulo Item -------- //
   	&__item {
   		margin: 0 1rem;
-		@include resumen-item(
-			$grid-template-cols:1fr,
-			$grid-template-rows:auto
-		);
 	}
 
 	&__item > &__fecha {
 		text-align: center;
+		font-weight: 400;
+		color: var(--a);
 	}
 
 	&__item > &__lugarTrabajo {
 		text-align: center;
+		color: var(--oxford);
+		font-weight: 500;
 	}
 
 	&__item > &__cargo {
 		text-align: center;
+		color: var(--oxford);
+		font-weight: 300;
+		font-size: 75%;
 	}
 
 	&__item > &__descripcionActividades {
 		text-align: center;
+		color: var(--oxford);
+		font-weight: 400;
+		font-size: 85%;
 	}
 
 	&__item > .linea__contenedor {
 		text-align: center;
-		@extend %contenedor;
+		@extend %contenedor_;
 	}
 
 	&__item > .punto__contenedor {
 		text-align: center;
-		@extend %contenedor;
+		@extend %contenedor_;
 	}
 
-//Clase para Fecha
-	.resumen__fecha {
-		font-size: 60%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}	
+	// //Clase para Fecha
+	// .resumen__fecha {
+	// 	font-size: 60%;
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// }
 
-//Clase para Linea
+	//Clase para Linea
 	.linea {
-		width: 100%;
-		height: 1px;
-		background-color: transparent;
+		height: 100%;
+		width: 2px;
+		background-color: var(--marfil);
 	}
 
-//MEDIA QUERIE //
+// -------- MEDIA QUERIE -------- //
+
+	//Módulo Item
+	  	&__item {
+			@include resumen-item(
+				$grid-template-cols: 10% 90%,
+				$grid-template-rows:repeat(4,auto)
+			);
+		}
+
+		&__item:nth-child(2n) > &__fecha,
+		&__item:nth-child(odd) > &__fecha {
+			grid-column:2/3;
+			grid-row:1/2;
+			text-align: left;
+		}
+
+		&__item:nth-child(2n) > &__lugarTrabajo,
+		&__item:nth-child(odd) > &__lugarTrabajo {
+			grid-column:2/3;
+			grid-row:2/3;
+			text-align: left;
+		}
+
+		&__item:nth-child(2n) > &__cargo,
+		&__item:nth-child(odd) > &__cargo {
+			grid-column:2/3;
+			grid-row:3/4;
+			text-align: left;
+		}
+
+		&__item:nth-child(2n) > &__descripcionActividades,
+		&__item:nth-child(odd) > &__descripcionActividades {
+			grid-column:2/3;
+			grid-row:4/5;
+			text-align: left;
+			padding-bottom: 1rem;
+		}
+
+		&__item:nth-child(2n) > .linea__contenedor,
+		&__item:nth-child(odd) > .linea__contenedor {
+			grid-column:1/2;
+			grid-row:1/5;
+		}
+
+		&__item:nth-child(2n) > .punto__contenedor,
+		&__item:nth-child(odd) > .punto__contenedor {
+			grid-column:1/2;
+			grid-row:1/2;
+		}
+		
+		//Clase para Fecha
+		.resumen__fecha {
+			font-size: 80%;
+			justify-content: flex-end;
+		}
+	
+	@include sm {
+			&__tituloItem {
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+				align-items: center;
+				margin: 0;
+			}
+
+		// -------- Módulo Item -------- //
+		  	&__item {
+		  		margin: 0 1rem;
+			}
+
+			&__item > &__fecha {
+				text-align: center;
+				font-weight: 400;
+				color: var(--a);
+			}
+
+			&__item > &__lugarTrabajo {
+				text-align: center;
+				color: var(--oxford);
+				font-weight: 500;
+			}
+
+			&__item > &__cargo {
+				text-align: center;
+				color: var(--oxford);
+				font-weight: 300;
+				font-size: 75%;
+			}
+
+			&__item > &__descripcionActividades {
+				text-align: center;
+				color: var(--oxford);
+				font-weight: 400;
+				font-size: 85%;
+			}
+
+			&__item > .linea__contenedor {
+				text-align: center;
+			}
+
+			&__item > .punto__contenedor {
+				text-align: center;
+			}
+
+		//Clase para Linea
+			.linea {
+				height: 100%;
+				width: 2px;
+				background-color: var(--marfil);
+			}
+
+		&__item {
+			@include resumen-item(
+				$grid-template-cols:45% 10% 45%,
+				$grid-template-rows: repeat(4,auto)
+			);
+		}
+		
+		//PlaceHolder Contenedor Linea & Punto
+			%contenedorsm {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+		//Nones	
+			&__item:nth-child(odd) > &__fecha {
+				grid-column:1/2;
+				grid-row:1/2;
+				text-align: right;
+			}
+
+			&__item:nth-child(odd) > &__lugarTrabajo {
+				grid-column:1/2;
+				grid-row:2/3;
+				text-align: right;
+			}
+
+			&__item:nth-child(odd) > &__cargo {
+				grid-column:1/2;
+				grid-row:3/4;
+				text-align: right;
+			}
+
+			&__item:nth-child(odd) > &__descripcionActividades {
+				grid-column:1/2;
+				grid-row:4/5;
+				text-align: right;
+			}
+
+			&__item:nth-child(odd) > .linea__contenedor {
+				grid-column:2/3;
+				grid-row:1/5;
+				@extend %contenedorsm;
+			}
+
+			&__item:nth-child(odd) > .punto__contenedor {
+				grid-column:2/3;
+				grid-row:1/2;
+				@extend %contenedorsm;
+			}
+
+		//Pares
+			&__item:nth-child(2n) > &__fecha {
+				grid-column:3/4;
+				grid-row:1/2;
+				text-align: left;
+			}
+
+			&__item:nth-child(2n) > &__lugarTrabajo {
+				grid-column:3/4;
+				grid-row:2/3;
+				text-align: left;
+			}
+
+			&__item:nth-child(2n) > &__cargo {
+				grid-column:3/4;
+				grid-row:3/4;
+				text-align: left;
+			}
+
+			&__item:nth-child(2n) > &__descripcionActividades {
+				grid-column:3/4;
+				grid-row:4/5;
+				text-align: left;
+			}
+
+			&__item:nth-child(2n) > .linea__contenedor {
+				grid-column:2/3;
+				grid-row:1/5;
+				@extend %contenedorsm;
+			}
+
+			&__item:nth-child(2n) > .punto__contenedor {
+				grid-column:2/3;
+				grid-row:1/2;
+				@extend %contenedorsm;
+			}
+	}
+
 	@include lg {
 
 		&__contenedor {
@@ -101,127 +342,91 @@
 	      	grid-template-rows: auto auto;
 		}
 		
+		&__tituloItem p {
+			width: 40%;
+		}
+
 		//PlaceHolder Contenedor Linea & Punto
-		%contenedormd {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
+			%contenedormd {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
 
-		//--------Experiencia Profesional--------//
-	  	&__experiencia {
-			grid-column:1/2;
-			grid-row:1/3;
-	  	}
+		//--------Experiencia Profesional lg--------//
+		  	&__experiencia {
+				grid-column:1/2;
+				grid-row:1/3;
+		  	}
 
-	    //Plus
-	  	&__item {
-			@include resumen-item(
-				$grid-template-cols:repeat(12,1fr),
-				$grid-template-rows:repeat(3,auto)
-			);
-		}
-
-		&__item > &__fecha {
-			grid-column:2/5;
-			grid-row:1/2;
-			text-align: right;
-		}
-
-		&__item > &__lugarTrabajo {
-			grid-column:6/12;
-			grid-row:1/2;
-			text-align: left;
-		}
-
-		&__item > &__cargo {
-			grid-column:6/12;
-			grid-row:2/3;
-			text-align: left;
-		}
-
-		&__item > &__descripcionActividades {
-			grid-column:6/12;
-			grid-row:3/4;
-			text-align: left;
-		}
-
-		&__item > .linea__contenedor {
-			grid-column:5/6;
-			grid-row:1/4;
-			@extend %contenedormd;
-		}
-
-		&__item > .punto__contenedor {
-			grid-column:5/6;
-			grid-row:1/2;
-			@extend %contenedormd;
-		}
-		//--------Educación md--------//
-	  	&__educacion {
-			grid-column:2/3;
-			grid-row:1/2;
-	  	}
-		//--------Freelance md--------//
-	  	&__freelance {
-			grid-column:2/3;
-			grid-row:2/3;      		
-	  	}
+		//--------Educación lg--------//
+		  	&__educacion {
+				grid-column:2/3;
+				grid-row:1/2;
+		  	}
 		
-		//Clase para Fecha
-		.resumen__fecha {
-			font-size: 80%;
-			justify-content: flex-end;
-		}
+		//--------Freelance lg--------//
+		  	&__freelance {
+				grid-column:2/3;
+				grid-row:2/3;      		
+		  	}
 
-	  	//Clase para Linea
-		.linea {
-			height: 100%;
-			width: 1px;
-			background-color: var(--tenue);
-		}
+		//Módulo Item
+		  	&__item {
+				@include resumen-item(
+					$grid-template-cols:repeat(12,1fr),
+					$grid-template-rows:repeat(3,auto)
+				);
+			}
+
+			&__item:nth-child(2n) > &__fecha,
+			&__item:nth-child(odd) > &__fecha {
+				grid-column:2/5;
+				grid-row:1/2;
+				text-align: right;
+			}
+
+			&__item:nth-child(2n) > &__lugarTrabajo,
+			&__item:nth-child(odd) > &__lugarTrabajo {
+				grid-column:6/12;
+				grid-row:1/2;
+				text-align: left;
+			}
+
+			&__item:nth-child(2n) > &__cargo,
+			&__item:nth-child(odd) > &__cargo {
+				grid-column:6/12;
+				grid-row:2/3;
+				text-align: left;
+			}
+
+			&__item:nth-child(2n) > &__descripcionActividades,
+			&__item:nth-child(odd) > &__descripcionActividades {
+				grid-column:6/12;
+				grid-row:3/4;
+				text-align: left;
+				padding-bottom: 1rem;
+			}
+
+			&__item:nth-child(2n) > .linea__contenedor,
+			&__item:nth-child(odd) > .linea__contenedor {
+				grid-column:5/6;
+				grid-row:1/4;
+				@extend %contenedormd;
+			}
+
+			&__item:nth-child(2n) > .punto__contenedor,
+			&__item:nth-child(odd) > .punto__contenedor {
+				grid-column:5/6;
+				grid-row:1/2;
+				@extend %contenedormd;
+			}
+			
+			//Clase para Fecha
+			.resumen__fecha {
+				font-size: 80%;
+				justify-content: flex-end;
+			}
 	}
 }
 
-//Clases Globales
-
-//Clase Título
-.resumen__tituloItem{
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	align-items: center;
-
-}
-
-//Clase para Linea
-.linea__naranja {
-	height: 1px;
-	width: 10%;
-	background-color: var(--anaranjado);
-}
-
-
-
-//Clase para Lugar
-.resumen__lugarTrabajo {
-
-}
-
-//Clase para Cargo
-.resumen__cargo {
-
-}
-
-//Clase para Descripción
-.resumen__descripcionActividades {
-
-}
-
-//Clase para Punto
-.punto{
-	width: 0.5rem;
-	height: 0.5rem;
-	border-radius: 50%;
-	background-color: var(--anaranjado);
-}

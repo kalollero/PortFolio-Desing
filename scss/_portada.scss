@@ -4,6 +4,7 @@
 	background-image: url("../images/bg-image.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	position: relative;
 	z-index: 9;
 
@@ -39,11 +40,12 @@
 	}
 
 	&__contenedor a:hover {
-		color: var(--anaranjado);
+		color: var(--melon);
 	}
 
 	&__nombre {
 		font-weight: 400;
+		font-family: 'Playfair Display', 'serif';
 	}
 
 	&__profesion {
