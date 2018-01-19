@@ -39,13 +39,16 @@ head
 	link(rel="icon" type="image/png" href="images/icon.png")
 	
 	//Icon Font
-	link(href="https://file.myfontastic.com/yGAo5hbMEGyagVcTpFscjj/icons.css" rel="stylesheet")
+	link(href="font/styles.css" rel="stylesheet")
 	
 	//Roboto Font
 	link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet")
 	
 	//PlayFair
 	link(href="https://fonts.googleapis.com/css?family=Playfair+Display:400" rel="stylesheet")
+	
+	//Merriweather
+	link(href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet")
 	
 	//Normalize 
 	link(rel="stylesheet" href="css/normalize.css")
@@ -71,7 +74,7 @@ body
 		div.menuNavegacion__icon: a(href="#tecnologia"): i.icon-tecnologia
 		div.menuNavegacion__icon: a(href="#frase2"): i.icon-frase2 			
 		div.menuNavegacion__icon: a(href="#contacto"): i.icon-contacto 
-		div.menuNavegacion__icon: a(href=""): i.icon-facebook 
+		div.menuNavegacion__icon: a(href="https://www.facebook.com/kalolleromarron"): i.icon-facebook 
 		div.menuNavegacion__botonMenu
 			a(href="#nav" aria-label="Open Navigation")
 				div.botonMenu#botonMenu 
@@ -108,13 +111,10 @@ body
 			div.portada__header
 				img.portada__logo(src="")(href="")
 				div.portada__social
-					a(href=""): i.icon-facebook
-					a(href=""): i.icon-github
-					a(href=""): i.icon-behance
-					a(href=""): i.icon-dribbble
+					a(href="https://www.facebook.com/kalolleromarron"): i.icon-facebook
 
-			h2.portada__nombre Kalóllero Marro.on
-			p.portada__profesion DISEÑADOR PUBLICITARIO
+			h2.portada__nombre Rogelio Serna Ojeda
+			p.portada__profesion DISEÑO PUBLICITARIO
 			a(href="#introduccion")
 				i.portada__mouse.icon-mouse
 
@@ -127,10 +127,10 @@ body
 		section#introduccion.introduccion
 			h5.titulo__seccion Sobre Mi
 			div.introduccion__resena
-				div.introduccion__texto Loco, Gitano & Soñador, con estudios en Imagen y Diseño; soy un publicista art nouvo de épocas contemporáneas, experto en vampiras moderna ...Bienvenid@.
-				div.introduccion__imagenPerfil: img(src="images/")
+				div.introduccion__texto Loco, Gitano & Soñador, con estudios y habilidades en Diseño; soy una persona art nouvo de épocas contemporáneas, experto en vampiras moderna ...Bienvenid@.
+				div.introduccion__imagenPerfil: img(src="images/introduccion.jpg")
 			div.introduccion__curriculumVitae
-				a(target="_blank")(href="Rogelio_Serna_Curriculum_vitae.pdf")
+				a(target="_blank")(href="https://drive.google.com/file/d/1OWpLhfRIlXQwF1Icl4xXPjwdrc00Hz5Q/view?usp=sharing")
 					div.introduccion__descargaCV DESCARGAR CV
 				a(href="#resumen")
 					div.introduccion__visitaResumen IR AL RESUMEN
@@ -138,7 +138,7 @@ body
 		//Frase 1
 		div#frase1.frase.frase--1
 			h2.frase__texto ...Siempre pasan cosas importantes en mi vida...”
-			h4.frase__autor mc marrO.On
+			p.frase__autor mc marrO.On
 			
 		//Resumen
 		section#resumen.resumen
@@ -155,7 +155,7 @@ body
 							i.icon-trabajo
 					//Auditoría Integral EZA	
 					div.resumen__item
-						div.resumen__fecha Jul-Nov/2004
+						div.resumen__fecha Abril/2016 a Nov/2017
 						div.resumen__lugarTrabajo Auditoría Integral Eza
 						div.resumen__cargo Auditoría, Análisis & Captura
 						div.resumen__descripcionActividades
@@ -169,12 +169,11 @@ body
 
 					//SEDESOL DELEGACIÓN VERACRUZ
 					div.resumen__item
-						div.resumen__fecha Nov-Dic/2004
+						div.resumen__fecha Nov-Dic/2014
 						div.resumen__lugarTrabajo SEDESOL Delegación Veracruz
-						div.resumen__cargo 
-						div.resumen__descripcionActividades 
-							p Programa TDT
-							p Entrega de Televisiones Digitales en la Región de Huayacocotla por el inicio del Apagon Tecnológico
+						div.resumen__cargo Brigadista
+						div.resumen__descripcionActividades
+							p Entrega de Televisiones Digitales en la Región de Huayacocotla por el inicio del Apagon Tecnológico. Programa TDT
 						div.linea__contenedor
 							div.linea
 						div.punto__contenedor
@@ -182,7 +181,7 @@ body
 
 					//Plus Internacional Ingenieros	
 					div.resumen__item
-						div.resumen__fecha Jul-Nov/2004
+						div.resumen__fecha Jul-Nov/2014
 						div.resumen__lugarTrabajo Plus Internacional Ingenieros 
 						div.resumen__cargo Verificador
 						div.resumen__descripcionActividades Verificación Documental de Expedientes Técnicos a Cédulas de Trabajo de SEDESOL Delegación Xalapa
@@ -288,67 +287,97 @@ body
 				
 				div.software__contenedorGrupo.software--imagenDiseno
 					h6.software__nombreGrupo--izquierda Sofware de Imagen & Diseño
-					div.software__grupo--izquierda
-						div.software__items
-							p.software__nombre Illustrator
-							p.software__nombre Photoshop
-							p.software__nombre Corel Drawn
-						div.software__nivelConocimiento
+					div.software__items--izquierda
+						p.software__nombre Illustrator
+						p.software__nombre Photoshop
+						p.software__nombre Corel Drawn
+					div.software__conocimiento--izquierda
+						div.software__nivel
+							div.software__porcentaje(title="80") 80%
+						div.software__nivel
+							div.software__porcentaje(title="40") 40%
+						div.software__nivel
+							div.software__porcentaje(title="20") 20%
 					div.software__icon--izquierda
 						img.imagen-fluida(src="images/desing.svg")
 
 				div.software__contenedorGrupo.software--programacion
 					h6.software__nombreGrupo--izquierda Lenguajes de Programación
-					div.software__grupo--izquierda
-						div.software__items
-							p.software__nombre HTML5
-							p.software__nombre CSS3
-							P.software__nombre JQuery
-						div.software__nivelConocimiento
+					div.software__items--izquierda
+						p.software__nombre HTML5
+						p.software__nombre CSS3
+						P.software__nombre JQuery
+					div.software__conocimiento--izquierda
+						div.software__nivel
+							div.software__porcentaje(title="60") 60%
+						div.software__nivel
+							div.software__porcentaje(title="50") 50%
+						div.software__nivel
+							div.software__porcentaje(title="10") 10%
 					div.software__icon--izquierda
 						img.imagen-fluida(src="images/desarrollo.svg")
 
 				div.software__contenedorGrupo.software--web
 					h6.software__nombreGrupo--izquierda Web Software
-					div.software__grupo--izquierda
-						div.software__items
-							p.software__nombre Google Analitics
-							p.software__nombre Hootsouit
-							p.software__nombre Bootstrap 4
-						div.software__nivelConocimiento
+					div.software__items--izquierda
+						p.software__nombre Google Analitics
+						p.software__nombre Hootsouit
+						p.software__nombre Bootstrap 4
+					div.software__conocimiento--izquierda
+						div.software__nivel
+							div.software__porcentaje(title="40") 30%
+						div.software__nivel
+							div.software__porcentaje(title="30") 30%
+						div.software__nivel
+							div.software__porcentaje(title="75") 55%
 					div.software__icon--izquierda
 						img.imagen-fluida(src="images/web.svg")
 
 				div.software__contenedorGrupo.software--office
 					h6.software__nombreGrupo--derecha Paquetería Office 
-					div.software__grupo--derecha
-						div.software__items
-							p.software__nombre Word
-							p.software__nombre Excel
-							p.software__nombre Power Point
-						div.software__nivelConocimiento
+					div.software__items--derecha
+						p.software__nombre Word
+						p.software__nombre Excel
+						p.software__nombre Power Point
+					div.software__conocimiento--derecha
+						div.software__nivel
+							div.software__porcentaje(title="60") 60%
+						div.software__nivel
+							div.software__porcentaje(title="40") 40%
+						div.software__nivel
+							div.software__porcentaje(title="60") 60%
 					div.software__icon--derecha
 						img.imagen-fluida(src="images/office.svg")
 
 				div.software__contenedorGrupo.software--videoAudio3D
 					h6.software__nombreGrupo--derecha Software de Video, Audio & 3D
-					div.software__grupo--derecha
-						div.software__items
-							p.software__nombre Auditions
-							p.software__nombre After Efects
-							p.software__nombre Blender
-						div.software__nivelConocimiento
+					div.software__items--derecha
+						p.software__nombre Auditions
+						p.software__nombre After Efects
+						p.software__nombre Blender
+					div.software__conocimiento--derecha
+						div.software__nivel
+							div.software__porcentaje(title="10") 10%
+						div.software__nivel
+							div.software__porcentaje(title="10") 10%
+						div.software__nivel
+							div.software__porcentaje(title="10") 10%
 					div.software__icon--derecha
 						img.imagen-fluida(src="images/3D.svg")
 
 				div.software__contenedorGrupo.software--desarrollo
 					h6.software__nombreGrupo--derecha Software para Desarrollo
-					div.software__grupo--derecha
-						div.software__items
-							p.software__nombre Sublime Text
-							p.software__nombre Git
-							p.software__nombre Acrobat
-						div.software__nivelConocimiento
+					div.software__items--derecha
+						p.software__nombre Sublime Text
+						p.software__nombre Git
+						p.software__nombre Acrobat
+					div.software__conocimiento--derecha
+						div.software__nivel
+							div.software__porcentaje(title="75") 60%
+						div.software__nivel
+							div.software__porcentaje(title="25") 60%
+						div.software__nivel
+							div.software__porcentaje(title="75") 60%
 					div.software__icon--derecha
 						img.imagen-fluida(src="images/clound.svg")
 
@@ -364,6 +393,8 @@ body
 					li.portafolio__boton.imagen: a(href="#tab__imagen") Imagen Gráfica
 					
 				div.portafolio__informacion
+
+					// B E C A V E R
 					div.portafolio__becaver#tab__becaver
 						div.portafolio__descripcion
 							p BECAVER
@@ -374,9 +405,10 @@ body
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(role="button")(src="images/portafolio.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/portafolio.jpg")
 									div.tarjeta__nombre Nombre						
 					
+					// I S C A M
 					div.portafolio__iscam#tab__iscam
 						div.portafolio__descripcion
 							p Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz
@@ -388,7 +420,8 @@ body
 									a.tarjeta__link#modal__iscam
 										img.tarjeta__imagen.imagen-fluida(src="images/portafolio.jpg")
 									div.tarjeta__nombre Nombre
-							
+					
+					// X I C O		
 					div.portafolio__xico#tab__xico
 						div.portafolio__descripcion
 							p XICO Historia, Cultura & Tradiciones
@@ -398,14 +431,30 @@ body
 									a.tarjeta__link#modal__xico
 										img.tarjeta__imagen.imagen-fluida(src="images/portafolio.jpg")
 									div.tarjeta__nombre Nombre
-
+					
+					// I M A G E N - G R Á F I C A
 					div.portafolio__imagenGrafica#tab__imagen
 						div.portafolio__logotipos
 							div.tarjeta
 								div.tarjeta__contenedor
-									a.tarjeta__link#modal__tortuga
-										img.tarjeta__imagen.imagen-fluida(src="images/portafolio.jpg")
-										div.tarjeta__nombre Nombre				
+									a.tarjeta__link
+										img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/b7/f0/28/b7f02851bd1a3d4bccdf904b105d5cf6.jpg")
+									div.tarjeta__nombre Brújula
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link
+										img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/c2/f3/e2/c2f3e2ced29089156cf9d9d13ffddfa8.jpg")
+									div.tarjeta__nombre el Cumple | Tarjetería
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link
+										img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/25/c2/aa/25c2aa0d5aafdd7542dd702056361bee.jpg")
+									div.tarjeta__nombre Tortuga del Viento
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link
+										img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/63/8d/5f/638d5f2bbe5fabe7380b99f139ee62c2.jpg")
+									div.tarjeta__nombre Verde Pistache
 
 		//Tecnologías en Estudio
 		section#tecnologia.tecnologia
@@ -416,102 +465,101 @@ body
 						i.icon-adobe
 					div.tecnologia__nombre
 						p InDesing
-						p Descripción de la tecnología
-					div.tecnologia__nivel
-						p Nivel
-						div
+					div.tecnologia__descripcion
+						p Diseño y maquetación de páginas para la publicación digital e impresa.
+					div.tecnologia__nivel.software
+						div.software__conocimiento--izquierda
+							div.software__nivel
+								div.software__porcentaje(title="20") 20%
 
 				div.tecnologia__item.tecnologia--sass
 					div.tecnologia__icono
 						i.icon-sass
 					div.tecnologia__nombre
 						p SASS
-						p Descripción de la tecnología
-					div.tecnologia__nivel
-						p Nivel
-						div
+					div.tecnologia__descripcion
+						p Ayudante para el desarrollador web a la hora de trabajar en CSS.
+					div.tecnologia__nivel.software
+						div.software__conocimiento--izquierda
+							div.software__nivel
+								div.software__porcentaje(title="40") 40%
 
 				div.tecnologia__item.tecnologia--javascript
 					div.tecnologia__icono
 						i.icon-javascript
 					div.tecnologia__nombre
 						p Java Script
-						p Descripción de la tecnología
-					div.tecnologia__nivel
-						p Nivel
-						div
+					div.tecnologia__descripcion
+						p JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript.
+					div.tecnologia__nivel.software
+						div.software__conocimiento--izquierda
+							div.software__nivel
+								div.software__porcentaje(title="15") 10%
 				
 				div.tecnologia__item.tecnologia--grid
 					div.tecnologia__icono
 						i.icon-css3
 					div.tecnologia__nombre
 						p CSS3 - Grid
-						p Descripción de la tecnología
-					div.tecnologia__nivel
-						p Nivel
-						div
-	
-					
-				div.tecnologia__item.tecnologia--sdkfacebook
-					div.tecnologia__icono
-						i.icon-sdk-facebook
-					div.tecnologia__nombre
-						p SDK JS Facebook
-						p Descripción de la tecnología
-					div.tecnologia__nivel
-						p Nivel
-						div
+					div.tecnologia__descripcion
+						p Es un Módulo de diseño de cuadrícula CSS basado en filas y columnas, que facilita el diseño web.
+					div.tecnologia__nivel.software
+						div.software__conocimiento--izquierda
+							div.software__nivel
+								div.software__porcentaje(title="80") 80%
 
 		//Frase 2
 		div#frase2.frase.frase--2
 			h2.frase__texto ...dormir las ocho horas de sueño entre las 10:00 pm y las 6:00 am es anticuado...”
-			h4.frase__autor mc marrO.On		
+			p.frase__autor mc marrO.On		
 					
 		//Contacto
 		section#contacto.contacto
 			h5.titulo__seccion Contacto
 			div.contacto__contenedor
 				div.contacto__medioMovil
-					div.contacto__icono
-						i.icon-telefono
-					div.contacto__nombre
-						p Teléfono Móvil
-					div.contacto__informacion
+					a(href="tel:2281285663")
+						div.contacto__icono
+							i.icon-telefono
+						div.contacto__nombre
+							p Teléfono Móvil
+						div.contacto__informacion 22 &middot 81 &middot 28 &middot 56 &middot 63
 
 				div.contacto__medioCorreo
-					div.contacto__icono
-						i.icon-correo
-					div.contacto__nombre
-						p Correo Web
-					div.contacto__informacion
+					a(href="mailto:kali.rso@hotmail.com")
+						div.contacto__icono
+							i.icon-correo
+						div.contacto__nombre
+							p Correo Web
+						div.contacto__informacion kali.rso@hotmail.com
 
 				div.contacto__medioFacebook
-					div.contacto__icono
-						i.icon-sdk-facebook
-					div.contacto__nombre
-						p Facebook
-					div.contacto__informacion
+					a(target="_blank")(href="https://www.facebook.com/kalolleromarron") 
+						div.contacto__icono
+							i.icon-sdk-facebook
+						div.contacto__nombre
+							p Facebook
+						div.contacto__informacion Kalollero Marro.on 
 
 				div.contacto__medioDireccion
-					div.contacto__icono
-						i.icon-direccion
-					div.contacto__nombre
-						p Dirección
-					div.contacto__informacion
+					a(target="_blank")(href="https://drive.google.com/open?id=1MWwkaec_yWDi3hv9paZHwS0omIZazbk8&usp=sharing")
+						div.contacto__icono
+							i.icon-direccion
+						div.contacto__nombre
+							p Dirección
+						div.contacto__informacion
+							p.contacto__informacion Avenida Adolfo Ruíz Cortínez no 1621 Colonia Francisco Ferrer Guardia
 
 		//Pie
 		footer.pie
 			div.pie__derechosReservados
-				p DR 2017
+				p ENERO  &middot  2018
 			
-			div.pie__firma FIRMA
+			div.pie__firma Rogelio Serna Ojeda
 				img(href="")
 
 			div.pie__redesSociales 
-				a.iconRedes(href=""): i.icon-facebook
-				a.iconRedes(href=""): i.icon-github
-				a.iconRedes(href=""): i.icon-behance
-				a.iconRedes(href=""): i.icon-dribbble
+				a.iconRedes(href="https://www.facebook.com/kalolleromarron"): i.icon-facebook
 
 
 	script(src="js/jquery-3.2.1.min.js")
@@ -529,7 +577,7 @@ body
 			$( "#tabs" ).tabs();
 		});
 
-		$('.tarjeta__link').click(function(){
+		$('.tarjeta__link,.contacto__mapa').click(function(){
 			var modal = $(this).attr('id');
 			var sitio = modal + ".html"
 			$('.modal__portafolio').attr('src', sitio);

@@ -2,24 +2,34 @@
 	padding: 2rem 3rem;
 	display: flex;
 	flex-flow: column;
+	background-color: var(--navy);
 
 	&__texto {
 		color: var(--blanco);
+		font-weight: 300;
+
+
+		@include md {
+			letter-spacing: 0.5rem;
+		}
 	}
 
 	&__autor {
 		color: var(--blanco);
+		text-align: right;
+		font-weight: 100;
 	}
 
 	&--1 {
-		background-image: url("../images/frase1.jpg");
+		
+		background: url("../images/.jpg") no-repeat, var(--navy);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
 	}
 
 	&--2 {
-		background-color: blue;
+		background-color: var;
 	}
 
 

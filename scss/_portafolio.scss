@@ -156,6 +156,7 @@
     &__contenedor {
         display: grid;
         grid-template-columns: 1fr;
+        text-align: center;
     }
 
     &__link {
@@ -167,7 +168,7 @@
     }
 
     &__nombre {
-        color: red;
+        color: var(--oxford);
     }
 }
 

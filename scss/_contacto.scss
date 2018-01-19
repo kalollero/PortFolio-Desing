@@ -43,10 +43,14 @@
 
 	&__nombre {
 		font-size: 90%;
+		color: var(--profundo);
 	}
 
+	&__informacion,
 	&__informacion {
-		
+		color: var(--profundo);
+		font-weight: 300;
+		cursor: pointer;
 	}
 
 	@include md {
