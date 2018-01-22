@@ -55,7 +55,7 @@
   </div>
   <!--Menú Navegación-->
   <nav class="menuNavegacion">
-    <div class="menuNavegacion__icon"><a href="#portada"><i class="icon-logo">o.o</i></a></div>
+    <div class="menuNavegacion__icon"><a href="#portada"><i class="icon-mouse"></i></a></div>
     <div class="menuNavegacion__icon"><a href="#introduccion"><i class="icon-introduccion"> </i></a></div>
     <div class="menuNavegacion__icon"><a href="#frase1"><i class="icon-frase1"> </i></a></div>
     <div class="menuNavegacion__icon"><a href="#resumen"><i class="icon-resumen"> </i></a></div>
@@ -68,22 +68,21 @@
     <div class="menuNavegacion__botonMenu"><a href="#nav" aria-label="Open Navigation">
         <div class="botonMenu" id="botonMenu"> <span class="top"></span><span class="middle"></span><span class="bottom"></span></div></a></div>
   </nav>
-  <div class="menuNavegacion__Extendida" id="nav"><a class="menuNavegacion__Extendida__items" href="#portada"> <i class="icon-logo">
-        <p>Inicio</p></i></a><a class="menuNavegacion__Extendida__items" href="#introduccion"> <i class="icon-introduccion">
-        <p>Introduccion</p></i></a><a class="menuNavegacion__Extendida__items" href="#resumen"> <i class="icon-resumen">
-        <p>Resumen</p></i></a><a class="menuNavegacion__Extendida__items" href="#software"> <i class="icon-software">
-        <p>Software</p></i></a><a class="menuNavegacion__Extendida__items" href="#portafolio"> <i class="icon-portafolio">
-        <p>Portafolio </p></i></a><a class="menuNavegacion__Extendida__items" href="#tecnologia"> <i class="icon-tecnologia">
-        <p>Aprendizaje en Progreso</p></i></a><a class="menuNavegacion__Extendida__items" href="#contacto"> <i class="icon-contacto">
-        <p>ContactO</p></i></a></div>
+  <div class="menuNavegacion__Extendida" id="nav"><a class="menuNavegacion__Extendida__items" href="#introduccion" id="menuIntroduccion"><i class="icon-introduccion"></i>
+      <p>Sobre Mi</p></a><a class="menuNavegacion__Extendida__items" href="#resumen" id="menuResumen"><i class="icon-resumen"></i>
+      <p>Resumen</p></a><a class="menuNavegacion__Extendida__items" href="#software" id="menuSoftware"><i class="icon-software"></i>
+      <p>Conocimiento</p></a><a class="menuNavegacion__Extendida__items" href="#portafolio" id="menuPortafolio"><i class="icon-portafolio"></i>
+      <p>Portafolio </p></a><a class="menuNavegacion__Extendida__items" href="#tecnologia" id="menuTecnologia"><i class="icon-tecnologia"></i>
+      <p>Aprendizaje</p></a><a class="menuNavegacion__Extendida__items" href="#contacto" id="menuContacto"><i class="icon-contacto"></i>
+      <p>Contacto</p></a></div>
   <!--Portada-->
   <header class="portada" id="portada">
     <div class="portada__contenedor">
       <div class="portada__header"><img class="portada__logo" src="" href=""/>
-        <div class="portada__social"><a href="https://www.facebook.com/kalolleromarron"><i class="icon-facebook"></i></a></div>
+        <div class="portada__social"></div>
       </div>
-      <h2 class="portada__nombre">Rogelio Serna Ojeda</h2>
-      <p class="portada__profesion">DISEÑO PUBLICITARIO</p><a href="#introduccion"><i class="portada__mouse icon-mouse"></i></a>
+      <p class="portada__nombre">Rogelio Serna Ojeda</p>
+      <p class="portada__profesion">DISEÑADOR PUBLICITARIO</p><a class="portada__mouse" href="#introduccion"><i class="icon-mouse"></i></a>
     </div>
   </header>
   <div class="marro-on__contenedor">
@@ -92,7 +91,7 @@
     <section class="introduccion" id="introduccion">
       <h5 class="titulo__seccion">Sobre Mi</h5>
       <div class="introduccion__resena">
-        <div class="introduccion__texto">Loco, Gitano & Soñador, con estudios y habilidades en Diseño; soy una persona art nouvo de épocas contemporáneas, experto en vampiras moderna ...Bienvenid@.</div>
+        <div class="introduccion__texto">Loco, Gitano & Soñador, con estudios en Imagen y Diseño; un publicista art nouvo de épocas contemporáneas, experto en vampiras moderna ...Bienvenid@.</div>
         <div class="introduccion__imagenPerfil"><img src="images/introduccion.jpg"/></div>
       </div>
       <div class="introduccion__curriculumVitae"><a target="_blank" href="https://drive.google.com/file/d/1OWpLhfRIlXQwF1Icl4xXPjwdrc00Hz5Q/view?usp=sharing">
@@ -100,9 +99,10 @@
           <div class="introduccion__visitaResumen">IR AL RESUMEN</div></a></div>
     </section>
     <!--Frase 1-->
-    <div class="frase frase--1" id="frase1">
-      <h2 class="frase__texto">...Siempre pasan cosas importantes en mi vida...”</h2>
-      <p class="frase__autor">mc marrO.On</p>
+    <div class="frase" id="frase1">
+      <div class="frase--1">
+        <h2 class="frase__texto">...Siempre pasan cosas importantes en mi vida...”</h2>
+      </div>
     </div>
     <!--Resumen-->
     <section class="resumen" id="resumen">
@@ -280,7 +280,7 @@
       <h5 class="titulo__seccion">Conocimiento</h5>
       <div class="software__contenedor">
         <div class="software__contenedorGrupo software--imagenDiseno">
-          <h6 class="software__nombreGrupo--izquierda">Sofware de Imagen & Diseño</h6>
+          <p class="software__nombreGrupo--izquierda">Sofware de Imagen & Diseño</p>
           <div class="software__items--izquierda">
             <p class="software__nombre">Illustrator</p>
             <p class="software__nombre">Photoshop</p>
@@ -288,19 +288,34 @@
           </div>
           <div class="software__conocimiento--izquierda">
             <div class="software__nivel">
-              <div class="software__porcentaje" title="80">80%</div>
+              <div class="software__cantidadPorcentaje" title="80">
+                <p>80%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="80"></div>
+              </div>
             </div>
             <div class="software__nivel">
-              <div class="software__porcentaje" title="40">40%</div>
+              <div class="software__cantidadPorcentaje" title="40">
+                <p>40%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="40"></div>
+              </div>
             </div>
             <div class="software__nivel">
-              <div class="software__porcentaje" title="20">20%</div>
+              <div class="software__cantidadPorcentaje" title="20">
+                <p>20%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="20"></div>
+              </div>
             </div>
           </div>
           <div class="software__icon--izquierda"><img class="imagen-fluida" src="images/desing.svg"/></div>
         </div>
         <div class="software__contenedorGrupo software--programacion">
-          <h6 class="software__nombreGrupo--izquierda">Lenguajes de Programación</h6>
+          <p class="software__nombreGrupo--izquierda">Lenguajes de Programación</p>
           <div class="software__items--izquierda">
             <p class="software__nombre">HTML5</p>
             <p class="software__nombre">CSS3</p>
@@ -308,19 +323,34 @@
           </div>
           <div class="software__conocimiento--izquierda">
             <div class="software__nivel">
-              <div class="software__porcentaje" title="60">60%</div>
+              <div class="software__cantidadPorcentaje" title="60">
+                <p>60%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="60"></div>
+              </div>
             </div>
             <div class="software__nivel">
-              <div class="software__porcentaje" title="50">50%</div>
+              <div class="software__cantidadPorcentaje" title="50"> 
+                <p>50%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="50"></div>
+              </div>
             </div>
             <div class="software__nivel">
-              <div class="software__porcentaje" title="10">10%</div>
+              <div class="software__cantidadPorcentaje" title="10"> 
+                <p>10%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="10"></div>
+              </div>
             </div>
           </div>
           <div class="software__icon--izquierda"><img class="imagen-fluida" src="images/desarrollo.svg"/></div>
         </div>
         <div class="software__contenedorGrupo software--web">
-          <h6 class="software__nombreGrupo--izquierda">Web Software</h6>
+          <p class="software__nombreGrupo--izquierda">Web Software</p>
           <div class="software__items--izquierda">
             <p class="software__nombre">Google Analitics</p>
             <p class="software__nombre">Hootsouit</p>
@@ -328,19 +358,34 @@
           </div>
           <div class="software__conocimiento--izquierda">
             <div class="software__nivel">
-              <div class="software__porcentaje" title="40">30%</div>
+              <div class="software__cantidadPorcentaje" title="40">
+                <p>30%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="40"></div>
+              </div>
             </div>
             <div class="software__nivel">
-              <div class="software__porcentaje" title="30">30%</div>
+              <div class="software__cantidadPorcentaje" title="30">
+                <p>30%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="30"></div>
+              </div>
             </div>
             <div class="software__nivel">
-              <div class="software__porcentaje" title="75">55%</div>
+              <div class="software__cantidadPorcentaje" title="75">
+                <p>55%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="75"></div>
+              </div>
             </div>
           </div>
           <div class="software__icon--izquierda"><img class="imagen-fluida" src="images/web.svg"/></div>
         </div>
         <div class="software__contenedorGrupo software--office">
-          <h6 class="software__nombreGrupo--derecha">Paquetería Office </h6>
+          <p class="software__nombreGrupo--derecha">Paquetería Office </p>
           <div class="software__items--derecha">
             <p class="software__nombre">Word</p>
             <p class="software__nombre">Excel</p>
@@ -348,19 +393,34 @@
           </div>
           <div class="software__conocimiento--derecha">
             <div class="software__nivel">
-              <div class="software__porcentaje" title="60">60%</div>
+              <div class="software__cantidadPorcentaje" title="60">
+                <p>60%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="60"></div>
+              </div>
             </div>
             <div class="software__nivel">
-              <div class="software__porcentaje" title="40">40%</div>
+              <div class="software__cantidadPorcentaje" title="40">
+                <p>40%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="40"></div>
+              </div>
             </div>
             <div class="software__nivel">
-              <div class="software__porcentaje" title="60">60%</div>
+              <div class="software__cantidadPorcentaje" title="60">
+                <p>60%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="60"></div>
+              </div>
             </div>
           </div>
           <div class="software__icon--derecha"><img class="imagen-fluida" src="images/office.svg"/></div>
         </div>
         <div class="software__contenedorGrupo software--videoAudio3D">
-          <h6 class="software__nombreGrupo--derecha">Software de Video, Audio & 3D</h6>
+          <p class="software__nombreGrupo--derecha">Software de Video, Audio & 3D</p>
           <div class="software__items--derecha">
             <p class="software__nombre">Auditions</p>
             <p class="software__nombre">After Efects</p>
@@ -368,19 +428,34 @@
           </div>
           <div class="software__conocimiento--derecha">
             <div class="software__nivel">
-              <div class="software__porcentaje" title="10">10%</div>
+              <div class="software__cantidadPorcentaje" title="10">
+                <p>10%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="10"></div>
+              </div>
             </div>
             <div class="software__nivel">
-              <div class="software__porcentaje" title="10">10%</div>
+              <div class="software__cantidadPorcentaje" title="10">
+                <p>10%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="10"></div>
+              </div>
             </div>
             <div class="software__nivel">
-              <div class="software__porcentaje" title="10">10%</div>
+              <div class="software__cantidadPorcentaje" title="10">
+                <p>10%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="10"></div>
+              </div>
             </div>
           </div>
           <div class="software__icon--derecha"><img class="imagen-fluida" src="images/3D.svg"/></div>
         </div>
         <div class="software__contenedorGrupo software--desarrollo">
-          <h6 class="software__nombreGrupo--derecha">Software para Desarrollo</h6>
+          <p class="software__nombreGrupo--derecha">Software para Desarrollo</p>
           <div class="software__items--derecha">
             <p class="software__nombre">Sublime Text</p>
             <p class="software__nombre">Git</p>
@@ -388,13 +463,28 @@
           </div>
           <div class="software__conocimiento--derecha">
             <div class="software__nivel">
-              <div class="software__porcentaje" title="75">60%</div>
+              <div class="software__cantidadPorcentaje" title="75">
+                <p>60%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="75"></div>
+              </div>
             </div>
             <div class="software__nivel">
-              <div class="software__porcentaje" title="25">60%</div>
+              <div class="software__cantidadPorcentaje" title="25">
+                <p>60%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="25"></div>
+              </div>
             </div>
             <div class="software__nivel">
-              <div class="software__porcentaje" title="75">60%</div>
+              <div class="software__cantidadPorcentaje" title="75">
+                <p>60%</p>
+              </div>
+              <div class="software__contenedorPorcentaje">
+                <div class="software__porcentaje" title="75"></div>
+              </div>
             </div>
           </div>
           <div class="software__icon--derecha"><img class="imagen-fluida" src="images/clound.svg"/></div>
@@ -406,51 +496,270 @@
       <h5 class="titulo__seccion">Portafolio</h5>
       <div class="portafolio__contenedor" id="tabs">
         <ul class="portafolio__navegador">
-          <li class="portafolio__boton becaver"><a href="#tab__becaver">BECAVER</a></li>
-          <li class="portafolio__boton iscam"><a href="#tab__iscam">ISCAM</a></li>
-          <li class="portafolio__boton xico"><a href="#tab__xico">XICO</a></li>
+          <li class="portafolio__boton becaver"><a href="#tab__becaver">Becaver</a></li>
+          <li class="portafolio__boton iscam"><a href="#tab__iscam">Iscam</a></li>
+          <li class="portafolio__boton xico"><a href="#tab__xico">Xico</a></li>
           <li class="portafolio__boton imagen"><a href="#tab__imagen">Imagen Gráfica</a></li>
         </ul>
-        <div class="portafolio__informacion">
+        <div class="portafolio__contenido">
           <!-- B E C A V E R-->
           <div class="portafolio__becaver" id="tab__becaver">
-            <div class="portafolio__descripcion">
-              <p>BECAVER</p>Feria de Becas 2014
-              Diseño de la Imagen Gráfica de la Feria
-              Feria Estatal de Becas, Organizada por la Dirección General de Sistema Estatal de Becas, Veracruz. Teniendo esta como sede las Ciudades de Xalapa, Veracruz, Córdoba, Poza Rica, Coatzacoalcos.
+            <div class="portafolio__informacion">
+              <p class="portafolio__titulo">BECAVER </p>
+              <p class="portafolio__subtitulo">Feria de Becas 2014</p>
+              <p class="portafolio__actividad">Diseño de la Imagen Gráfica de la Feria</p>
+              <p class="portafolio__descripcion">Feria Estatal de Becas, Organizada por la Dirección General de Sistema Estatal de Becas del Estado de Veracruz.</p>
+              <p class="portafolio__descripcion">Teniendo como sede las Ciudades de: Xalapa, Veracruz, Córdoba, Poza Rica, Coatzacoalcos.</p>
             </div>
             <div class="portafolio__galeria">
               <div class="tarjeta">
-                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/portafolio.jpg"/></a>
-                  <div class="tarjeta__nombre">Nombre						</div>
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="Logotipo" src="images/1-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Logotipo</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/2-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Cartel</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/3-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Gafetes</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/4-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Invitación</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/5-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Flyer</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/6-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Ante Pecho</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/7-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Back</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/8-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Señalética</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/9-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Portada Facebook</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/10-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Xalapa 01</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/11-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Xalapa 02</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/12-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Veracruz 01</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/13-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Veracruz 02</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/14-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Córdoba 01</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/15-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Córdoba 02</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/16-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Poza Rica 01</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/17-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Poza Rica 02</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/18-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Coatzacoalcos 01</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__becaver"><img class="tarjeta__imagen imagen-fluida" title="button" src="images/19-becaver.jpg"/></a>
+                  <div class="tarjeta__nombre">Coatzacoalcos 02</div>
                 </div>
               </div>
             </div>
           </div>
           <!-- I S C A M-->
           <div class="portafolio__iscam" id="tab__iscam">
-            <div class="portafolio__descripcion">
-              <p>Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz</p>
-              <p>Diseño de la Imagen Gráfica del Evento Logística del Evento & Community Manager en Redes Sociales</p>
-              <p>Muestra Gastronómica de Pueblos Originarios del Estado de Veracruz en Coordinación con la Delegación de SEDESOL Veracruz</p>
+            <div class="portafolio__iscam--tradiciones">
+              <div class="portafolio__informacion">
+                <p class="portafolio__titulo">Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz</p>
+                <p class="portafolio__actividad">Diseño de la Imagen Gráfica del Evento Logística del Evento & Community Manager en Redes Sociales</p>
+                <p class="portafolio__descripcion">Muestra Gastronómica de Pueblos Originarios del Estado de Veracruz en Coordinación con la Delegación de SEDESOL ~ Veracruz</p>
+              </div>
+              <div class="portafolio__galeria">
+                <div class="tarjeta">
+                  <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__iscam"><img class="tarjeta__imagen imagen-fluida" src="images/1-iscam.jpg"/></a>
+                    <div class="tarjeta__nombre">Logotipo</div>
+                  </div>
+                </div>
+                <div class="tarjeta">
+                  <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__iscam"><img class="tarjeta__imagen imagen-fluida" src="images/2-iscam.jpg"/></a>
+                    <div class="tarjeta__nombre">Cartel</div>
+                  </div>
+                </div>
+                <div class="tarjeta">
+                  <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__iscam"><img class="tarjeta__imagen imagen-fluida" src="images/3-iscam.jpg"/></a>
+                    <div class="tarjeta__nombre">Gafetes</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="portafolio__galeria">
-              <div class="tarjeta">
-                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__iscam"><img class="tarjeta__imagen imagen-fluida" src="images/portafolio.jpg"/></a>
-                  <div class="tarjeta__nombre">Nombre</div>
+            <div class="portafolio__iscam--tradiciones">
+              <div class="portafolio__informacion">
+                <p class="portafolio__titulo">Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz</p>
+                <p class="portafolio__actividad">Diseño de la Imagen Gráfica del Evento Logística del Evento & Community Manager en Redes Sociales</p>
+                <p class="portafolio__descripcion">Muestra Gastronómica de Pueblos Originarios del Estado de Veracruz en Coordinación con la Delegación de SEDESOL ~ Veracruz</p>
+              </div>
+              <div class="portafolio__galeria">
+                <div class="tarjeta">
+                  <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__iscam"><img class="tarjeta__imagen imagen-fluida" src="images/1-iscam.jpg"/></a>
+                    <div class="tarjeta__nombre">Logotipo</div>
+                  </div>
+                </div>
+                <div class="tarjeta">
+                  <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__iscam"><img class="tarjeta__imagen imagen-fluida" src="images/2-iscam.jpg"/></a>
+                    <div class="tarjeta__nombre">Cartel</div>
+                  </div>
+                </div>
+                <div class="tarjeta">
+                  <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__iscam"><img class="tarjeta__imagen imagen-fluida" src="images/3-iscam.jpg"/></a>
+                    <div class="tarjeta__nombre">Gafetes</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portafolio__iscam--tradiciones">
+              <div class="portafolio__informacion">
+                <p class="portafolio__titulo">Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz</p>
+                <p class="portafolio__actividad">Diseño de la Imagen Gráfica del Evento Logística del Evento & Community Manager en Redes Sociales</p>
+                <p class="portafolio__descripcion">Muestra Gastronómica de Pueblos Originarios del Estado de Veracruz en Coordinación con la Delegación de SEDESOL ~ Veracruz</p>
+              </div>
+              <div class="portafolio__galeria">
+                <div class="tarjeta">
+                  <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__iscam"><img class="tarjeta__imagen imagen-fluida" src="images/1-iscam.jpg"/></a>
+                    <div class="tarjeta__nombre">Logotipo</div>
+                  </div>
+                </div>
+                <div class="tarjeta">
+                  <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__iscam"><img class="tarjeta__imagen imagen-fluida" src="images/2-iscam.jpg"/></a>
+                    <div class="tarjeta__nombre">Cartel</div>
+                  </div>
+                </div>
+                <div class="tarjeta">
+                  <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__iscam"><img class="tarjeta__imagen imagen-fluida" src="images/3-iscam.jpg"/></a>
+                    <div class="tarjeta__nombre">Gafetes</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portafolio__iscam--tradiciones">
+              <div class="portafolio__informacion">
+                <p class="portafolio__titulo">Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz</p>
+                <p class="portafolio__actividad">Diseño de la Imagen Gráfica del Evento Logística del Evento & Community Manager en Redes Sociales</p>
+                <p class="portafolio__descripcion">Muestra Gastronómica de Pueblos Originarios del Estado de Veracruz en Coordinación con la Delegación de SEDESOL ~ Veracruz</p>
+              </div>
+              <div class="portafolio__galeria">
+                <div class="tarjeta">
+                  <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__iscam"><img class="tarjeta__imagen imagen-fluida" src="images/1-iscam.jpg"/></a>
+                    <div class="tarjeta__nombre">Logotipo</div>
+                  </div>
+                </div>
+                <div class="tarjeta">
+                  <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__iscam"><img class="tarjeta__imagen imagen-fluida" src="images/2-iscam.jpg"/></a>
+                    <div class="tarjeta__nombre">Cartel</div>
+                  </div>
+                </div>
+                <div class="tarjeta">
+                  <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__iscam"><img class="tarjeta__imagen imagen-fluida" src="images/3-iscam.jpg"/></a>
+                    <div class="tarjeta__nombre">Gafetes</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- X I C O		-->
           <div class="portafolio__xico" id="tab__xico">
-            <div class="portafolio__descripcion">
-              <p>XICO Historia, Cultura & Tradiciones</p>
+            <div class="portafolio__informacion">
+              <p class="portafolio__titulo">XICO </p>
+              <p class="portafolio__subtitulo">Historia, Cultura & Tradiciones</p>
+              <p class="portafolio__actividad">Diseño de la Imagen Gráfica del evento</p>
+              <p class="portafolio__descripcion"></p>
             </div>
             <div class="portafolio__galeria">
               <div class="tarjeta">
-                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__xico"><img class="tarjeta__imagen imagen-fluida" src="images/portafolio.jpg"/></a>
-                  <div class="tarjeta__nombre">Nombre</div>
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__xico"><img class="tarjeta__imagen imagen-fluida" title="" src="images/1-xico.jpg"/></a>
+                  <div class="tarjeta__nombre">Logotipo</div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__xico"><img class="tarjeta__imagen imagen-fluida" title="" src="images/2-xico.jpg"/></a>
+                  <div class="tarjeta__nombre"></div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__xico"><img class="tarjeta__imagen imagen-fluida" title="" src="images/3-xico.jpg"/></a>
+                  <div class="tarjeta__nombre"></div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__xico"><img class="tarjeta__imagen imagen-fluida" title="" src="images/4-xico.jpg"/></a>
+                  <div class="tarjeta__nombre"></div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__xico"><img class="tarjeta__imagen imagen-fluida" title="" src="images/5-xico.jpg"/></a>
+                  <div class="tarjeta__nombre"></div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__xico"><img class="tarjeta__imagen imagen-fluida" title="" src="images/6-xico.jpg"/></a>
+                  <div class="tarjeta__nombre"></div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__xico"><img class="tarjeta__imagen imagen-fluida" title="" src="images/7-xico.jpg"/></a>
+                  <div class="tarjeta__nombre"></div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__xico"><img class="tarjeta__imagen imagen-fluida" title="" src="images/8-xico.jpg"/></a>
+                  <div class="tarjeta__nombre"></div>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta___contenedor"><a class="tarjeta__link" id="modal__xico"><img class="tarjeta__imagen imagen-fluida" title="" src="images/9-xico.jpg"/></a>
+                  <div class="tarjeta__nombre"></div>
                 </div>
               </div>
             </div>
@@ -459,22 +768,22 @@
           <div class="portafolio__imagenGrafica" id="tab__imagen">
             <div class="portafolio__logotipos">
               <div class="tarjeta">
-                <div class="tarjeta__contenedor"><a class="tarjeta__link"><img class="tarjeta__imagen imagen-fluida" src="https://i.pinimg.com/564x/b7/f0/28/b7f02851bd1a3d4bccdf904b105d5cf6.jpg"/></a>
+                <div class="tarjeta__contenedor"><a class="tarjeta--Link"><img class="tarjeta__imagen imagen-fluida" src="https://i.pinimg.com/564x/b7/f0/28/b7f02851bd1a3d4bccdf904b105d5cf6.jpg"/></a>
                   <div class="tarjeta__nombre">Brújula</div>
                 </div>
               </div>
               <div class="tarjeta">
-                <div class="tarjeta__contenedor"><a class="tarjeta__link"><img class="tarjeta__imagen imagen-fluida" src="https://i.pinimg.com/564x/c2/f3/e2/c2f3e2ced29089156cf9d9d13ffddfa8.jpg"/></a>
+                <div class="tarjeta__contenedor"><a class="tarjeta--Link"><img class="tarjeta__imagen imagen-fluida" src="https://i.pinimg.com/564x/c2/f3/e2/c2f3e2ced29089156cf9d9d13ffddfa8.jpg"/></a>
                   <div class="tarjeta__nombre">el Cumple | Tarjetería</div>
                 </div>
               </div>
               <div class="tarjeta">
-                <div class="tarjeta__contenedor"><a class="tarjeta__link"><img class="tarjeta__imagen imagen-fluida" src="https://i.pinimg.com/564x/25/c2/aa/25c2aa0d5aafdd7542dd702056361bee.jpg"/></a>
+                <div class="tarjeta__contenedor"><a class="tarjeta--Link"><img class="tarjeta__imagen imagen-fluida" src="https://i.pinimg.com/564x/25/c2/aa/25c2aa0d5aafdd7542dd702056361bee.jpg"/></a>
                   <div class="tarjeta__nombre">Tortuga del Viento</div>
                 </div>
               </div>
               <div class="tarjeta">
-                <div class="tarjeta__contenedor"><a class="tarjeta__link"><img class="tarjeta__imagen imagen-fluida" src="https://i.pinimg.com/564x/63/8d/5f/638d5f2bbe5fabe7380b99f139ee62c2.jpg"/></a>
+                <div class="tarjeta__contenedor"><a class="tarjeta--Link"><img class="tarjeta__imagen imagen-fluida" src="https://i.pinimg.com/564x/63/8d/5f/638d5f2bbe5fabe7380b99f139ee62c2.jpg"/></a>
                   <div class="tarjeta__nombre">Verde Pistache</div>
                 </div>
               </div>
@@ -498,7 +807,12 @@
           <div class="tecnologia__nivel software">
             <div class="software__conocimiento--izquierda">
               <div class="software__nivel">
-                <div class="software__porcentaje" title="20">20%</div>
+                <div class="software__cantidadPorcentaje" title="20">
+                  <p>20%</p>
+                </div>
+                <div class="software__contenedorPorcentaje">
+                  <div class="software__porcentaje" title="20"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -514,7 +828,12 @@
           <div class="tecnologia__nivel software">
             <div class="software__conocimiento--izquierda">
               <div class="software__nivel">
-                <div class="software__porcentaje" title="40">40%</div>
+                <div class="software__cantidadPorcentaje" title="40">
+                  <p>40%</p>
+                </div>
+                <div class="software__contenedorPorcentaje">
+                  <div class="software__porcentaje" title="40"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -525,12 +844,17 @@
             <p>Java Script</p>
           </div>
           <div class="tecnologia__descripcion">
-            <p>JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript.</p>
+            <p>JavaScript es un lenguaje de programación, que facilita el diseño web.</p>
           </div>
           <div class="tecnologia__nivel software">
             <div class="software__conocimiento--izquierda">
               <div class="software__nivel">
-                <div class="software__porcentaje" title="15">10%</div>
+                <div class="software__cantidadPorcentaje" title="15">
+                  <p>10%</p>
+                </div>
+                <div class="software__contenedorPorcentaje">
+                  <div class="software__porcentaje" title="15"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -541,12 +865,17 @@
             <p>CSS3 - Grid</p>
           </div>
           <div class="tecnologia__descripcion">
-            <p>Es un Módulo de diseño de cuadrícula CSS basado en filas y columnas, que facilita el diseño web.</p>
+            <p>Es un Módulo de diseño de cuadrícula CSS basado en filas y columnas.</p>
           </div>
           <div class="tecnologia__nivel software">
             <div class="software__conocimiento--izquierda">
               <div class="software__nivel">
-                <div class="software__porcentaje" title="80">80%</div>
+                <div class="software__cantidadPorcentaje" title="80">
+                  <p>80%</p>
+                </div>
+                <div class="software__contenedorPorcentaje">
+                  <div class="software__porcentaje" title="80"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -554,9 +883,10 @@
       </div>
     </section>
     <!--Frase 2-->
-    <div class="frase frase--2" id="frase2">
-      <h2 class="frase__texto">...dormir las ocho horas de sueño entre las 10:00 pm y las 6:00 am es anticuado...”</h2>
-      <p class="frase__autor">mc marrO.On		</p>
+    <div class="frase" id="frase2">
+      <div class="frase--2">
+        <h2 class="frase__texto">"dormir las ocho horas de sueño entre las 10:00 pm y las 6:00 am es anticuado”</h2>
+      </div>
     </div>
     <!--Contacto-->
     <section class="contacto" id="contacto">
@@ -568,18 +898,18 @@
               <p>Teléfono Móvil</p>
             </div>
             <div class="contacto__informacion">22 &middot 81 &middot 28 &middot 56 &middot 63</div></a></div>
-        <div class="contacto__medioCorreo"><a href="mailto:kali.rso@hotmail.com">
-            <div class="contacto__icono"><i class="icon-correo"></i></div>
-            <div class="contacto__nombre">
-              <p>Correo Web</p>
-            </div>
-            <div class="contacto__informacion">kali.rso@hotmail.com</div></a></div>
         <div class="contacto__medioFacebook"><a target="_blank" href="https://www.facebook.com/kalolleromarron"> 
             <div class="contacto__icono"><i class="icon-sdk-facebook"></i></div>
             <div class="contacto__nombre">
               <p>Facebook</p>
             </div>
             <div class="contacto__informacion">Kalollero Marro.on </div></a></div>
+        <div class="contacto__medioCorreo"><a href="mailto:kali.rso@hotmail.com">
+            <div class="contacto__icono"><i class="icon-correo"></i></div>
+            <div class="contacto__nombre">
+              <p>Correo Web</p>
+            </div>
+            <div class="contacto__informacion">kali.rso@hotmail.com</div></a></div>
         <div class="contacto__medioDireccion"><a target="_blank" href="https://drive.google.com/open?id=1MWwkaec_yWDi3hv9paZHwS0omIZazbk8&amp;usp=sharing">
             <div class="contacto__icono"><i class="icon-direccion"></i></div>
             <div class="contacto__nombre">
@@ -602,26 +932,35 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script type="text/javascript">
-    $('#botonMenu').click(function(){
-    	$(this).toggleClass('active');
-    	$('#nav').toggleClass('nav--activo');
-    });
+    $(document).ready(function(){
+    	$('#botonMenu').click(function(){
+    		$(this).toggleClass('active');
+    		$('#nav').toggleClass('nav--activo');
+    	});
+    	
+    	$(function() {
+    		$( "#tabs" ).tabs();
+    	});
     
-    $(function() {
-    	$( "#tabs" ).tabs();
-    });
+    	$('.tarjeta__link,.contacto__mapa').click(function(){
+    		var modal = $(this).attr('id');
+    		var sitio = modal + ".html"
+    		$('.modal__portafolio').attr('src', sitio);
+    	  	$('.modal__contenedor').removeAttr('id').attr('id','entrada').removeClass('modal__displayNone');
+    	  	$('body').addClass('modal__activo');
+    	});
     
-    $('.tarjeta__link,.contacto__mapa').click(function(){
-    	var modal = $(this).attr('id');
-    	var sitio = modal + ".html"
-    	$('.modal__portafolio').attr('src', sitio);
-      	$('.modal__contenedor').removeAttr('id').attr('id','entrada').removeClass('modal__displayNone');
-      	$('body').addClass('modal__activo');
-    });
+    	$('#cerrar').click(function(){
+    	 	$('.modal__contenedor').addClass('modal__displayNone');
+    	  	$('body').removeAttr('class');
+    	});
     
-    $('#cerrar').click(function(){
-     	$('.modal__contenedor').addClass('modal__displayNone');
-      	$('body').removeAttr('class');
+    	var menuNavegacionExtendida = $("#menuIntroduccion, #menuResumen, #menuSoftware, #menuPortafolio, #menuTecnologia, #menuContacto");
+    		
+    	$(menuNavegacionExtendida).click(function(){
+    		$("#botonMenu").toggleClass("active");
+    		$("#nav").toggleClass("nav--activo");
+    	});
     });
   </script>
 </body>

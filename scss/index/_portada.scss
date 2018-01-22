@@ -1,0 +1,159 @@
+.portada {
+	width: 100%;
+	height: 100vh;
+	background: url("../images/bg-image_moviles.jpg") no-repeat, var(--oxford);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 9;
+
+	&__contenedor {
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: 2rem 1fr 2rem;
+    	grid-template-rows: 10% auto auto 10%;
+		color: var(--blanco);
+		// background-color: var(--navyTransparente);
+	}
+	
+	&__header {
+		grid-column: 3/4;
+		grid-row:1/2;
+		width: 100%;
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		align-items: center;
+		// padding: 0 1rem;
+	}
+
+	&__logo {	
+	}
+
+	&__social a {
+		color: var(--gris);
+		font-size: 80%;
+	}
+
+	&__contenedor a:hover {
+		color: var(--melon);
+	}
+
+	&__nombre {
+		grid-column: 2/3;
+		grid-row: 2/3;
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-end;
+		align-items: center;
+		text-align: center;
+		font-size: 3rem;
+		font-weight: 400;
+		font-family: 'Merriweather', serif;
+	}
+
+	&__profesion {
+		grid-column: 2/3;
+		grid-row:3/4;
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+		align-items: center;
+		text-align: center;
+		font-weight: 300;
+		letter-spacing: 0.25rem;
+		font-size: 1.25rem;
+	}
+
+	&__mouse {
+		grid-column: 2/3;
+		grid-row: 4/5;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	&__mouse > .icon-mouse {
+		position: relative;
+		animation-duration: 1s;
+		animation-name: mouse;
+		animation-iteration-count: infinite;
+		font-size: 2.5rem;
+	}
+
+	&__mouse > .icon-mouse:hover {
+		animation: none;
+	}
+
+	@include sm {
+		&__social a {
+			font-size: 1rem;
+		}
+
+		&__nombre {
+			font-size: 3rem;
+		}
+		&__profesion {
+			letter-spacing: 0.5rem;
+		}
+	}
+
+	@include md {
+
+		&__contenedor {
+			grid-template-columns: 5rem 1fr 5rem;
+    		grid-template-rows: 20% auto auto 10%;
+			width: 100%;
+			height: 100%;
+    	}
+
+		&__social a {
+			font-size: 1.5rem;
+		}
+
+		&__nombre {
+			font-size: 4rem;
+		}
+		&__profesion {
+		}
+	}
+
+	@include lg {
+		background: url("../images/bg-image.jpg") no-repeat, var(--navy);
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		
+		&__nombre {
+			font-size: 6rem;
+		}
+
+		&__profesion {
+		}
+	}
+
+	@include xl {
+		&__nombre {
+			font-size: 6rem;
+		}
+	}
+}
+
+
+@keyframes mouse {
+  0% {
+    bottom: 1rem;
+  }
+
+  50% {
+	bottom: 2rem;
+  }
+
+  100% {
+    bottom: 1rem;
+  }
+}

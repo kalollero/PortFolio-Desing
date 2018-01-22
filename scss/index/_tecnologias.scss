@@ -1,41 +1,44 @@
 .tecnologia {
-	background-color: var(--ceniza);
+	background-color: var(--navy);
+	
 	&__contenedor {
 			display: grid;
 			grid-template-columns: 1fr;
 			grid-gap: 1rem;
 			margin: 0 1rem;
+			color: var(--marfil);
 	}
+	
+	//
+		// &--indesing {
+		// 	grid-column: 1/2;
+		// 	grid-row: 1/2;
+		// }
 
-	// &--indesing {
-	// 	grid-column: 1/2;
-	// 	grid-row: 1/2;
-	// }
+		// &--sass {
+		// 	grid-column: 2/3;
+		// 	grid-row: 1/2;
+		// }
 
-	// &--sass {
-	// 	grid-column: 2/3;
-	// 	grid-row: 1/2;
-	// }
+		// &--javascript {
+		// 	grid-column: 1/2;
+		// 	grid-row: 2/3;
+		// }
 
-	// &--javascript {
-	// 	grid-column: 1/2;
-	// 	grid-row: 2/3;
-	// }
+		// &--canvas {
+		// 	grid-column: 2/3;
+		// 	grid-row: 2/3;
+		// }
 
-	// &--canvas {
-	// 	grid-column: 2/3;
-	// 	grid-row: 2/3;
-	// }
+		// &--sdkfacebook {
+		// 	grid-column: 1/2;
+		// 	grid-row: 3/4;
+		// }
 
-	// &--sdkfacebook {
-	// 	grid-column: 1/2;
-	// 	grid-row: 3/4;
-	// }
-
-	// &--grid {
-	// 	grid-column: 2/3;
-	// 	grid-row: 3/4;
-	// }
+		// &--grid {
+		// 	grid-column: 2/3;
+		// 	grid-row: 3/4;
+		// }
 
 	//Clases Globales
 
@@ -49,7 +52,7 @@
 
 
 	&__item {
-		background-color: var(--ceniza);
+		// background-color: var(--ceniza);
 		border-radius: 4px;
 		// padding: 0.5rem;
 		// margin: 0 0.5rem;
@@ -73,6 +76,7 @@
 	}
 
 	&__nombre {
+		font-weight: 400;
 	}
 
 	&__descripcion {
@@ -85,6 +89,19 @@
 		padding: 0rem 1rem;
     	background-color: transparent;
 	}
+
+	&__nivel .software__cantidadPorcentaje p {
+		background-color: var(--melon);
+	}
+
+	&__nivel .software__contenedorPorcentaje {
+		background-color: var(--marfil);
+	}
+
+	&__nivel .software__porcentaje {
+		background-color: var(--melon);
+	}
+
 
 	//media queries SM
 	@include sm {	
@@ -146,5 +163,8 @@
 	}
 
 	//media queries lg
+}
 
+.tecnologia h5 {
+	color: var(--blanco);
 }

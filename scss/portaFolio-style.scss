@@ -1,5 +1,5 @@
 //Media Queries
-@import "media_queries";
+@import "index/_media_queries.scss";
 
 
 
@@ -44,34 +44,34 @@
 	}
 
 /* -------- MENU --------*/
-@import "menu.scss";
+@import "index/_menu.scss";
 
 /* -------- BAC -------- */
-@import "back.scss";
+@import "index/_back.scss";
 
 /* -------- PORTADA --------*/
-@import "portada.scss";
+@import "index/_portada.scss";
 
 /* -------- INTRODUCCION --------*/
-@import "introduccion.scss";
+@import "index/_introduccion.scss";
 
 /* -------- FRASE --------*/
-@import "frase.scss";
+@import "index/_frase.scss";
 
 /* -------- RESUMEN --------*/
-@import "resumen.scss";
+@import "index/_resumen.scss";
 
 /* -------- SOFTWARE --------*/
-@import "software.scss";
+@import "index/_software.scss";
 
 /* -------- PORTAFOLIO --------*/
-@import "portafolio.scss";
+@import "index/_portafolio.scss";
 
 /* -------- TECNOLOGÍAS --------*/
-@import "tecnologias.scss";
+@import "index/_tecnologias.scss";
 
 /* -------- CONTACTO --------*/
-@import "contacto.scss";
+@import "index/_contacto.scss";
 
 /* -------- PIE --------*/
-@import "pie.scss";
+@import "index/_pie.scss";

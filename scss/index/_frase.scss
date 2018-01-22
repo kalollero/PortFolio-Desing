@@ -1,0 +1,48 @@
+.frase {
+	display: flex;
+	flex-flow: column;
+	height: 40vh;
+
+	&__texto {
+		color: var(--blanco);
+		font-weight: 400;
+
+
+		@include md {
+			letter-spacing: 0.5rem;
+		}
+	}
+
+	&__autor {
+		color: var(--blanco);
+		text-align: right;
+		font-weight: 400;
+	}
+
+	&--1,
+	&--2 {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--navyTransparente);
+		padding: 2rem 5rem;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+}
+
+#frase1 {
+	background: url("../images/f-4.jpg") no-repeat, var(--navy);
+	background-size: cover;
+	background-position: center bottom;
+	background-attachment: fixed;
+}
+
+#frase2 {
+	background: url("../images/f-2.jpg") no-repeat, var(--navy);
+	background-size: cover;
+	background-position: center bottom;
+	background-attachment: fixed;
+}

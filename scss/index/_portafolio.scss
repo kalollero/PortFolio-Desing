@@ -1,5 +1,6 @@
 .portafolio {
-	padding: 1rem;
+	padding-right: 1rem;
+    padding-left: 1rem;
 
     &__contenedor {
         display: grid;
@@ -11,66 +12,108 @@
     &__navegador {
         grid-column: 1/2;
         grid-row: 1/2;
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin:0px;
         padding:0px;
         text-align: center;
     }
     
     &__boton {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style:none;
+        list-style: none;
         border-radius: 4px;
-        color: var(--profundo);
+        font-size: 80%;
+        font-weight: 400;
+        padding: 2px 6px;
+        margin: 0 2px 1rem 2px;
+        background-color: var(--melon);
+        border: 1px var(--melon) solid;
     }
 
     &__boton > a {
-        color: var(--profundo);
+        color: var(--blanco);
+    }
+    
+    // .ui-tabs-active,
+    &__boton:hover {
+        border: 1px var(--navy) solid;
+        background-color: var(--navy);
+    }
+    
+    // &__boton.ui-tabs-active > a,
+    &__boton > a:hover {
+        color: var(--blanco);
     }
 
-    .becaver {
-        grid-column: 2/3;
-        grid-row: 1/2;
+    .ui-tabs-active {
+        border: 1px var(--navy) solid;
+        background-color: var(--ceniza);
+    }
+    
+    &__boton.ui-tabs-active > a {
+        color: var(--navy);
     }
 
-    .iscam {
-        grid-column:3/4;
-        grid-row: 1/2;
+    .becaver {}
+
+    .iscam {}
+
+    .xico {}
+
+    .imagen {}
+
+    &__contenido {
+        grid-column:1/2;
+        grid-row: 2/3;
     }
 
-    .xico {
-        grid-column:4/5;
-        grid-row: 1/2;
-    }
-
-    .imagen {
-        grid-column:5/6;
-        grid-row: 1/2;
+    &__becaver, 
+    &__iscam, 
+    &__xico {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-column-gap: 1rem;
     }
 
     &__informacion {
         grid-column:1/2;
-        grid-row: 2/3;
+        grid-row: 1/2;
     }
 
-    &__becaver, &__iscam, &__xico, &__xico {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto;
-        grid-column-gap: 1rem;
+    &__titulo {
+        font-weight: 500;
+        color: var(--b);
+    }
+
+    &__subtitulo {
+        font-size: 80%;
+        font-weight: 500;
+        color: var(--tenue);
+    }
+
+    &__actividad {
+        font-size: 80%;
+        font-weight: 300;
+        color: var(--b);
+        margin: 0.75rem 0 0.25rem 0;
     }
 
     &__descripcion {
-        grid-column:1/2;
-        grid-row: 1/2;
+        font-size: 80%;
+        font-weight: 400;
+        color: var(--oxford);
+        margin-bottom: 0.25rem;
+        display: none;
     }
+
 
     &__galeria {
         grid-column: 1/2;
         grid-row: 2/3;
+        // grid-column:1/2;
+        // grid-row: 1/2;
         width: 100%;
         height: 100%;
         -webkit-column-count:2;
@@ -104,15 +147,35 @@
     }
 
     @include md {
-        &__becaver, &__iscam, &__xico, &__xico {
+
+        &__boton {
+            padding: 2px 1rem;
+            margin: 0 2.5px 2rem 2.5px;
+        }
+
+        &__becaver, 
+        &__iscam--tradiciones,
+        &__iscam--tradiciones,
+        &__iscam--tradiciones,
+        &__iscam--tradiciones, 
+        &__xico {
             display: grid;
             grid-template-columns: 30% 70%;
             grid-template-rows: auto;
         }
 
-         &__descripcion {
+        &__iscam {
+            display: flex;
+            flex-flow: column;
+        }
+
+         &__informacion {
             grid-column:1/2;
             grid-row: 1/2;
+        }
+
+        &__descripcion {
+            display: block;
         }
 
         &__galeria {
@@ -121,9 +184,9 @@
         }
 
         &__galeria {
-            -webkit-column-count:4;
-            -moz-column-count:4;
-            column-count:4;
+            -webkit-column-count:3;
+            -moz-column-count:3;
+            column-count:3;
             -webkit-column-gap: 0.5rem;
             -moz-column-gap: 0.5rem;
             column-gap: 0.5rem;
@@ -136,9 +199,9 @@
 
     @include lg {
         &__galeria {
-            -webkit-column-count:5;
-            -moz-column-count:5;
-            column-count:5;
+            -webkit-column-count:4;
+            -moz-column-count:4;
+            column-count:4;
             -webkit-column-gap: 0.5rem;
             -moz-column-gap: 0.5rem;
             column-gap: 0.5rem;
@@ -160,21 +223,22 @@
     }
 
     &__link {
-        color: red;
+        
     }
 
-    &__imagen {
-        color: red;
+    &__link > &__imagen {
+        cursor: pointer;
     }
 
     &__nombre {
         color: var(--oxford);
+        font-size: 80%;
+        font-weight: 300;
     }
 }
 
 .modal {
     &__contenedor {
-        
         width: 100%;
         height: 100%;
         position: fixed;

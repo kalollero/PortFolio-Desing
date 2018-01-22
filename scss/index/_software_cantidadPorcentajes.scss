@@ -1,0 +1,65 @@
+.software {
+
+	@include sm {
+		&__cantidadPorcentaje[title="5"]{
+			width: 5%;
+		}
+		&__cantidadPorcentaje[title="10"]{
+			width: 10%;
+		}
+		&__cantidadPorcentaje[title="15"]{
+			width: 15%;
+		}
+		&__cantidadPorcentaje[title="20"]{
+			width: 20%;
+		}
+		&__cantidadPorcentaje[title="25"]{
+			width: 25%;
+		}
+		&__cantidadPorcentaje[title="30"]{
+			width: 30%;
+		}
+		&__cantidadPorcentaje[title="35"]{
+			width: 35%;
+		}
+		&__cantidadPorcentaje[title="40"]{
+			width: 40%;
+		}
+		&__cantidadPorcentaje[title="45"]{
+			width: 45%;
+		}
+		&__cantidadPorcentaje[title="50"]{
+			width: 50%;
+		}
+		&__cantidadPorcentaje[title="55"]{
+			width: 55%;
+		}
+		&__cantidadPorcentaje[title="60"]{
+			width: 60%;
+		}
+		&__cantidadPorcentaje[title="65"]{
+			width: 65%;
+		}
+		&__cantidadPorcentaje[title="70"]{
+			width: 70%;
+		}
+		&__cantidadPorcentaje[title="75"]{
+			width: 75%;
+		}
+		&__cantidadPorcentaje[title="80"]{
+			width: 80%;
+		}
+		&__cantidadPorcentaje[title="85"]{
+			width: 85%;
+		}
+		&__cantidadPorcentaje[title="90"]{
+			width: 90%;
+		}
+		&__cantidadPorcentaje[title="95"]{
+			width: 95%;
+		}
+		&__cantidadPorcentaje[title="100"]{
+			width: 100%;
+		}
+	}
+}
