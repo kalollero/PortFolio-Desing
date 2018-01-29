@@ -5,11 +5,17 @@
 
 	&__texto {
 		color: var(--blanco);
-		font-weight: 400;
+		font-weight: 700;
+		font-size: 2rem;
+		font-family: 'Domine', serif;
 
 
 		@include md {
 			letter-spacing: 0.5rem;
+
+			&__texto {
+				font-size: 2rem;
+			}
 		}
 	}
 

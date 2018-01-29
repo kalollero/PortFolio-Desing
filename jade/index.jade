@@ -50,6 +50,9 @@ head
 	//Merriweather
 	link(href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet")
 	
+	//
+	link(href="https://fonts.googleapis.com/css?family=Domine:400,700" rel="stylesheet")
+
 	//Normalize 
 	link(rel="stylesheet" href="css/normalize.css")
 
@@ -123,8 +126,8 @@ body
 				div.portada__social
 					//- a(href="https://www.facebook.com/kalolleromarron"): i.icon-facebook
 
-			p.portada__nombre Rogelio Serna Ojeda
-			p.portada__profesion DISEÑADOR PUBLICITARIO
+			p.portada__nombre Kalóllero Marro.on
+			p.portada__profesion Rogelio Serna Ojeda
 			
 			a.portada__mouse(href="#introduccion")
 				i.icon-mouse
@@ -141,7 +144,7 @@ body
 				div.introduccion__texto Loco, Gitano & Soñador, con estudios en Imagen y Diseño; un publicista art nouvo de épocas contemporáneas, experto en vampiras moderna ...Bienvenid@.
 				div.introduccion__imagenPerfil: img(src="images/introduccion.jpg")
 			div.introduccion__curriculumVitae
-				a(target="_blank")(href="https://drive.google.com/file/d/1OWpLhfRIlXQwF1Icl4xXPjwdrc00Hz5Q/view?usp=sharing")
+				a(target="_blank")(href="source/Rogelio_Serna_Ojeda_Curriculum_vitae.pdf")
 					div.introduccion__descargaCV DESCARGAR CV
 				a(href="#resumen")
 					div.introduccion__visitaResumen IR AL RESUMEN
@@ -285,7 +288,7 @@ body
 					div.resumen__item
 						div.resumen__fecha Feb-Jun/2012
 						div.resumen__lugarTrabajo XICO Historia, Cultura y Tradiciones
-						div.resumen__cargo Ciclo de Conferencias y Panel sobre los pueblos mágicos de México
+						div.resumen__cargo Ciclo de Conferencias y Panel sobre los Pueblos Mágicos de México
 						div.resumen__descripcionActividades Coordinación, Logística & Diseño de la Imagen Gráfica
 						div.linea__contenedor
 							div.linea
@@ -454,9 +457,10 @@ body
 			div.portafolio__contenedor#tabs
 				ul.portafolio__navegador
 					li.portafolio__boton.becaver: a(href="#tab__becaver") Becaver
-					li.portafolio__boton.iscam: a(href="#tab__iscam") Iscam
+					//- li.portafolio__boton.iscam: a(href="#tab__iscam") Iscam
 					li.portafolio__boton.xico: a(href="#tab__xico") Xico
 					li.portafolio__boton.imagen: a(href="#tab__imagen") Imagen Gráfica
+					//- li.portafolio__boton.imagen: a(href="#tab__mockup") Mockup
 					
 				div.portafolio__contenido
 
@@ -584,7 +588,7 @@ body
 									div.tarjeta__nombre Coatzacoalcos 02
 					
 					// I S C A M
-					div.portafolio__iscam#tab__iscam
+						div.portafolio__iscam#tab__iscam
 						div.portafolio__iscam--tradiciones
 							div.portafolio__informacion
 								p.portafolio__titulo Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz
@@ -609,6 +613,7 @@ body
 										a.tarjeta__link#modal__iscam
 											img.tarjeta__imagen.imagen-fluida(src="images/3-iscam.jpg")
 										div.tarjeta__nombre Gafetes
+
 						div.portafolio__iscam--tradiciones
 							div.portafolio__informacion
 								p.portafolio__titulo Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz
@@ -633,6 +638,7 @@ body
 										a.tarjeta__link#modal__iscam
 											img.tarjeta__imagen.imagen-fluida(src="images/3-iscam.jpg")
 										div.tarjeta__nombre Gafetes
+						
 						div.portafolio__iscam--tradiciones
 							div.portafolio__informacion
 								p.portafolio__titulo Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz
@@ -657,6 +663,7 @@ body
 										a.tarjeta__link#modal__iscam
 											img.tarjeta__imagen.imagen-fluida(src="images/3-iscam.jpg")
 										div.tarjeta__nombre Gafetes
+						
 						div.portafolio__iscam--tradiciones
 							div.portafolio__informacion
 								p.portafolio__titulo Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz
@@ -688,7 +695,7 @@ body
 							p.portafolio__titulo XICO 
 							p.portafolio__subtitulo Historia, Cultura & Tradiciones
 							p.portafolio__actividad Diseño de la Imagen Gráfica del evento
-							p.portafolio__descripcion
+							p.portafolio__descripcion Ciclo de Conferencias y Panel sobre los Pueblos Mágicos de México
 						div.portafolio__galeria
 							div.tarjeta
 								div.tarjeta___contenedor
@@ -759,6 +766,30 @@ body
 									a.tarjeta--Link
 										img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/63/8d/5f/638d5f2bbe5fabe7380b99f139ee62c2.jpg")
 									div.tarjeta__nombre Verde Pistache
+
+					// M O C K U P
+						div.portafolio__imagenGrafica#tab__mockup
+							div.portafolio__logotipos
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta--Link
+											img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/b7/f0/28/b7f02851bd1a3d4bccdf904b105d5cf6.jpg")
+										div.tarjeta__nombre Brújula
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta--Link
+											img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/c2/f3/e2/c2f3e2ced29089156cf9d9d13ffddfa8.jpg")
+										div.tarjeta__nombre el Cumple | Tarjetería
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta--Link
+											img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/25/c2/aa/25c2aa0d5aafdd7542dd702056361bee.jpg")
+										div.tarjeta__nombre Tortuga del Viento
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta--Link
+											img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/63/8d/5f/638d5f2bbe5fabe7380b99f139ee62c2.jpg")
+										div.tarjeta__nombre Verde Pistache
 
 		//Tecnologías en Estudio
 		section#tecnologia.tecnologia
@@ -859,25 +890,25 @@ body
 							p Correo Web
 						div.contacto__informacion kali.rso@hotmail.com
 
-				div.contacto__medioDireccion
-					a(target="_blank")(href="https://drive.google.com/open?id=1MWwkaec_yWDi3hv9paZHwS0omIZazbk8&usp=sharing")
-						div.contacto__icono
-							i.icon-direccion
-						div.contacto__nombre
-							p Dirección
-						div.contacto__informacion
-							p.contacto__informacion Avenida Adolfo Ruíz Cortínez no 1621 Colonia Francisco Ferrer Guardia
+				div.contacto__medioDireccion#modal__mapa
+					div.contacto__icono
+						i.icon-direccion
+					div.contacto__nombre
+						p Dirección
+					div.contacto__informacion
+						p.contacto__informacion Avenida Adolfo Ruíz Cortínez no 1621 Colonia Francisco Ferrer Guardia
 
 		//Pie
 		footer.pie
 			div.pie__derechosReservados
-				p ENERO  &middot  2018
+				p ENERO  &middot  2018 
 			
 			div.pie__firma Rogelio Serna Ojeda
 				img(href="")
 
 			div.pie__redesSociales 
-				a.iconRedes(href="https://www.facebook.com/kalolleromarron"): i.icon-facebook
+				p Version 1.8.2 &middot Kalóllero Marro.on
+				//- a.iconRedes(href="https://www.facebook.com/kalolleromarron"): i.icon-facebook
 
 
 	script(src="js/jquery-3.2.1.min.js")
@@ -896,7 +927,7 @@ body
 				$( "#tabs" ).tabs();
 			});
 
-			$('.tarjeta__link,.contacto__mapa').click(function(){
+			$('.tarjeta__link,.contacto__medioDireccion').click(function(){
 				var modal = $(this).attr('id');
 				var sitio = modal + ".html"
 				$('.modal__portafolio').attr('src', sitio);

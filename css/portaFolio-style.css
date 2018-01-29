@@ -567,12 +567,17 @@ section {
 
 .frase__texto {
   color: var(--blanco);
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: 'Domine', serif;
 }
 
 @media (min-width: 768px) {
   .frase__texto {
     letter-spacing: 0.5rem;
+  }
+  .frase__texto__texto {
+    font-size: 2rem;
   }
 }
 
@@ -1500,9 +1505,9 @@ section {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
-    -webkit-column-gap: 0.5rem;
-    -moz-column-gap: 0.5rem;
-    column-gap: 0.5rem;
+    -webkit-column-gap: 0.75rem;
+    -moz-column-gap: 0.75rem;
+    column-gap: 0.75rem;
   }
   .portafolio__logotipos {
     grid-template-columns: repeat(4, 1fr);
@@ -1514,9 +1519,9 @@ section {
     -webkit-column-count: 4;
     -moz-column-count: 4;
     column-count: 4;
-    -webkit-column-gap: 0.5rem;
-    -moz-column-gap: 0.5rem;
-    column-gap: 0.5rem;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
   }
   .portafolio__logotipos {
     grid-template-columns: repeat(5, 1fr);
@@ -1525,6 +1530,7 @@ section {
 
 .tarjeta {
   display: inline-block;
+  margin: 1rem;
 }
 
 .tarjeta__contenedor {
@@ -1854,6 +1860,7 @@ section {
   border-radius: 4px;
   width: 100%;
   height: 6rem;
+  cursor: pointer;
 }
 
 .contacto__icono > i {
@@ -1867,7 +1874,7 @@ section {
 }
 
 .contacto__informacion {
-  color: var(--profundo);
+  color: var(--navy);
   font-size: 70%;
   font-weight: 300;
   cursor: pointer;
@@ -1896,9 +1903,9 @@ section {
     grid-row: 1/2;
   }
   .contacto__informacion {
-    color: var(--profundo);
+    color: var(--navy);
     font-size: 90%;
-    font-weight: 300;
+    font-weight: 500;
     cursor: pointer;
   }
 }
@@ -1943,6 +1950,8 @@ section {
 
 .pie__redesSociales {
   display: none;
+  font-size: 50%;
+  font-weight: 300;
 }
 
 @media (min-width: 768px) {

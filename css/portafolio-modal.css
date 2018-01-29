@@ -2,6 +2,11 @@ body {
   --amarilloBecaver: #e2a21a;
 }
 
+iframe {
+  width: 100%;
+  height: 100vh;
+}
+
 .modal__body {
   overflow: hidden;
 }
