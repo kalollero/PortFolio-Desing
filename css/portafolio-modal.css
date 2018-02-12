@@ -103,6 +103,30 @@ iframe {
   background-color: var(--marfil);
 }
 
+.modal .triptico {
+  background: url("../images/becas/01_triptico.jpg") no-repeat, var(--blanco);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.modal .catalogo {
+  background: url("../images/becas/01_catalogo.jpg") no-repeat, var(--blanco);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.modal .hector {
+  background: url("../images/hector/01_revista.jpg") no-repeat, var(--blanco);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 @media (min-width: 576px) {
   .modal__nav {
     display: none;
