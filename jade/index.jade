@@ -67,7 +67,8 @@ body
 
 	//Menú Navegación
 	nav.menuNavegacion
-		div.menuNavegacion__icon: a(href="#portada"): i.icon-mouse
+		div.menuNavegacion__icon: a(href="#portada"): i.icon-mouse 
+		//img.imagen-fluida(src="images/logo/logo.png")
 		div.menuNavegacion__icon: a(href="#introduccion"): i.icon-introduccion 
 		div.menuNavegacion__icon: a(href="#frase1"): i.icon-frase1 
 		div.menuNavegacion__icon: a(href="#resumen"): i.icon-resumen 
@@ -83,6 +84,10 @@ body
 					span.top
 					span.middle
 					span.bottom
+		
+
+		div.menuNavegacion__icon--logo: a(href="#portada"): i.icon-mouse
+		div.menuNavegacion__icon--nombre Kalóllero Marro.on
 
 	div#nav.menuNavegacion__Extendida
 		//- a.menuNavegacion__Extendida__items(href="#portada") 
@@ -125,9 +130,11 @@ body
 				img.portada__logo(src="")(href="")
 				div.portada__social
 					//- a(href="https://www.facebook.com/kalolleromarron"): i.icon-facebook
-
-			p.portada__nombre Kalóllero Marro.on
-			p.portada__profesion DISEÑO PUBLICITARIO
+			div.portada__texto
+				//- div.portada__logotipo
+				//- 	img.imagen-fluida(src="images/logo/logo7.png")(href="")
+				p.portada__nombre Kalóllero Marro.on
+				p.portada__profesion DISEÑO & PUBLICIDAD
 			
 			a.portada__mouse(href="#introduccion")
 				i.icon-mouse
@@ -142,7 +149,7 @@ body
 			h5.titulo__seccion Sobre Mi
 			div.introduccion__resena
 				div.introduccion__texto Loco, Gitano & Soñador, con estudios en Imagen y Diseño; un publicista art nouvo de épocas contemporáneas, experto en vampiras moderna ...Bienvenid@.
-				div.introduccion__imagenPerfil: img(src="images/introduccion.jpg")
+				div.introduccion__imagenPerfil: img.imagen-fluida(src="images/introduccion.jpg")
 			div.introduccion__curriculumVitae
 				a(target="_blank")(href="source/Rogelio_Serna_Ojeda_Curriculum_vitae.pdf")
 					div.introduccion__descargaCV DESCARGAR CV
@@ -218,7 +225,7 @@ body
 									li Cocina Saludable (2012);
 									li Cursos de Gastronomía (Cocina Francesa, Mexicana, Panadería, Fondant y Pastelería, Cocktelería, entre otros);
 									li Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz, en coordinación con SEDESOL Delegación Estatal (diciembre 2012);
-									li 1er Simposio de Enfermería Geronto-Geriátrica (2013).
+									li 1er Simposium de Enfermería Geronto-Geriátrica (2013).
 							p Desarrollo y gestión de las redes sociales, sitio web y e-marketing de la institución.
 							p Imagen gráfica de la institución.
 						div.linea__contenedor
@@ -368,10 +375,10 @@ body
 							div.software__contenedorPorcentaje
 								div.software__porcentaje(title="30")
 						div.software__nivel
-							div.software__cantidadPorcentaje(title="75")
+							div.software__cantidadPorcentaje(title="55")
 								p 55%
 							div.software__contenedorPorcentaje
-								div.software__porcentaje(title="75")
+								div.software__porcentaje(title="55")
 					div.software__icon--izquierda
 						img.imagen-fluida(src="images/web.svg")
 
@@ -456,12 +463,15 @@ body
 			
 			div.portafolio__contenedor#tabs
 				ul.portafolio__navegador
-					li.portafolio__boton.becaver: a(href="#tab__becaver") Becaver
-					//- li.portafolio__boton.iscam: a(href="#tab__iscam") Iscam
-					li.portafolio__boton.xico: a(href="#tab__xico") Xico
-					//- li.portafolio__boton.imagen: a(href="#tab__tortuga") Tortuga del Viento
-					li.portafolio__boton.imagen: a(href="#tab__imagen") Imagen Gráfica
-					li.portafolio__boton.imagen: a(href="#tab__video") Audio & Video
+					
+					li.portafolio__boton: a(href="#tab__iscam") Iscam
+					li.portafolio__boton: a(href="#tab__geronto") Geronto &middot Geriatría
+					//- li.portafolio__boton: a(href="#tab__tradiciones") Tradiciones y Costumbres
+					li.portafolio__boton: a(href="#tab__becaver") Becaver
+					li.portafolio__boton: a(href="#tab__becas") Becas
+					li.portafolio__boton: a(href="#tab__xico") Xico
+					//- li.portafolio__boton: a(href="#tab__tortuga") Tortuga del Viento
+					li.portafolio__boton: a(href="#tab__free") FreeLance
 					
 				div.portafolio__contenido
 
@@ -477,194 +487,522 @@ body
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="Logotipo")(src="images/1-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="Logotipo")(src="images/becaver/1-becaver.jpg")
 									div.tarjeta__nombre Logotipo
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/2-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/2-becaver.jpg")
 									div.tarjeta__nombre Cartel
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/3-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/3-becaver.jpg")
 									div.tarjeta__nombre Gafetes
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/4-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/4-becaver.jpg")
 									div.tarjeta__nombre Invitación
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/5-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/5-becaver.jpg")
 									div.tarjeta__nombre Flyer
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/6-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/6-becaver.jpg")
 									div.tarjeta__nombre Ante Pecho
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/7-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/7-becaver.jpg")
 									div.tarjeta__nombre Back
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/8-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/8-becaver.jpg")
 									div.tarjeta__nombre Señalética
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/9-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/9-becaver.jpg")
 									div.tarjeta__nombre Portada Facebook
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/10-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/10-becaver.jpg")
 									div.tarjeta__nombre Xalapa 01
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/11-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/11-becaver.jpg")
 									div.tarjeta__nombre Xalapa 02
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/12-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/12-becaver.jpg")
 									div.tarjeta__nombre Veracruz 01
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/13-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/13-becaver.jpg")
 									div.tarjeta__nombre Veracruz 02
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/14-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/14-becaver.jpg")
 									div.tarjeta__nombre Córdoba 01
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/15-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/15-becaver.jpg")
 									div.tarjeta__nombre Córdoba 02
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/16-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/16-becaver.jpg")
 									div.tarjeta__nombre Poza Rica 01
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/17-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/17-becaver.jpg")
 									div.tarjeta__nombre Poza Rica 02
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/18-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/18-becaver.jpg")
 									div.tarjeta__nombre Coatzacoalcos 01
-
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__becaver
-										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/19-becaver.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becaver/19-becaver.jpg")
 									div.tarjeta__nombre Coatzacoalcos 02
 					
-					// I S C A M
-						div.portafolio__iscam#tab__iscam
-						div.portafolio__iscam--tradiciones
-							div.portafolio__informacion
-								p.portafolio__titulo Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz
-								p.portafolio__actividad Diseño de la Imagen Gráfica del Evento Logística del Evento & Community Manager en Redes Sociales
-								p.portafolio__descripcion Muestra Gastronómica de Pueblos Originarios del Estado de Veracruz en Coordinación con la Delegación de SEDESOL ~ Veracruz
-							div.portafolio__galeria
-								
-								div.tarjeta
-									div.tarjeta___contenedor
-										a.tarjeta__link#modal__iscam
-											img.tarjeta__imagen.imagen-fluida(src="images/1-iscam.jpg")
-										div.tarjeta__nombre Logotipo
-
-								div.tarjeta
-									div.tarjeta___contenedor
-										a.tarjeta__link#modal__iscam
-											img.tarjeta__imagen.imagen-fluida(src="images/2-iscam.jpg")
-										div.tarjeta__nombre Cartel
-
-								div.tarjeta
-									div.tarjeta___contenedor
-										a.tarjeta__link#modal__iscam
-											img.tarjeta__imagen.imagen-fluida(src="images/3-iscam.jpg")
-										div.tarjeta__nombre Gafetes
-
-						div.portafolio__iscam--que_no_se_te_escape_nada
-							div.portafolio__informacion
-								p.portafolio__titulo Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz
-								p.portafolio__actividad Diseño de la Imagen Gráfica del Evento Logística del Evento & Community Manager en Redes Sociales
-								p.portafolio__descripcion Muestra Gastronómica de Pueblos Originarios del Estado de Veracruz en Coordinación con la Delegación de SEDESOL ~ Veracruz
-							div.portafolio__galeria
-								
-								div.tarjeta
-									div.tarjeta___contenedor
-										a.tarjeta__link#modal__iscam
-											img.tarjeta__imagen.imagen-fluida(src="images/1-iscam.jpg")
-										div.tarjeta__nombre Logotipo
-
-								div.tarjeta
-									div.tarjeta___contenedor
-										a.tarjeta__link#modal__iscam
-											img.tarjeta__imagen.imagen-fluida(src="images/2-iscam.jpg")
-										div.tarjeta__nombre Cartel
-
-								div.tarjeta
-									div.tarjeta___contenedor
-										a.tarjeta__link#modal__iscam
-											img.tarjeta__imagen.imagen-fluida(src="images/3-iscam.jpg")
-										div.tarjeta__nombre Gafetes
-						
-						div.portafolio__iscam--geronto_geriatria
-							div.portafolio__informacion
-								p.portafolio__titulo Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz
-								p.portafolio__actividad Diseño de la Imagen Gráfica del Evento Logística del Evento & Community Manager en Redes Sociales
-								p.portafolio__descripcion Muestra Gastronómica de Pueblos Originarios del Estado de Veracruz en Coordinación con la Delegación de SEDESOL ~ Veracruz
-							div.portafolio__galeria
-								
-								div.tarjeta
-									div.tarjeta___contenedor
-										a.tarjeta__link#modal__iscam
-											img.tarjeta__imagen.imagen-fluida(src="images/1-iscam.jpg")
-										div.tarjeta__nombre Logotipo
-
-								div.tarjeta
-									div.tarjeta___contenedor
-										a.tarjeta__link#modal__iscam
-											img.tarjeta__imagen.imagen-fluida(src="images/2-iscam.jpg")
-										div.tarjeta__nombre Cartel
-
-								div.tarjeta
-									div.tarjeta___contenedor
-										a.tarjeta__link#modal__iscam
-											img.tarjeta__imagen.imagen-fluida(src="images/3-iscam.jpg")
-										div.tarjeta__nombre Gafetes
+					// B E C A S
+					div.portafolio__becas#tab__becas
+						div.portafolio__informacion
+							p.portafolio__titulo Dirección General del Sistema Estatal de Becas 
+							p.portafolio__subtitulo 
+							p.portafolio__actividad Diseño de Material Publicitario e informativo.
+							p.portafolio__descripcion Tríptico que muestra la visión y misión de la dirección; las diferentes becas que se otorgan y los pasos a seguir para obtener una beca, así como las personas que son sujetas a recibir estas.
+							p.portafolio__descripcion Catálogo de Convenios realizados entre la Dirección General del Sistema Estatal de Becas y las entidades educativas dentro del estado de Veracruz.
+							p.portafolio__descripcion Diseño de las publicaciones para realizar el pautado en la red social Facebook.
+						div.portafolio__galeria
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/triptico.jpg")
+									div.tarjeta__nombre Tríptico
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/catalogo.jpg")
+									div.tarjeta__nombre Catálogo
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="Logotipo")(src="images/becas/01-becas.jpg")
+									div.tarjeta__nombre Publicación
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/02-becas.jpg")
+									div.tarjeta__nombre Publicación
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/03-becas.jpg")
+									div.tarjeta__nombre Publicación
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/04-becas.jpg")
+									div.tarjeta__nombre Publicación
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/05-becas.jpg")
+									div.tarjeta__nombre Publicación
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/06-becas.jpg")
+									div.tarjeta__nombre Publicación
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/07-becas.jpg")
+									div.tarjeta__nombre Publicación
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/08-becas.jpg")
+									div.tarjeta__nombre Publicación
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/09-becas.jpg")
+									div.tarjeta__nombre Publicación
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/10-becas.jpg")
+									div.tarjeta__nombre Publicación
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/11-becas.jpg")
+									div.tarjeta__nombre Publicación
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/12-becas.jpg")
+									div.tarjeta__nombre Publicación
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/13-becas.jpg")
+									div.tarjeta__nombre Publicación
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/14-becas.jpg")
+									div.tarjeta__nombre Publicación
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/15-becas.jpg")
+									div.tarjeta__nombre Publicación
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__becas
+										img.tarjeta__imagen.imagen-fluida(title="button")(src="images/becas/16-becas.jpg")
+									div.tarjeta__nombre Publicación
 					
+					// I S C A M
+					div.portafolio__iscam#tab__iscam
+						
+						div.portafolio__iscam--grafica
+							div.portafolio__informacion
+								p.portafolio__titulo ISCAM Publicidad
+								p.portafolio__actividad Diseño de la Imagen Gráfica
+								p.portafolio__descripcion Creación de elementos publicitarios, gráficos y digitales, utilizados durante los ciclos de inscripción de nuevos estudiantes. 
+								p.portafolio__descripcion Diseño de elementos gráficos digitales de los cursos realizados en el área de Gastronomía y Colaborador Educativo Infantil.
+							div.portafolio__galeria
+								div.tarjeta
+									div.tarjeta___contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/01-iscam-grafica.jpg")
+										div.tarjeta__nombre Logotipo
+								div.tarjeta
+									div.tarjeta___contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/02-iscam-grafica.jpg")
+										div.tarjeta__nombre Cartel
+								div.tarjeta
+									div.tarjeta___contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/03-iscam-grafica.jpg")
+										div.tarjeta__nombre Publicación
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/04-iscam-grafica.jpg")
+										div.tarjeta__nombre Microperforado
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/05-iscam-grafica.jpg")
+										div.tarjeta__nombre Flyer
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/06-iscam-grafica.jpg")
+										div.tarjeta__nombre Título
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/07-iscam-grafica.jpg")
+										div.tarjeta__nombre Volantes
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/08-iscam-grafica.jpg")
+										div.tarjeta__nombre Volantes
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/09-iscam-grafica.jpg")
+										div.tarjeta__nombre Portada
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/10-iscam-grafica.jpg")
+										div.tarjeta__nombre Coctelería
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/11-iscam-grafica.jpg")
+										div.tarjeta__nombre Mexicana
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/12-iscam-grafica.jpg")
+										div.tarjeta__nombre Vegetariana
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/13-iscam-grafica.jpg")
+										div.tarjeta__nombre Panadería
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/14-iscam-grafica.jpg")
+										div.tarjeta__nombre Repostería
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/15-iscam-grafica.jpg")
+										div.tarjeta__nombre Serv. Comensales
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/16-iscam-grafica.jpg")
+										div.tarjeta__nombre Grand Manger
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/17-iscam-grafica.jpg")
+										div.tarjeta__nombre Oriental
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/18-iscam-grafica.jpg")
+										div.tarjeta__nombre Mariscos
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/19-iscam-grafica.jpg")
+										div.tarjeta__nombre Verano 01
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamGrafica
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/imagen_grafica/20-iscam-grafica.jpg")
+										div.tarjeta__nombre Verano 02
+							
+						div.portafolio__iscam--pautado
+							div.portafolio__informacion
+								p.portafolio__titulo ISCAM Publicaciones
+								p.portafolio__actividad Diseño de Publicidad Digital
+								p.portafolio__descripcion Diseño de las publicaciones en temporada de inscripciones para realizar el pautado en la red social Facebook.
+							div.portafolio__galeria
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/01-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/02-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/03-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/04-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/05-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/06-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/07-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/08-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/09-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/10-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/11-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/12-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/13-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/14-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/15-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/16-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/17-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/18-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+								div.tarjeta
+									div.tarjeta__contenedor
+										a.tarjeta__link#modal__iscamPautado
+											img.tarjeta__imagen.imagen-fluida(src="images/iscam/pautado/19-iscam-pautado.jpg")
+										div.tarjeta__nombre Publicación Facebook
+				
+					// I S C A M  -- G E R O N T O - G E R I A T R Í A
+					div.portafolio__iscamGeronto#tab__geronto
+						div.portafolio__informacion
+							p.portafolio__titulo 1er Simposium de Enfermería | Geronto - Geriatría
+							p.portafolio__actividad Diseño de la Imagen Gráfica del Evento Logística del Evento & Community Manager en Redes Sociales
+							p.portafolio__descripcion Simposium orientado a la orientación y capacitación sobre nutrición, diabetes, hipertensión, duelo, asniedad, depresión de los adultos en plenitud, preparando así especialistas que puedan ofrecer una mejor calidad de vida y atención.
+						div.portafolio__galeria
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/01-iscam-geronto.jpg")
+									div.tarjeta__nombre Logotipo
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/02-iscam-geronto.jpg")
+									div.tarjeta__nombre Cartel
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/03-iscam-geronto.jpg")
+									div.tarjeta__nombre Lona
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/04-iscam-geronto.jpg")
+									div.tarjeta__nombre Back
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/05-iscam-geronto.jpg")
+									div.tarjeta__nombre Programa
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/06-iscam-geronto.jpg")
+									div.tarjeta__nombre Reconocimiento
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/07-iscam-geronto.jpg")
+									div.tarjeta__nombre Constancia
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/08-iscam-geronto.jpg")
+									div.tarjeta__nombre Portada
+						//	
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/09-iscam-geronto.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/10-iscam-geronto.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/11-iscam-geronto.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/12-iscam-geronto.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/13-iscam-geronto.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/14-iscam-geronto.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/15-iscam-geronto.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/16-iscam-geronto.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/17-iscam-geronto.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/18-iscam-geronto.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/19-iscam-geronto.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamGeronto
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/geronto_geriatria/20-iscam-geronto.jpg")
+									div.tarjeta__nombre Título
+									
 					// X I C O		
 					div.portafolio__xico#tab__xico
 						div.portafolio__informacion
@@ -676,51 +1014,85 @@ body
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__xico
-										img.tarjeta__imagen.imagen-fluida(title="")(src="images/1-xico.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="")(src="images/xico/1-xico.jpg")
 									div.tarjeta__nombre Logotipo
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__xico
-										img.tarjeta__imagen.imagen-fluida(title="")(src="images/2-xico.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="")(src="images/xico/2-xico.jpg")
 									div.tarjeta__nombre Cartel I
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__xico
-										img.tarjeta__imagen.imagen-fluida(title="")(src="images/3-xico.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="")(src="images/xico/3-xico.jpg")
 									div.tarjeta__nombre Cartel II
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__xico
-										img.tarjeta__imagen.imagen-fluida(title="")(src="images/4-xico.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="")(src="images/xico/4-xico.jpg")
 									div.tarjeta__nombre Cartel III
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__xico
-										img.tarjeta__imagen.imagen-fluida(title="")(src="images/5-xico.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="")(src="images/xico/5-xico.jpg")
 									div.tarjeta__nombre Lona
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__xico
-										img.tarjeta__imagen.imagen-fluida(title="")(src="images/6-xico.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="")(src="images/xico/6-xico.jpg")
 									div.tarjeta__nombre Dossier
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__xico
-										img.tarjeta__imagen.imagen-fluida(title="")(src="images/7-xico.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="")(src="images/xico/7-xico.jpg")
 									div.tarjeta__nombre Portada Facebook
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__xico
-										img.tarjeta__imagen.imagen-fluida(title="")(src="images/8-xico.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="")(src="images/xico/8-xico.jpg")
 									div.tarjeta__nombre Gafetes
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__xico
-										img.tarjeta__imagen.imagen-fluida(title="")(src="images/9-xico.jpg")
+										img.tarjeta__imagen.imagen-fluida(title="")(src="images/xico/9-xico.jpg")
 									div.tarjeta__nombre Constancias
-						
-					// T OR T U G A  DEL V I E N T O
-						div.portafolio__tortuga#tab__tortuga
+					
+					// F R E E L A N C E
+					div.portafolio__freelance#tab__free
+						div.portafolio__logotipos
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__brujula
+										img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/b7/f0/28/b7f02851bd1a3d4bccdf904b105d5cf6.jpg")
+									div.tarjeta__nombre Brújula
+							div.tarjeta
+								div.tarjeta__contenedor
+									a(href="https://www.facebook.com/profile.php?id=100009385120538&ref=br_rs")(target="_blank").tarjeta--Link
+										img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/c2/f3/e2/c2f3e2ced29089156cf9d9d13ffddfa8.jpg")
+									div.tarjeta__nombre el Cumple | Tarjetería
+							div.tarjeta
+								div.tarjeta__contenedor
+									a(href="https://www.facebook.com/FOFUVERDEPISTACHE/?ref=br_rs")(target="_blank").tarjeta--Link
+										img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/63/8d/5f/638d5f2bbe5fabe7380b99f139ee62c2.jpg")
+									div.tarjeta__nombre Verde Pistache
+							div.tarjeta
+								div.tarjeta__contenedor
+									a(href="https://www.facebook.com/FOFUVERDEPISTACHE/?ref=br_rs")(target="_blank").tarjeta--Link
+										img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/25/c2/aa/25c2aa0d5aafdd7542dd702056361bee.jpg")
+									div.tarjeta__nombre Tortuga del Viento
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__hector
+										img.tarjeta__imagen.imagen-fluida(src="images/hector/logo_hector_1.jpg")
+									div.tarjeta__nombre Chef Hector Rodríguez Arvizu
+							//- div.tarjeta
+							//- 	div.tarjeta__contenedor
+							//- 		a.tarjeta_link#modal__marron
+							//- 			img.tarjeta__imagen.imagen-fluida(src="images/logo/logo6.png")
+							//- 		div.tarjeta__nombre Kalóllero Marro.on	
+					
+				// T O R T U G A  DEL V I E N T O
+					div.portafolio__tortuga#tab__tortuga
 						div.portafolio__informacion
 							p.portafolio__titulo Tortuga del Viento
 							p.portafolio__actividad Diseño de la Imagen Gráfica del Evento Logística del Evento & Community Manager en Redes Sociales
@@ -729,7 +1101,7 @@ body
 							div.tarjeta
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__iscam
-										img.tarjeta__imagen.imagen-fluida(src="images/1-iscam.jpg")
+										img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/25/c2/aa/25c2aa0d5aafdd7542dd702056361bee.jpg")
 									div.tarjeta__nombre Logotipo
 
 							div.tarjeta
@@ -742,35 +1114,115 @@ body
 								div.tarjeta___contenedor
 									a.tarjeta__link#modal__iscam
 										img.tarjeta__imagen.imagen-fluida(src="images/3-iscam.jpg")
+									div.tarjeta__nombre Gafetes				
+				
+				// I S C A M  -- T R A D I C I O N E S  &  C O S T U M B R E S
+					div.portafolio__iscamTradiciones#tab__tradiciones
+						div.portafolio__informacion
+							p.portafolio__titulo Tradiciones y Costumbre de Nuestros Pueblos Originarios de Veracruz
+							p.portafolio__actividad Diseño de la Imagen Gráfica del Evento Logística del Evento & Community Manager en Redes Sociales
+							p.portafolio__descripcion Muestra Gastronómica de Pueblos Originarios del Estado de Veracruz en Coordinación con la Delegación de SEDESOL ~ Veracruz
+						div.portafolio__galeria
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/01-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Logotipo
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/02-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Cartel
+							div.tarjeta
+								div.tarjeta___contenedor
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/03-iscam-tradiciones.jpg")
 									div.tarjeta__nombre Gafetes
-					
-					// I M A G E N - G R Á F I C A
-					div.portafolio__imagenGrafica#tab__imagen
-						div.portafolio__logotipos
 							div.tarjeta
 								div.tarjeta__contenedor
-									a.tarjeta--Link
-										img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/b7/f0/28/b7f02851bd1a3d4bccdf904b105d5cf6.jpg")
-									div.tarjeta__nombre Brújula
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/04-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
 							div.tarjeta
 								div.tarjeta__contenedor
-									a.tarjeta--Link
-										img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/c2/f3/e2/c2f3e2ced29089156cf9d9d13ffddfa8.jpg")
-									div.tarjeta__nombre el Cumple | Tarjetería
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/05-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
 							div.tarjeta
 								div.tarjeta__contenedor
-									a.tarjeta--Link
-										img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/25/c2/aa/25c2aa0d5aafdd7542dd702056361bee.jpg")
-									div.tarjeta__nombre Tortuga del Viento
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/06-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
 							div.tarjeta
 								div.tarjeta__contenedor
-									a.tarjeta--Link
-										img.tarjeta__imagen.imagen-fluida(src="https://i.pinimg.com/564x/63/8d/5f/638d5f2bbe5fabe7380b99f139ee62c2.jpg")
-									div.tarjeta__nombre Verde Pistache
-
-					// A U D I O   &   V I D E O
-					div.portafolio__imagenGrafica#tab__video
-						iframe(width="560" height="315" src="https://www.youtube.com/embed/fjd8ic_iJM0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/07-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/08-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/09-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/10-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/11-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/12-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/13-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/14-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/15-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/16-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/17-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/18-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/19-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
+							div.tarjeta
+								div.tarjeta__contenedor
+									a.tarjeta__link#modal__iscamTradiciones
+										img.tarjeta__imagen.imagen-fluida(src="images/iscam/tradiciones/20-iscam-tradiciones.jpg")
+									div.tarjeta__nombre Título
 
 		//Tecnologías en Estudio
 		section#tecnologia.tecnologia
@@ -882,13 +1334,13 @@ body
 		//Pie
 		footer.pie
 			div.pie__derechosReservados
-				p ENERO  &middot  2018 
+				p FEBRERO  &middot  2018 
 			
-			div.pie__firma Rogelio Serna Ojeda
+			div.pie__firma Kalóllero Marro.on
 				img(href="")
 
 			div.pie__redesSociales 
-				p Version 1.8.8 &middot Kalóllero Marro.on
+				p Version 2.1.8 &middot Kalóllero Marro.on
 				//- a.iconRedes(href="https://www.facebook.com/kalolleromarron"): i.icon-facebook
 
 

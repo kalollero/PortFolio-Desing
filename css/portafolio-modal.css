@@ -85,6 +85,11 @@ iframe {
   width: 100%;
 }
 
+.modal__contenedorImagen > .issuuembed {
+  height: 100vh;
+  width: 100%;
+}
+
 .modal__contenedorImagenPortada {
   background-color: var(--oxford);
   width: 100%;
