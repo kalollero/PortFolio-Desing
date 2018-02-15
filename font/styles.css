@@ -131,3 +131,6 @@
 .icon-direccion:before {
   content: "\47";
 }
+.icon-wordpress:before {
+  content: "\42";
+}
