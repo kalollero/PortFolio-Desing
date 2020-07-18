@@ -1,93 +1,232 @@
 .contacto {
-	background-color: var(--ahuesado);
-	
-	&__contenedor {
-		display: grid;
-		grid-template-columns: repeat(2,1fr);
-		grid-template-rows: repeat(2,1fr);
-		grid-gap: 1rem;
-		margin: 0 1rem;
-		text-align: center;
+	width: 100vw;
+	min-height: 100vh;
+	padding: 2rem 10%;
+	background-color: var(--profundo);
+
+	&__frase {
+		width: 100%;
+		height: 30vh;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
 	}
 
-	&__medioMovil {
-		grid-column:1/2;
-		grid-row:1/2;
+	&__idea {
+		font-size: 1.75rem;
+		font-weight: 600;
+		color: var(--blanco);
+		line-height: 1.1;
+		margin: 0 0 1rem 0;
 	}
 
-	&__medioFacebook {
-		grid-column:2/3;
-		grid-row:1/2;
+	&__cuentame {
+		font-size: 1.75rem;
+		font-weight: 200;
+		color: var(--blanco);
+		line-height: 1.1;
+		padding: 0 0 8px 0;
+		position: relative;
+	}
+
+	/*&__cuentame:after {
+		content: "";
+	    display: block;
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    height: 1px;
+	    background-color: rgba(255,255,255,.7);
+	}*/
+
+	&__texto {
+		display: flex;
+		margin-top: 15%;
+		flex-flow: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__datos {
+		//width: 50%;
 	}
 
 	&__medioCorreo {
-		grid-column:1/2;
-		grid-row:2/3;
+		font-size: 1.25rem;
+		font-weight: 200;
+		color: var(--blanco);
+		padding: 0 0 8px 0;
+		position: relative;
+	}
+
+	&__medioCorreo a:after {
+		content: "";
+	    display: block;
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    height: 1px;
+	    background-color: rgba(255,255,255,.7);
 	}
 
 	&__medioDireccion {
-		grid-column:2/3;
-		grid-row:2/3;
+		font-size: .8rem;
+		font-weight: 100;
+		color: var(--blanco);
+		padding: 2rem 0 1rem 0;
 	}
 
-	&__icono {
-		border-radius: 4px;
+	&__medioMovil {
+		font-size: 1rem;
+		font-weight: 100;
+		color: var(--blanco);
+	}
+
+	&__redes {
 		width: 100%;
-		height: 6rem;
-		cursor: pointer;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items:flex-end;
+		margin: 4rem;
+	}
+	
+	&__medioCorreo,
+	&__medioDireccion p,
+	&__medioMovil,
+	&__medioFacebook,
+	&__medioInstagram,
+	&__medioFreelancer,
+	&__medioSkype {
+		text-align: center;
 	}
 
-	&__icono > i {
-		font-size: 4rem;
-		color: var(--melon);
+	&__medioFacebook,
+	&__medioInstagram,
+	&__medioFreelancer,
+	&__medioSkype {
+		width: 50%;
+		margin: 2rem 0 0 0;
+		font-weight: 100;
 	}
 
-	&__nombre {
-		font-size: 90%;
-		color: var(--profundo);
+	&__medioFacebook:hover,
+	&__medioInstagram:hover,
+	&__medioFreelancer:hover,
+	&__medioSkype:hover {
+		font-weight: 400;
 	}
 
-	&__informacion {
-		color: var(--navy);
-		font-size: 70%;
-		font-weight: 300;
-		cursor: pointer;
+	@include sm {
+
 	}
 
 	@include md {
 
-		&__contenedor {
-			display: grid;
-			grid-template-columns: repeat(4,1fr);
-			grid-template-rows: auto;
-		}	
-	
-		&__medioMovil {
-			grid-column:1/2;
-			grid-row:1/2;
+	}
+
+	@include lg {
+		padding: 2rem 10%;
+		background-color: var(--profundo);
+
+		&__frase {
+			width: 100%;
+			height: 30vh;
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: flex-start;
 		}
 
-		&__medioFacebook {
-			grid-column:2/3;
-			grid-row:1/2;
+		&__idea {
+			font-size: 3rem;
+			font-weight: 600;
+			color: var(--blanco);
+			line-height: 1.1;
+			margin: 0 0 1rem 0;
+		}
+
+		&__cuentame {
+			font-size: 3rem;
+			font-weight: 200;
+			color: var(--blanco);
+			line-height: 1.1;
+			padding: 0 0 8px 0;
+			position: relative;
+		}
+
+		&__texto {
+			display: flex;
+			margin-top: 15%;
+			flex-flow: row;
+			justify-content: space-between;
+			align-items: flex-end;
+		}
+
+		&__datos {
+			//width: 50%;
 		}
 
 		&__medioCorreo {
-			grid-column:3/4;
-			grid-row:1/2;
+			font-size: 1.25rem;
+			font-weight: 200;
+			color: var(--blanco);
+			padding: 0 0 8px 0;
+			position: relative;
 		}
 
 		&__medioDireccion {
-			grid-column:4/5;
-			grid-row:1/2;
+			font-size: .8rem;
+			font-weight: 100;
+			color: var(--blanco);
+			padding: 2rem 0 1rem 0;
 		}
 
-		&__informacion {
-			color: var(--navy);
-			font-size: 90%;
-			font-weight: 500;
-			cursor: pointer;
+		&__medioMovil {
+			font-size: .8rem;
+			font-weight: 100;
+			color: var(--blanco);
 		}
+
+		&__medioCorreo,
+		&__medioDireccion p,
+		&__medioMovil,
+		&__medioFacebook,
+		&__medioInstagram,
+		&__medioFreelancer,
+		&__medioSkype {
+			text-align: left;
+		}
+
+		&__redes {
+			width: 50%;
+			margin: 0;
+		}
+		
+
+		&__medioFacebook,
+		&__medioInstagram,
+		&__medioFreelancer,
+		&__medioSkype {
+			width: 30%;
+			margin: 2rem 0 0 0;
+			font-weight: 100;
+
+		}
+
+		&__medioFacebook:hover,
+		&__medioInstagram:hover,
+		&__medioFreelancer:hover,
+		&__medioSkype:hover {
+			font-weight: 400;
+		}
+	
 	}
 
+	@include xl {
+	
+	}
 }

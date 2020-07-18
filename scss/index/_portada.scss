@@ -1,178 +1,125 @@
 .portada {
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
-	background: url("../images/bg-image_moviles.jpg") no-repeat, var(--oxford);
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	position: relative;
+	padding: 2rem 10%;
+	background: var(--blanco);
 	z-index: 9;
+	font-family: "Poppins", sans-serif;
+	
 
 	&__contenedor {
 		width: 100%;
 		height: 100%;
-		display: grid;
-		grid-template-columns: 2rem 1fr 2rem;
-    	grid-template-rows: 10% auto 10%;
-		color: var(--blanco);
-		// background-color: var(--navyTransparente);
 	}
+
+	&__navMenu{}
 	
-	&__header {
-		grid-column: 3/4;
-		grid-row:1/2;
-		width: 100%;
+	&__logo {
+		font-family: "Poppins", sans-serif;
+		font-weight: 600;
+	}
+
+	&__contenido {
 		display: flex;
-		flex-flow: row;
-		justify-content: center;
-		align-items: center;
-		// padding: 0 1rem;
+		flex-flow: column;
 	}
 
-	// &__logo {	
-	// }
-
-	// &__social a {
-	// 	color: var(--gris);
-	// 	font-size: 80%;
-	// }
-
-	&__contenedor a:hover {
-		color: var(--navy);
-	}
-
-
-	&__texto {
-		grid-column: 2/3;
-		grid-row: 2/3;
+	&__titulo {
+		width: 80vw;
 		display: flex;
     	flex-flow: column;
     	justify-content: center;
+    	align-items: flex-start;
+    	font-family: "Poppins", sans-serif;
+		font-weight: 800;
+		margin: 18vh 0 2rem 0;
+
+    	&-UI,
+		&-webDesign,
+		&-packaging {
+    		font-size: 2.25rem;
+    		line-height: 1.1;
+    	}
 	}
 
-	&__logotipo {
-		display: flex;
-		flex-flow: column;
-		justify-content: flex-start;
-		align-items: center;
-		text-align: center;
-	}
-
-	&__logotipo > img {
-		width: 20%;
-	}
-
-
-	&__nombre {
-		display: flex;
-		flex-flow: column;
-		justify-content: flex-end;
-		align-items: center;
-		text-align: center;
-		font-size: 3rem;
-		font-weight: 400;
-		font-family: 'Merriweather', serif;
-	}
-
-	&__profesion {
-		display: flex;
-		flex-flow: column;
-		justify-content: flex-start;
-		align-items: center;
-		text-align: center;
-		font-weight: 300;
-		letter-spacing: 0.25rem;
-		font-size: 1.25rem;
-	}
-
-	&__mouse {
-		grid-column: 2/3;
-		grid-row: 3/4;
-	    display: flex;
-	    justify-content: center;
-	    align-items: center;
-	}
-
-	&__mouse > .icon-mouse {
-		position: relative;
-		animation-duration: 1s;
-		animation-name: mouse;
-		animation-iteration-count: infinite;
-		font-size: 2.5rem;
-	}
-
-	&__mouse > .icon-mouse:hover {
-		animation: none;
+	&__texto {
+		font-family: 'Open Sans', sans-serif;
+		width: 50vw;
+		height: auto;
+		font-size: .75rem;
+		font-weight: 200;
+		text-align: right;
+		align-self: flex-end;
 	}
 
 	@include sm {
-		&__social a {
-			font-size: 1rem;
+	
+		&__navMenu{
+			height: 30vh;
 		}
 
-		&__nombre {
-			font-size: 3rem;
+		&__logo {
+			font-size: 1rem;
 		}
-		&__profesion {
-			letter-spacing: 0.5rem;
+		
+		&__titulo {
+    		//border: 1px dashed orange;
+    		margin:0 0 2rem 0;
 		}
 	}
 
 	@include md {
-
-		&__contenedor {
-			grid-template-columns: 5rem 1fr 5rem;
-    		grid-template-rows: 10% auto 10%;
-			width: 100%;
-			height: 100%;
-    	}
-
-		&__social a {
-			font-size: 1.5rem;
+		&__contenido {
+			//width: 60vw;
+			flex-flow: row;
+			justify-content: flex-start;
+			align-items: flex-end;
+			//border: 1px dashed orange;
 		}
 
-		&__nombre {
-			font-size: 4rem;
+		&__titulo {
+			margin:0 0 0 0;
+			
+			&-UI,
+			&-webDesign,
+			&-packaging {
+    			font-size: 4rem;
+    		}
 		}
-		
-		&__profesion {
+
+		&__texto {
+		width: 30vw;
 		}
 	}
 
+
 	@include lg {
-		background: url("../images/bg-image.jpg") no-repeat, var(--navy);
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		
-		&__nombre {
-			font-size: 8rem;
+
+		&__titulo {
+			margin:0 15% 0 0;
+			
+			&-UI,
+			&-webDesign,
+			&-packaging {
+    			font-size: 4.5rem;
+    		}
 		}
 
-		&__profesion {
+		&__texto {
+			font-size: 1rem;
+			font-weight: 400;
 		}
 	}
 
 	@include xl {
-		&__nombre {
-			font-size: 6rem;
+		&__titulo {
+			
+			&-UI,
+			&-webDesign,
+			&-packaging {
+    			font-size: 5rem;
+    		}
 		}
 	}
 }
 
-
-@keyframes mouse {
-  0% {
-    bottom: 1rem;
-  }
-
-  50% {
-	bottom: 2rem;
-  }
-
-  100% {
-    bottom: 1rem;
-  }
-}

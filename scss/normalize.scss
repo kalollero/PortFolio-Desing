@@ -10,18 +10,19 @@ Inicia Normalize
 
 
 html {
-  line-height: 1.5; 
+  //line-height: 1.5;
   -ms-text-size-adjust: 100%; 
   -webkit-text-size-adjust: 100%; 
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: var(--profundo);
 }
 
 
 body {
   margin: 0;
   font-size: 18px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   --navy: rgba(0, 7, 36, 1);
   --anaranjado: #e62117;
   --melon: rgba(255, 44, 53, 1);
@@ -42,6 +43,8 @@ body {
   --profundoTransparente: rgba(23, 23, 23, 0.5);
   --navyTransparente: rgba(0, 7, 36, 0.5);
   /*--sombra*/
+
+  color: var(--profundo);
 }
 
 
@@ -369,7 +372,7 @@ Inicia FrameWork
 .imagen-fluida {
     max-width: 100%;
     height: auto;
-  }
+  } 
 
 // * {
 //     border: 1px dashed orange;
